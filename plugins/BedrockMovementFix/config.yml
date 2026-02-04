@@ -1,0 +1,15 @@
+# BedrockMovementFix Configuration
+
+# Enable or disable the movement fix globally
+enabled: true
+
+# If true, only apply the fix to Bedrock players (detected via Floodgate)
+# If false, apply to all players
+bedrock-only: true
+
+# Enable debug logging (logs every 10th allowed movement)
+debug: true
+
+# Enable verbose debug logging (logs EVERY allowed movement with coordinates)
+# WARNING: This can spam your console! Only use for troubleshooting.
+verbose-debug: false

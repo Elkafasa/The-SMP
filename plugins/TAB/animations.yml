@@ -1,0 +1,60 @@
+glitch_vibrant:
+  change-interval: 100
+  texts:
+  - '&d&kxxx &5&lSYSTEM ERROR &d&kxxx'
+  - '&5&kxxx &d&lFATAL ERROR &5&kxxx'
+  - '&d&lG&5&lL&d&lI&5&lT&d&lC&5&lH'
+  - '&c&lE&4&lR&c&lR&4&lO&c&lR'
+glitch_line:
+  change-interval: 150
+  texts:
+  - '&d&k10101010101010'
+  - '&5&k01010101010101'
+  - '&d&o#$@&5&l!&d&o&*^%%'
+  - '&5&o*&d&l%&5&o^&d&l$!&5&o@&d&l#'
+ram_bar:
+  change-interval: 1000
+  texts:
+  - '&8[&f%progressbar_percentage_memory-used%&8]'
+ip_glow:
+  change-interval: 200
+  texts:
+  - '&e&obetterthanchoosmp.sdlf.fun'
+  - '&6&obetterthanchoosmp.sdlf.fun'
+  - '&f&obetterthanchoosmp.sdlf.fun'
+  - '&6&obetterthanchoosmp.sdlf.fun'
+health_safe:
+  change-interval: 1000
+  texts:
+  - '&a%player_health%'
+  - '&2%player_health%'
+health_warning:
+  change-interval: 400
+  texts:
+  - '&e%player_health%'
+  - '&6%player_health%'
+  - '&f%player_health%'
+health_danger:
+  change-interval: 150
+  texts:
+  - '&c%player_health%'
+  - '&4%player_health%'
+  - '&f%player_health%'
+  - '&c%player_health%'
+day_colors:
+  change-interval: 500
+  texts:
+  - '&e%skript_tab_time%'
+  - '&6%skript_tab_time%'
+night_colors:
+  change-interval: 500
+  texts:
+  - '&b%skript_tab_time%'
+  - '&3%skript_tab_time%'
+bar_colors:
+  change-interval: 1000
+  texts:
+  - BLUE
+  - AQUA
+  - WHITE
+  - AQUA

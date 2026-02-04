@@ -1,0 +1,11 @@
+{
+  "id": "report-20260204-182126",
+  "timestamp": "Wed Feb 04 18:21:26 AST 2026",
+  "description": "Final report before shutdown",
+  "serverVersion": "1.21.11-102-fd39dbd (MC: 1.21.11)",
+  "bukkitVersion": "1.21.11-R0.1-SNAPSHOT",
+  "maxPlayers": 20,
+  "onlinePlayers": 0,
+  "worlds": 3,
+  "sampleCount": 14
+}

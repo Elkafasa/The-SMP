@@ -1,0 +1,89 @@
+Config:
+  
+  # ----------------------------------------
+  # Language / Localization
+  # Available: FRENCH, ENGLISH, SPANISH, CUSTOM
+  # ----------------------------------------
+  Language: FRENCH
+  
+  # ----------------------------------------
+  # Storage Connector
+  # TYPE can be "YAML" or "MYSQL"
+  # MySQL settings are used only when TYPE="MYSQL"
+  # ----------------------------------------
+  Storage:
+    TYPE: YAML # MYSQL or YAML
+    
+    # Optional (for MYSQL)
+    HOST: localhost
+    PORT: 3306
+    USERNAME: root
+    PASSWORD: ''
+    DATABASE: HomePlugin
+  
+  # ----------------------------------------
+  # Redis Cache (Optional)
+  # Enable only if you need cross-instance cache/sync
+  # ----------------------------------------
+  Redis:
+    Use-Redis: false
+    HOST: localhost
+    PORT: 6379
+    SSL: false
+    PASSWORD: ''
+  
+  # ----------------------------------------
+  # Home Settings
+  # Limits, validation, and disabled worlds
+  # ----------------------------------------
+  Home:
+    Default-Home-Limit: 3
+    Prevent-Unfair-Location: true
+    Disabled-Worlds:
+    - world_nether
+    - world_the_end
+  
+  # ----------------------------------------
+  # Teleport Task / Warmup & Effects
+  # ----------------------------------------
+  Task:
+    Task-Duration: 3 # seconds
+    Use-Title: true
+    Use-Message: true
+    Particles-After-Teleport: true
+    Skip-If-Op: true
+  
+  
+  # ----------------------------------------
+  # TPA (Teleport Requests)
+  # ----------------------------------------
+  Tpa:
+    Tpa-Duration: 30 # seconds
+  
+  # ----------------------------------------
+  # RTP (Random Teleport)
+  # ----------------------------------------
+  RTP:
+    Cooldown-Seconds: 1000 # seconds
+    Max-Radius: 200
+    Enabled: true
+  
+  # ----------------------------------------
+  # Economy (Vault)
+  # Toggle costs and set prices per action
+  # ----------------------------------------
+  Economy:
+    UseEconomy: false
+    Home-Creation-Price: 100.0
+    Home-Teleport-Price: 50.0
+    Tpa-Request-Price: 20.0
+    RTP-Price: 150.0
+  
+  # ----------------------------------------
+  # Features
+  # Enable or disable specific features
+  # ----------------------------------------
+  Features:
+    Enable-TPA: true
+    Enable-Spawn: true
+    Enable-Home: true

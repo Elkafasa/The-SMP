@@ -1,0 +1,50 @@
+# ==========================================
+# combatlog.sk
+# ==========================================
+
+options:
+    combat_time: 15 seconds
+
+on damage of player:
+    if attacker is a player:
+        set {-combat::%victim%} to now
+        set {-combat::%attacker%} to now
+        
+        # Create BossBar for Victim
+        if bossbar with id "combat_%uuid of victim%" does not exist:
+            create bossbar with id "combat_%uuid of victim%" titled "&c&lIN COMBAT" for victim
+            set bossbar color of bossbar with id "combat_%uuid of victim%" to red
+            set bossbar style of bossbar with id "combat_%uuid of victim%" to progress
+            
+        # Create BossBar for Attacker
+        if bossbar with id "combat_%uuid of attacker%" does not exist:
+            create bossbar with id "combat_%uuid of attacker%" titled "&c&lIN COMBAT" for attacker
+            set bossbar color of bossbar with id "combat_%uuid of attacker%" to red
+            set bossbar style of bossbar with id "combat_%uuid of attacker%" to progress
+
+every 1 second:
+    loop all players:
+        if {-combat::%loop-player%} is set:
+            set {_diff} to difference between now and {-combat::%loop-player%}
+            if {_diff} >= {@combat_time}:
+                delete {-combat::%loop-player%}
+                if bossbar with id "combat_%uuid of loop-player%" exists:
+                    remove bossbar with id "combat_%uuid of loop-player%"
+                send "&a&lSAFE &8» &7You are no longer in combat." to loop-player
+            else:
+                # Update Bossbar Progress
+                set {_seconds_left} to {@combat_time}
+                remove {_diff} from {_seconds_left}
+                set {_s} to total seconds of {_seconds_left}
+                # 15 seconds max
+                set {_p} to ({_s} / 15) * 100
+                set bossbar value of bossbar with id "combat_%uuid of loop-player%" to {_p}
+                set bossbar title of bossbar with id "combat_%uuid of loop-player%" to "&c&lIN COMBAT &7(&e%ceil({_s})%s&7)"
+
+on quit:
+    if {-combat::%player%} is set:
+        kill player
+        broadcast "&c&lCOMBAT LOG &8» &c%player% &7logged out while fighting!"
+        delete {-combat::%player%}
+        if bossbar with id "combat_%uuid of player%" exists:
+            remove bossbar with id "combat_%uuid of player%"
