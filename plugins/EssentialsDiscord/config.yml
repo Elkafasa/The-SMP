@@ -1,7 +1,7 @@
 # EssentialsX Discord - Whitelist-Only Connection Bridge
 # This config disables all chat, console, and status messages.
 
-token: "MTQ2Nzc2ODg2MzAwNDI5OTI4NQ.GbwRQ9.udIumC7Zv3SH5Hs6HVJb3XKLICOmSzK5Uwpjag"
+token: "confidential_bot_token"
 guild: 1423730932581666978
 discord-url: "https://discord.gg/EfxJTTD2nD"
 
