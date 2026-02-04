@@ -1,0 +1,784 @@
+[18:13:10] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-LTS; Eclipse Adoptium Temurin-21.0.9+10) on Linux 6.8.0-90-generic (amd64)
+[18:13:10] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-102-main@fd39dbd (2026-02-04T14:32:24Z) for Minecraft 1.21.11
+[18:13:11] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[18:13:13] [ServerMain/INFO]: [PluginInitializerManager] Initialized 32 plugins
+[18:13:13] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (3):
+ - JEIRecipeBridge (1.0.0), MCOptimizer (1.2.2), SkBee (3.16.0)
+[18:13:13] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (29):
+ - BedrockMovementFix (${version}), BlockSigningPlugin (2.9), Chunky (1.4.40), Craftorithm (1.10.25-20260112), Essentials (2.21.2), EssentialsDiscord (2.21.2), EssentialsDiscordLink (2.21.2), Geyser-Spigot (2.9.2-SNAPSHOT), GrimAC (2.3.73-daa3bfe), HomePlugin (0.8.6-main-SNAPSHOT), JustTPA (20250220c), KnockbackSync (1.3.6-dev-b132), LuckPerms (5.5.28), Orebfuscator (5.5.7), PlaceholderAPI (2.12.1), PreLoginWhitelist (1.3), ProtocolLib (5.4.0), SkinsRestorer (15.10.0), Skript (2.14.1), TAB (5.5.0), Vault (2.18.0), WorldEdit (7.4.0+7381-3decaf0), floodgate (2.2.5-SNAPSHOT (b126-096c605)), packetevents (2.11.2), skript-gui (1.3.1), skript-particle (1.4.0), skript-placeholders (1.7.0), skript-yaml (1.7.2), voicechat (2.6.11)
+[18:13:22] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:13:23] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[18:13:24] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 1,079.8ms
+[18:13:28] [ServerMain/INFO]: Loaded 1470 recipes
+[18:13:29] [ServerMain/INFO]: Loaded 1584 advancements
+[18:13:29] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[18:13:29] [Server thread/INFO]: Loading properties
+[18:13:29] [Server thread/INFO]: This server is running Paper version 1.21.11-102-main@fd39dbd (2026-02-04T14:32:24Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[18:13:29] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[18:13:29] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:13:29] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:13:30] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[18:13:30] [Server thread/INFO]: Default game type: SURVIVAL
+[18:13:30] [Server thread/INFO]: Generating keypair
+[18:13:30] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:13:31] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[18:13:31] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[18:13:33] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.1
+[18:13:33] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.28
+[18:13:34] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[18:13:34] [Server thread/INFO]: [Vault] Loading server plugin Vault v2.18.0
+[18:13:34] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[18:13:35] [Server thread/INFO]: [floodgate] Took 1,367ms to boot Floodgate
+[18:13:35] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.14.1
+[18:13:35] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.2
+[18:13:35] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[18:13:35] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.11) has not yet been tested! Proceed with caution.
+[18:13:36] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.2-SNAPSHOT
+[18:13:37] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[18:13:37] [Server thread/INFO]: [Geyser-Spigot] Enabled extension MCXboxBroadcast
+[18:13:37] [Server thread/INFO]: [Geyser-Spigot] Loaded 1 extension(s)
+[18:13:37] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.16.0
+[18:13:37] [Server thread/INFO]: [EssentialsDiscord] Loading server plugin EssentialsDiscord v2.21.2
+[18:13:37] [Server thread/INFO]: [Orebfuscator] Loading server plugin Orebfuscator v5.5.7
+[18:13:37] [Server thread/INFO]: [Craftorithm] Loading server plugin Craftorithm v1.10.25-20260112
+[18:13:37] [Server thread/INFO]: [skript-placeholders] Loading server plugin skript-placeholders v1.7.0
+[18:13:37] [Server thread/INFO]: [PreLoginWhitelist] Loading server plugin PreLoginWhitelist v1.3
+[18:13:37] [Server thread/INFO]: [skript-gui] Loading server plugin skript-gui v1.3.1
+[18:13:37] [Server thread/INFO]: [GrimAC] Loading server plugin GrimAC v2.3.73-daa3bfe
+[18:13:37] [Server thread/INFO]: [GrimAC] Loading PacketEvents...
+[18:13:40] [Server thread/INFO]: [BlockSigningPlugin] Loading server plugin BlockSigningPlugin v2.9
+[18:13:40] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.0+7381-3decaf0
+[18:13:43] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@65459dc1]
+[18:13:43] [Server thread/INFO]: [MCOptimizer] Loading server plugin MCOptimizer v1.2.2
+[18:13:43] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.11.2
+[18:13:45] [Server thread/INFO]: [HomePlugin] Loading server plugin HomePlugin v0.8.6-main-SNAPSHOT
+[18:13:45] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.10.0
+[18:13:45] [Server thread/INFO]: [JustTPA] Loading server plugin JustTPA v20250220c
+[18:13:45] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.5.0
+[18:13:45] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.7.2
+[18:13:45] [Server thread/INFO]: [skript-particle] Loading server plugin skript-particle v1.4.0
+[18:13:45] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[18:13:45] [Server thread/INFO]: [JEIRecipeBridge] Loading server plugin JEIRecipeBridge v1.0.0
+[18:13:46] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Loading server plugin EssentialsDiscordLink v2.21.2
+[18:13:46] [Server thread/INFO]: [KnockbackSync] Loading server plugin KnockbackSync v1.3.6-dev-b132
+[18:13:46] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.11
+[18:13:46] [Server thread/INFO]: [BedrockMovementFix] Loading server plugin BedrockMovementFix v${version}
+[18:13:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:13:46] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.28
+[18:13:47] [Server thread/INFO]:         __    
+[18:13:47] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.28
+[18:13:47] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[18:13:47] [Server thread/INFO]: 
+[18:13:48] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[18:13:48] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[18:13:49] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[18:13:49] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2719ms)
+[18:13:49] [Server thread/INFO]: [Vault] Enabling Vault v2.18.0
+[18:13:49] [Server thread/INFO]: [Vault] Enabled Version 2.18.0
+[18:13:49] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[18:13:49] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[18:13:49] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.0+7381-3decaf0
+[18:13:49] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:13:50] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[18:13:51] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Enabling MCOptimizer v1.2.2
+[18:13:52] [Server thread/INFO]: [MCOptimizer] 
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ╔════════════════════════════════════════════╗
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║            MCOptimizer Plugin              ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║    Optimize your server with minimal       ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║            CPU/RAM overhead!               ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ╠════════════════════════════════════════════╣
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║ Created by: juicyyfruittsnackss            ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║ Support: https://dcs.gg/fruitsnacks/       ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║ Projects: https://fruitsnacks.xyz          ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ║ Version: 1.2.2                            ║
+[18:13:52] [Server thread/INFO]: [MCOptimizer] ╚════════════════════════════════════════════╝
+[18:13:52] [Server thread/INFO]: [MCOptimizer] 
+[18:13:52] [Server thread/INFO]: [MCOptimizer] For support go to: https://dcs.gg/fruitsnacks/
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Check https://fruitsnacks.xyz for upcoming projects
+[18:13:52] [Server thread/INFO]: [MCOptimizer] 
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Using existing data folder at: /data/plugins/MCOptimizer
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Loading configuration...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Configuration loaded successfully
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing chunk management...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Chunk Manager initialized. Max chunks per tick: 0
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing entity optimization...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Entity Optimizer initialized. Max entities per chunk: 25
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing redstone optimization...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Redstone Optimizer initialized. Max updates per tick: 100
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing mob culling...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Mob Culling Manager initialized. Max mobs per world: 1000
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing performance monitor...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Web panel functionality has been removed
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing configuration analyzer...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing memory leak detector...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Memory leak detection started. Checking every 15 minutes.
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing entity distance limiter...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Entity distance limiting started
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing TNT optimizer...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] TNT optimizer initialized
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing task optimizer...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Task optimization started
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Network optimization disabled
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing AFK manager...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] AFK manager initialized
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Stress testing disabled
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing performance report manager...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Loaded 12 existing performance reports
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Performance report manager initialized
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Plugin integration API disabled
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing cross-platform support (forced enabled)...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: Geyser-Spigot v2.9.2-SNAPSHOT
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: Floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Universal cross-platform support initialized - compatible with all bridge solutions
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Initializing lag prediction system...
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Lag prediction enabled (interval: 30s, points: 60)
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Web interface enabled (port: 8080, auth: disabled)
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Started lag prediction task (interval: 30s)
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Lag prediction web interface available at: http://localhost:8080/
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Registering mcoptimizer command manually
+[18:13:52] [Server thread/INFO]: [MCOptimizer] Metrics collection enabled
+[18:13:52] [Server thread/INFO]: [MCOptimizer] MCOptimizer v1.2.2 enabled successfully
+[18:13:52] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.10.0
+[18:13:54] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.11.
+[18:13:54] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[18:13:55] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[18:13:55] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.10.0]
+[18:13:55] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[18:13:55] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:13:55] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:13:55] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:13:55] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:13:55] [Server thread/INFO]: Preparing level "world"
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.10.0
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: fcb9320
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[18:13:55] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[18:13:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[18:13:57] [Server thread/INFO]: Prepared spawn area in 1 ms
+[18:13:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[18:13:57] [Server thread/INFO]: Prepared spawn area in 0 ms
+[18:13:57] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[18:13:57] [Server thread/INFO]: Preparing spawn area: 100%
+[18:13:57] [Server thread/INFO]: Prepared spawn area in 1 ms
+[18:13:57] [Server thread/INFO]: Done preparing level "world" (1.499s)
+[18:13:57] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.1
+[18:13:57] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[18:13:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: vaultunlocked [2.13.1]
+[18:13:57] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[18:13:58] [Server thread/INFO]: [Skript] Enabling Skript v2.14.1
+[18:14:00] [Thread-15/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[18:14:03] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[18:14:03] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
+[18:14:04] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[18:14:04] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[18:14:04] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[18:14:04] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[18:14:05] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
+[18:14:05] [Server thread/INFO]: [Essentials] Using locale en_US
+[18:14:05] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[18:14:06] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[18:14:06] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[18:14:06] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.2-SNAPSHOT
+[18:14:07] [Thread-17/INFO]: [Skript] Loaded 5684 aliases in 4154ms
+[18:14:09] [Server thread/INFO]: [SkBee] Enabling SkBee v3.16.0
+[18:14:09] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] It looks like another addon registered 'respawn reason' already.
+[18:14:10] [Server thread/INFO]: [SkBee] You may have to use their RespawnReason in SkBee's syntaxes.
+[18:14:10] [Server thread/INFO]: [SkBee] It looks like another addon registered 'EntityEffect' already.
+[18:14:10] [Server thread/INFO]: [SkBee] You may have to use their EntityEffects in SkBee's 'play entity effect' effect.
+[18:14:10] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[18:14:10] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.11! Trying to find NMS support
+[18:14:10] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R7' loaded!
+[18:14:10] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[18:14:10] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee]  - Do note these elements are in Skript as 'Experimental'
+[18:14:10] [Server thread/INFO]: [SkBee]  - If issues arise, disable this feature and use Skript's elements instead
+[18:14:10] [Server thread/INFO]: [SkBee] Dialog Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Display Entity Elements disabled via config
+[18:14:10] [Server thread/INFO]: [SkBee] Fastboard[Adventure] Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
+[18:14:10] [Server thread/INFO]: [SkBee] Particle Elements disable (now in Skript)
+[18:14:11] [Server thread/INFO]: [SkBee] Property Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Scoreboard Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[18:14:11] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
+[18:14:11] [Server thread/INFO]: [SkBee] Loaded SkBee (449) elements:
+[18:14:11] [Server thread/INFO]: [SkBee]  - 56 events
+[18:14:11] [Server thread/INFO]: [SkBee]  - 72 effects
+[18:14:11] [Server thread/INFO]: [SkBee]  - 243 expressions
+[18:14:11] [Server thread/INFO]: [SkBee]  - 27 conditions
+[18:14:11] [Server thread/INFO]: [SkBee]  - 51 sections
+[18:14:11] [Server thread/INFO]: [SkBee]  - 11 properties
+[18:14:11] [Server thread/INFO]: [SkBee] Checking for update...
+[18:14:11] [Server thread/INFO]: [SkBee] Plugin is up to date!
+[18:14:11] [Server thread/INFO]: [SkBee] Successfully enabled v3.16.0 in 1.76 seconds
+[18:14:11] [Server thread/INFO]: [EssentialsDiscord] Enabling EssentialsDiscord v2.21.2
+[18:14:11] [Server thread/INFO]: [EssentialsDiscord] Starting Metrics. Opt-out using the global bStats config.
+[18:14:11] [Server thread/INFO]: [EssentialsDiscord] Attempting to login to Discord...
+[18:14:13] [Server thread/INFO]: [net.essentialsx.dep.net.dv8tion.jda.api.JDA] Login Successful!
+[18:14:13] [JDA MainWS-ReadThread/INFO]: [net.essentialsx.dep.net.dv8tion.jda.internal.requests.WebSocketClient] Connected to WebSocket
+[18:14:14] [JDA MainWS-ReadThread/INFO]: [net.essentialsx.dep.net.dv8tion.jda.api.JDA] Finished Loading!
+[18:14:14] [Server thread/INFO]: [EssentialsDiscord] Successfully logged in as Whitelister#4129
+[18:14:14] [Server thread/INFO]: [Orebfuscator] Enabling Orebfuscator v5.5.7
+[18:14:14] [Server thread/INFO]: [Orebfuscator] Searching NMS adapter for server version "v1_21_R7_mojang"!
+[18:14:14] [Server thread/INFO]: [Orebfuscator] NMS adapter for server version "v1_21_R7_mojang" found!
+[18:14:15] [Server thread/INFO]: [Craftorithm] Enabling Craftorithm v1.10.25-20260112
+[18:14:15] [Server thread/INFO]: [skript-placeholders] Enabling skript-placeholders v1.7.0
+[18:14:15] [Server thread/INFO]: [PreLoginWhitelist] Enabling PreLoginWhitelist v1.3
+[18:14:15] [Server thread/INFO]: [skript-gui] Enabling skript-gui v1.3.1
+[18:14:15] [Server thread/INFO]: [Skript]     Missing version in default.lang
+[18:14:15] [Server thread/INFO]: [GrimAC] Enabling GrimAC v2.3.73-daa3bfe
+[18:14:15] [Server thread/INFO]: [GrimAC] Registering packets...
+[18:14:15] [Server thread/INFO]: [GrimAC] Registering tick schedulers...
+[18:14:16] [Server thread/INFO]: Grim Version: 2.3.73-daa3bfe
+[18:14:16] [Server thread/INFO]: [GrimAC] Registering singular bukkit event... (PistonEvent)
+[18:14:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: grim [2.3.73-daa3bfe]
+[18:14:16] [Server thread/INFO]: [BlockSigningPlugin] Enabling BlockSigningPlugin v2.9
+[18:14:16] [Server thread/WARN]: [BlockSigningPlugin] Invalid material in onlyscan: SPAWNER_MINECART
+[18:14:16] [Server thread/INFO]: [packetevents] Enabling packetevents v2.11.2
+[18:14:16] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[18:14:16] [Server thread/INFO]: [HomePlugin] Enabling HomePlugin v0.8.6-main-SNAPSHOT
+[18:14:16] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.11.2)
+[18:14:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: homeplugin [0.8.6-main-SNAPSHOT]
+[18:14:16] [Server thread/INFO]: [HomePlugin] PlaceholderAPI detected. Placeholders enabled.
+[18:14:16] [Server thread/INFO]: [HomePlugin] Redis disabled in config. Skipping Redis setup.
+[18:14:16] [Server thread/INFO]: [HomePlugin] Using YAML storage.
+[18:14:16] [Server thread/INFO]: [HomePlugin] Registering Homes...
+[18:14:16] [Server thread/INFO]: [HomePlugin] Registering Spawns...
+[18:14:16] [Server thread/INFO]: [HomePlugin] Registering commands...
+[18:14:16] [Server thread/INFO]: [HomePlugin] Registering events...
+[18:14:16] [Server thread/WARN]: [HomePlugin] No plugin extensions detected.
+[18:14:16] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[18:14:16] [Server thread/INFO]: [HomePlugin] HomePlugin started successfully!
+[18:14:16] [Server thread/INFO]: [HomePlugin] Language: FRENCH
+[18:14:16] [Server thread/INFO]: [HomePlugin] Storage: YAML
+[18:14:16] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[18:14:16] [Server thread/INFO]: [JustTPA] Enabling JustTPA v20250220c
+[18:14:16] [Server thread/INFO]: [JustTPA] JustTPA initialized
+[18:14:16] [Server thread/INFO]: [JustTPA] bStats enabled
+[18:14:16] [Server thread/INFO]: [JustTPA] Checking for updates...
+[18:14:16] [Server thread/INFO]: [TAB] Enabling TAB v5.5.0
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from 5.0.1 to 5.0.2
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from 5.2.1 to 5.2.2
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from config version 0 to 1
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from config version 1 to 2
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] Please note that header/footer conversion may not be 100% accurate and will not convert per-group settings and per-user settings. Review your config to make sure it is set up the way you want.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] header-footer: Missing configuration section "header-footer.disable-condition" of type String, using default value %world%=disabledworld.
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from config version 2 to 3
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from config version 3 to 4
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from config version 4 to 5
+[18:14:17] [Server thread/INFO]: [TAB] [config.yml] [Hint] Refresh interval of %rel_factionsuuid_relation_color% is same as default interval, therefore there is no need to override it.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Missing configuration section "scoreboard.delay-on-join-milliseconds" of type Integer, using default value 0.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default-color". Valid keys: [enabled, disable-condition]
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support: Missing configuration section "proxy-support.type" of type String, using default value PLUGIN.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.plugin: Missing configuration section "proxy-support.plugin.name" of type String, using default value RedisBungee.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.redis: Missing configuration section "proxy-support.redis.url" of type String, using default value redis://:password@localhost:6379/0.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.exchange" of type String, using default value plugin.
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.url" of type String, using default value amqp://guest:guest@localhost:5672/%2F.
+[18:14:17] [Server thread/INFO]: [TAB] Performing configuration conversion from 2.8.10 to 2.9.0
+[18:14:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [5.5.0]
+[18:14:17] [Server thread/INFO]: [TAB] [WARN] Found a total of 12 issues.
+[18:14:17] [Server thread/INFO]: [TAB] Enabled in 534ms
+[18:14:17] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.7.2
+[18:14:17] [Server thread/INFO]: [skript-particle] Enabling skript-particle v1.4.0
+[18:14:17] [Thread-24/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
+[18:14:17] [Server thread/INFO]: [skript-particle] Successfully enabled skript-particle.
+[18:14:17] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[18:14:17] [Server thread/INFO]: [JEIRecipeBridge] Enabling JEIRecipeBridge v1.0.0
+[18:14:17] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Enabling EssentialsDiscordLink v2.21.2
+[18:14:17] [Server thread/WARN]: [net.essentialsx.discordlink.EssentialsDiscordLink] Invalid group players was provided for role 1467584719838384270. The following groups are available: [default, smp_member, admin]
+[18:14:17] [Server thread/WARN]: [net.essentialsx.discordlink.EssentialsDiscordLink] Invalid group players was provided for role 1467584719838384270. The following groups are available: [default, smp_member, admin]
+[18:14:17] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Starting Metrics. Opt-out using the global bStats config.
+[18:14:17] [Server thread/INFO]: [KnockbackSync] Enabling KnockbackSync v1.3.6-dev-b132
+[18:14:18] [Server thread/INFO]: [KnockbackSync] Checking for updates...
+[18:14:18] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.11
+[18:14:18] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.11-R0.1
+[18:14:18] [Server thread/INFO]: [voicechat] Compatibility version 20
+[18:14:18] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[18:14:18] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: voicechat [2.6.11]
+[18:14:18] [Server thread/INFO]: [voicechat] Successfully registered PlaceholderAPI expansion
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix] Enabling BedrockMovementFix v${version}
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix] Successfully hooked into Floodgate API!
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix] Paper PlayerFailMoveEvent detected - using advanced movement fix!
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix] ===========================================
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix] BedrockMovementFix v1.0.0 enabled!
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix]   Enabled: true
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix]   Bedrock Only: true
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix]   Debug Mode: true
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix]   Verbose Debug: false
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix]   Floodgate: DETECTED - will apply to Bedrock players only
+[18:14:18] [Server thread/INFO]: [BedrockMovementFix] ===========================================
+[18:14:18] [Server thread/INFO]: [spark] Starting background profiler...
+[18:14:19] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] 
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.2-b1049 (git-master-21c1c32)
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] 
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[18:14:25] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[18:14:26] [Server thread/INFO]: [Geyser-Spigot] [mcxboxbroadcast] Starting MCXboxBroadcast Extension build 128 (git-master-0645544) for Bedrock 1.21.130 (898)
+[18:14:27] [Server thread/INFO]: [Geyser-Spigot] Done (7.644s)! Run /geyser help for help!
+[18:14:27] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Starting SessionManager...
+[18:14:27] [MCXboxBroadcast Thread-1/WARN]: [Geyser-Spigot] Extension MCXboxBroadcast loads class reactor.netty.http.client.HttpClient from an external source. This can change at any time and break the extension, additionally to potentially causing unexpected behaviour!
+[18:14:27] [Server thread/INFO]: Starting remote control listener
+[18:14:27] [Server thread/INFO]: Thread RCON Listener started
+[18:14:27] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[18:14:27] [Server thread/INFO]: Running delayed init tasks
+[18:14:27] [Craft Scheduler Thread - 4 - MCOptimizer/INFO]: [MCOptimizer] Started web interface on 0.0.0.0:8080
+[18:14:27] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[18:14:27] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Update checking disabled in config.
+[18:14:27] [Craft Scheduler Thread - 9 - JustTPA/WARN]: [JustTPA] Failed to check for updates
+[18:14:27] [Craft Scheduler Thread - 10 - GrimAC/INFO]: New GrimAC version found! Version 2.3.73-f118b5c is available to be downloaded here: https://modrinth.com/plugin/grimac
+[18:14:27] [Server thread/INFO]: [Skript] Loading variables...
+[18:14:27] [Server thread/INFO]: [Skript] Loaded 0 variables in 0.0 seconds
+[18:14:28] [Server thread/INFO]: [Skript] Line 6: (TAB_placeholders.sk)
+[18:14:28] [Server thread/INFO]:     Can't understand this structure: on skript placeholder request for the prefix "skript"
+[18:14:28] [Server thread/INFO]:     Line: on skript placeholder request for the prefix "skript":
+[18:14:28] [Server thread/INFO]:  
+[18:14:28] [Server thread/INFO]: [Skript] Line 10: (endlockdown.sk)
+[18:14:28] [Server thread/INFO]:     Text cannot be parsed as a date
+[18:14:28] [Server thread/INFO]:     Line: set {_d} to "{@UnlockDate}" parsed as date
+[18:14:28] [Server thread/INFO]:  
+[18:14:28] [Server thread/INFO]: [Skript] Line 12: (endlockdown.sk)
+[18:14:28] [Server thread/INFO]:     Text cannot be parsed as a date
+[18:14:28] [Server thread/INFO]:     Line: set {_d} to "2026/02/19 15:30:00" parsed as date
+[18:14:28] [Server thread/INFO]:  
+[18:14:28] [Server thread/INFO]: [Skript] Line 59: (ENDFIGHTEVENT.sk)
+[18:14:28] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "to_the_end"
+[18:14:28] [Server thread/INFO]:     Line: remove bossbar with id "to_the_end"
+[18:14:28] [Server thread/INFO]:  
+[18:14:29] [Server thread/INFO]: [Skript] Line 36: (borderchecker.sk)
+[18:14:29] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "pre_teleport"
+[18:14:29] [Server thread/INFO]:     Line: remove bossbar with id "pre_teleport"
+[18:14:29] [Server thread/INFO]:  
+[18:14:29] [Server thread/INFO]: [Skript] Line 38: (borderchecker.sk)
+[18:14:29] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "to_the_end"
+[18:14:29] [Server thread/INFO]:     Line: remove bossbar with id "to_the_end"
+[18:14:29] [Server thread/INFO]:  
+[18:14:29] [Server thread/INFO]: [Skript] Line 40: (borderchecker.sk)
+[18:14:29] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "dragon_pvp"
+[18:14:29] [Server thread/INFO]:     Line: remove bossbar with id "dragon_pvp"
+[18:14:29] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 16: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar with id "to_the_end" titled "&6&lTHE DRAGON IS AWAKE" for all players
+[18:14:30] [Server thread/INFO]:     Line: create bossbar with id "to_the_end" titled "&6&lTHE DRAGON IS AWAKE" for all players
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 18: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     bar style of boss bar bossbar with id "to_the_end" can't be set to 'progress' because the latter is not a boss bar style
+[18:14:30] [Server thread/INFO]:     Line: set bossbar style of bossbar with id "to_the_end" to progress
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 23: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "to_the_end"
+[18:14:30] [Server thread/INFO]:     Line: remove bossbar with id "to_the_end"
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 31: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar with id "dragon_pvp" titled "&c&lDRAGON INTERFERENCE: PVP DISABLED" for all players
+[18:14:30] [Server thread/INFO]:     Line: create bossbar with id "dragon_pvp" titled "&c&lDRAGON INTERFERENCE: PVP DISABLED" for all players
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 33: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     bar style of boss bar bossbar with id "dragon_pvp" can't be set to 'progress' because the latter is not a boss bar style
+[18:14:30] [Server thread/INFO]:     Line: set bossbar style of bossbar with id "dragon_pvp" to progress
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 36: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "dragon_pvp"
+[18:14:30] [Server thread/INFO]:     Line: remove bossbar with id "dragon_pvp"
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 46: (ENDFIGHTEVENT.sk)
+[18:14:30] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "to_the_end"
+[18:14:30] [Server thread/INFO]:     Line: remove bossbar with id "to_the_end"
+[18:14:30] [Server thread/INFO]:  
+[18:14:30] [Server thread/INFO]: [Skript] Line 19: (borderchecker.sk)
+[18:14:30] [Server thread/INFO]:     Can't understand this expression: 'world border size of world "world"'
+[18:14:30] [Server thread/INFO]:     Line: set {_size} to world border size of world "world"
+[18:14:30] [Server thread/INFO]:  
+[18:14:31] [Craft Scheduler Thread - 12 - KnockbackSync/INFO]: [KnockbackSync] You are running a development build newer than the latest release.
+[18:14:31] [Craft Scheduler Thread - 14 - KnockbackSync/INFO]: [KnockbackSync] Downloading: dev-builds.txt
+[18:14:31] [Server thread/INFO]: [Skript] Line 15: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar with id "combat_%uuid of victim%" titled "&c&lIN COMBAT" for victim
+[18:14:31] [Server thread/INFO]:     Line: create bossbar with id "combat_%uuid of victim%" titled "&c&lIN COMBAT" for victim
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 17: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     bar style of boss bar bossbar with id "combat_%UUID of the attacked entity%" can't be set to 'progress' because the latter is not a boss bar style
+[18:14:31] [Server thread/INFO]:     Line: set bossbar style of bossbar with id "combat_%uuid of victim%" to progress
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 21: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar with id "combat_%uuid of attacker%" titled "&c&lIN COMBAT" for attacker
+[18:14:31] [Server thread/INFO]:     Line: create bossbar with id "combat_%uuid of attacker%" titled "&c&lIN COMBAT" for attacker
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 23: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     bar style of boss bar bossbar with id "combat_%UUID of the attacker%" can't be set to 'progress' because the latter is not a boss bar style
+[18:14:31] [Server thread/INFO]:     Line: set bossbar style of bossbar with id "combat_%uuid of attacker%" to progress
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 32: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "combat_%uuid of loop-player%"
+[18:14:31] [Server thread/INFO]:     Line: remove bossbar with id "combat_%uuid of loop-player%"
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 38: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     Can't understand this expression: 'total seconds of {_seconds_left}'
+[18:14:31] [Server thread/INFO]:     Line: set {_s} to total seconds of {_seconds_left}
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 41: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     The expression 'bossbar with id "combat_%UUID of loop-player%"' returns the following types that do not have the typed value property: boss bars
+[18:14:31] [Server thread/INFO]:     Line: set bossbar value of bossbar with id "combat_%uuid of loop-player%" to {_p}
+[18:14:31] [Server thread/INFO]:  
+[18:14:31] [Server thread/INFO]: [Skript] Line 50: (combatlog.sk)
+[18:14:31] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "combat_%uuid of player%"
+[18:14:31] [Server thread/INFO]:     Line: remove bossbar with id "combat_%uuid of player%"
+[18:14:31] [Server thread/INFO]:  
+[18:14:32] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Successfully authenticated as TheRealRexo3740 (2535439467516037) with 13/2000 friends
+[18:14:32] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Creating Xbox LIVE session...
+[18:14:32] [Craft Scheduler Thread - 14 - KnockbackSync/INFO]: [KnockbackSync] Downloaded: dev-builds.txt
+[18:14:32] [Craft Scheduler Thread - 14 - KnockbackSync/INFO]: [KnockbackSync] Downloading: releases.txt
+[18:14:32] [Server thread/INFO]: [Skript] Line 35: (endlockdown.sk)
+[18:14:32] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar with id "pre_teleport" titled "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%" for all players
+[18:14:32] [Server thread/INFO]:     Line: create bossbar with id "pre_teleport" titled "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%" for all players
+[18:14:32] [Server thread/INFO]:  
+[18:14:32] [Server thread/INFO]: [Skript] Line 37: (endlockdown.sk)
+[18:14:32] [Server thread/INFO]:     bar style of boss bar bossbar with id "pre_teleport" can't be set to 'notched 6' because the latter is not a boss bar style
+[18:14:32] [Server thread/INFO]:     Line: set bossbar style of bossbar with id "pre_teleport" to notched 6
+[18:14:32] [Server thread/INFO]:  
+[18:14:32] [Server thread/INFO]: [Skript] Line 40: (endlockdown.sk)
+[18:14:32] [Server thread/INFO]:     Can't understand this expression: 'total seconds of {_timeleft}'
+[18:14:32] [Server thread/INFO]:     Line: set {_s} to total seconds of {_timeleft}
+[18:14:32] [Server thread/INFO]:  
+[18:14:32] [Server thread/INFO]: [Skript] Line 42: (endlockdown.sk)
+[18:14:32] [Server thread/INFO]:     The expression 'bossbar with id "pre_teleport"' returns the following types that do not have the typed value property: boss bars
+[18:14:32] [Server thread/INFO]:     Line: set bossbar value of bossbar with id "pre_teleport" to {_percent}
+[18:14:32] [Server thread/INFO]:  
+[18:14:32] [Server thread/INFO]: [Skript] Line 48: (endlockdown.sk)
+[18:14:32] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar with id "pre_teleport"
+[18:14:32] [Server thread/INFO]:     Line: remove bossbar with id "pre_teleport"
+[18:14:32] [Server thread/INFO]:  
+[18:14:32] [Server thread/INFO]: [Skript] Loaded 5 scripts with a total of 17 structures in 4.29 seconds
+[18:14:32] [Server thread/INFO]: [Skript] Finished loading.
+[18:14:32] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v2.18.0)!
+[18:14:32] [Craft Scheduler Thread - 14 - KnockbackSync/INFO]: [KnockbackSync] Downloaded: releases.txt
+[18:14:33] [Server thread/INFO]: [Craftorithm] Found Vault, hooked successfully.
+[18:14:33] [Server thread/INFO]: [Craftorithm] Converted listener: io.github.apickledwalrus.skriptgui.gui.events.GUIEvents
+[18:14:33] [Server thread/INFO]: [Craftorithm] Converted listener: net.skinsrestorer.bukkit.listener.InventoryListener
+[18:14:33] [Server thread/INFO]: [Craftorithm] Converted listener: org.crazyhouse.blocksigningplugin.EventListener
+[18:14:33] [Server thread/INFO]: [Craftorithm] Plugin loaded successfully.
+[18:14:33] [Server thread/INFO]: Done (83.587s)! For help, type "help"
+[18:14:33] [Server thread/INFO]: [voicechat] Loading plugins
+[18:14:33] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[18:14:33] [Server thread/INFO]: [voicechat] Initializing plugins
+[18:14:33] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[18:14:33] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[18:14:33] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'protea.seedloaf.com:49276'
+[18:14:33] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[18:14:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: world [1.2.3]
+[18:14:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[18:14:33] [Server thread/INFO]: 2 placeholder hook(s) registered!
+[18:14:35] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] NetherNet Broadcaster started on ID: 12947723035166432
+[18:14:36] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Creation of Xbox LIVE session was successful!
+[18:15:13] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[18:15:13] [RCON Client /0:0:0:0:0:0:0:1 #2/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[18:17:01] [User Authenticator #0/INFO]: UUID of player TheRealRexo is aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:17:01] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, Essentials, ProtocolLib]
+[18:17:06] [TAB Processing Thread/INFO]: [TAB] [WARN] Placeholder %skript_tab_time% used in a numeric condition returned "%skript_tab_time%" for player TheRealRexo, which is not a valid number.
+[18:17:06] [TAB Processing Thread/INFO]: [TAB] [WARN] Placeholder %skript_tab_time% used in a numeric condition returned "%skript_tab_time%" for player TheRealRexo, which is not a valid number.
+[18:17:06] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:17:06] [Server thread/INFO]: [BedrockMovementFix] Player joined: TheRealRexo
+[18:17:06] [Server thread/INFO]: [BedrockMovementFix]   Is Bedrock: false
+[18:17:06] [Server thread/INFO]: [BedrockMovementFix]   Has bypass permission: true
+[18:17:06] [Server thread/INFO]: [BedrockMovementFix]   Movement fix active: false
+[18:17:06] [Server thread/INFO]: TheRealRexo joined the game
+[18:17:06] [Server thread/INFO]: TheRealRexo[/100.73.19.55:48134] logged in with entity id 1 at ([world]-72.73155749572595, 116.0, 89.3310526545494)
+[18:17:07] [Netty Epoll IO #0/WARN]: Failed to deliver packet, sending fallback clientbound/minecraft:system_chat
+io.netty.channel.StacklessClosedChannelException
+	at io.netty.channel.AbstractChannel.close(ChannelPromise)(Unknown Source) ~[netty-transport-4.2.7.Final.jar:4.2.7.Final]
+[18:17:07] [Netty Epoll IO #0/WARN]: Failed to deliver packet, sending fallback clientbound/minecraft:system_chat
+io.netty.channel.StacklessClosedChannelException
+	at io.netty.channel.AbstractChannel.close(ChannelPromise)(Unknown Source) ~[netty-transport-4.2.7.Final.jar:4.2.7.Final]
+[18:17:07] [Netty Epoll IO #0/WARN]: Failed to deliver packet, sending fallback clientbound/minecraft:system_chat
+io.netty.channel.StacklessClosedChannelException
+	at io.netty.channel.AbstractChannel.close(ChannelPromise)(Unknown Source) ~[netty-transport-4.2.7.Final.jar:4.2.7.Final]
+[18:17:07] [Netty Epoll IO #0/WARN]: Failed to deliver packet, sending fallback clientbound/minecraft:system_chat
+io.netty.channel.StacklessClosedChannelException
+	at io.netty.channel.AbstractChannel.close(ChannelPromise)(Unknown Source) ~[netty-transport-4.2.7.Final.jar:4.2.7.Final]
+[18:17:07] [Server thread/INFO]: TheRealRexo lost connection: Disconnected
+[18:17:07] [Server thread/INFO]: [voicechat] Disconnecting client TheRealRexo
+[18:17:07] [Server thread/INFO]: TheRealRexo left the game
+[18:18:11] [User Authenticator #1/INFO]: UUID of player TheRealRexo is aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:13] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:13] [Server thread/INFO]: [BedrockMovementFix] Player joined: TheRealRexo
+[18:18:13] [Server thread/INFO]: [BedrockMovementFix]   Is Bedrock: false
+[18:18:13] [Server thread/INFO]: [BedrockMovementFix]   Has bypass permission: true
+[18:18:13] [Server thread/INFO]: [BedrockMovementFix]   Movement fix active: false
+[18:18:13] [Server thread/INFO]: TheRealRexo joined the game
+[18:18:13] [Server thread/INFO]: TheRealRexo[/100.74.177.19:44846] logged in with entity id 99 at ([world]-72.73155749572595, 116.0, 89.3310526545494)
+[18:18:13] [TAB Processing Thread/INFO]: [TAB] [WARN] Placeholder %skript_tab_time% used in a numeric condition returned "%skript_tab_time%" for player TheRealRexo, which is not a valid number.
+[18:18:13] [TAB Processing Thread/INFO]: [TAB] [WARN] Placeholder %skript_tab_time% used in a numeric condition returned "%skript_tab_time%" for player TheRealRexo, which is not a valid number.
+[18:18:14] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:14] [Server thread/INFO]: [voicechat] Received secret request of TheRealRexo (20)
+[18:18:14] [Server thread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:18:15] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:18:16] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:18] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:20] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:22] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:24] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:26] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:28] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:28] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:18:28] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:18:28] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:18:30] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:30] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:31] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:31] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:18:32] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:34] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:36] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:38] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:40] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:42] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:43] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:18:43] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:18:43] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:18:44] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:45] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:46] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:18:46] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:18:46] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:47] [Server thread/WARN]: TheRealRexo moved too quickly! 2.471372038697311,-9.085290077602309,9.250346237004777
+[18:18:48] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:50] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:52] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:54] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:56] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:58] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:18:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:18:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:18:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:19:00] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:00] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:19:01] [Server thread/INFO]: TheRealRexo issued server command: /skript reload all
+[18:19:02] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:02] [Thread-55/INFO]: [Skript] Loaded 5684 aliases in 1305ms
+[18:19:04] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:06] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:08] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:10] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:12] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:19:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:19:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:19:14] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:15] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:19:16] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:18] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:20] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:22] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:24] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:26] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:28] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:29] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:19:29] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:19:29] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:19:30] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:30] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:31] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:31] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:19:32] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:34] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:36] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:38] [Server thread/INFO]: [MCOptimizer] Culled 1 mobs across all worlds
+[18:19:38] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:40] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:41] [Server thread/INFO]: TheRealRexo issued server command: /bukkit:plugins
+[18:19:42] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:19:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:19:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:19:44] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:45] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:46] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:46] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:19:46] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:19:48] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:50] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:52] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:54] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:56] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:58] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:19:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:19:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:19:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:20:00] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:00] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:20:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:20:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player TheRealRexo (aef92a64-80e4-3a84-906f-cbd810f21b5b) successfully connected to voice chat
+[18:20:02] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:04] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:06] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:08] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:10] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:12] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:14] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[18:20:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player aef92a64-80e4-3a84-906f-cbd810f21b5b timed out
+[18:20:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player TheRealRexo
+[18:20:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to TheRealRexo
+[18:20:15] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player aef92a64-80e4-3a84-906f-cbd810f21b5b
+[18:20:16] [Server thread/INFO]: TheRealRexo lost connection: Disconnected
+[18:20:16] [Server thread/INFO]: [voicechat] Disconnecting client TheRealRexo
+[18:20:16] [Server thread/INFO]: TheRealRexo left the game
+[18:20:21] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[18:20:21] [RCON Client /0:0:0:0:0:0:0:1 #3/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[18:21:26] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[18:21:26] [Server thread/INFO]: [Rcon: Stopping the server]
+[18:21:26] [RCON Client /0:0:0:0:0:0:0:1 #4/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[18:21:26] [Server thread/INFO]: Stopping server
+[18:21:26] [Server thread/INFO]: [BedrockMovementFix] Disabling BedrockMovementFix v${version}
+[18:21:26] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.11
+[18:21:26] [Server thread/INFO]: [KnockbackSync] Disabling KnockbackSync v1.3.6-dev-b132
+[18:21:26] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Disabling EssentialsDiscordLink v2.21.2
+[18:21:26] [Server thread/INFO]: [JEIRecipeBridge] Disabling JEIRecipeBridge v1.0.0
+[18:21:26] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
+[18:21:26] [Server thread/INFO]: [skript-particle] Disabling skript-particle v1.4.0
+[18:21:26] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.7.2
+[18:21:26] [Server thread/INFO]: [TAB] Disabling TAB v5.5.0
+[18:21:26] [Server thread/INFO]: [TAB] Disabled in 3ms
+[18:21:26] [Server thread/INFO]: [JustTPA] Disabling JustTPA v20250220c
+[18:21:26] [Server thread/INFO]: [JustTPA] JustTPA disabled
+[18:21:26] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.10.0
+[18:21:26] [Server thread/INFO]: [HomePlugin] Disabling HomePlugin v0.8.6-main-SNAPSHOT
+[18:21:26] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[18:21:26] [Server thread/INFO]: [HomePlugin] HomePlugin shut down successfully!
+[18:21:26] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[18:21:26] [Server thread/INFO]: [packetevents] Disabling packetevents v2.11.2
+[18:21:26] [Server thread/INFO]: [MCOptimizer] Disabling MCOptimizer v1.2.2
+[18:21:26] [Server thread/INFO]: [MCOptimizer] Lag prediction manager shutdown
+[18:21:26] [Craft Scheduler Thread - 4 - MCOptimizer/WARN]: [MCOptimizer] Plugin MCOptimizer v1.2.2 generated an exception while executing task 23
+java.lang.NullPointerException: Cannot invoke "java.net.ServerSocket.isClosed()" because "this.webServer" is null
+	at MCOptimizer-1.21.11.jar//com.mc.optimizer.lagprediction.LagPredictionManager.lambda$startWebInterface$2(LagPredictionManager.java:217) ~[?:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.11.jar:1.21.11-102-fd39dbd]
+	at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.21.11.jar:1.21.11-102-fd39dbd]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.21.11.jar:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[?:?]
+[18:21:26] [Server thread/INFO]: [MCOptimizer] Generated final performance report: report-20260204-182126
+[18:21:26] [Server thread/INFO]: [MCOptimizer] Performance report manager shutdown
+[18:21:26] [Server thread/INFO]: [MCOptimizer] AFK manager shutdown
+[18:21:26] [Server thread/INFO]: [MCOptimizer] Task optimizer shutdown
+[18:21:26] [Server thread/INFO]: [MCOptimizer] TNT optimizer shutdown
+[18:21:26] [Server thread/INFO]: [MCOptimizer] MCOptimizer disabled
+[18:21:26] [Server thread/INFO]: [MCOptimizer] For support go to: https://dcs.gg/fruitsnacks/
+[18:21:26] [Server thread/INFO]: [MCOptimizer] Check https://fruitsnacks.xyz for upcoming projects
+[18:21:26] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.4.0+7381-3decaf0
+[18:21:26] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:21:26] [Server thread/INFO]: [BlockSigningPlugin] Disabling BlockSigningPlugin v2.9
+[18:21:26] [Server thread/INFO]: [GrimAC] Disabling GrimAC v2.3.73-daa3bfe
+[18:21:26] [Server thread/INFO]: [GrimAC] Terminating PacketEvents...
+[18:21:26] [Server thread/INFO]: [skript-gui] Disabling skript-gui v1.3.1
+[18:21:26] [Server thread/INFO]: [PreLoginWhitelist] Disabling PreLoginWhitelist v1.3
+[18:21:26] [Server thread/INFO]: [skript-placeholders] Disabling skript-placeholders v1.7.0
+[18:21:26] [Server thread/INFO]: [Craftorithm] Disabling Craftorithm v1.10.25-20260112
+[18:21:26] [Server thread/INFO]: [Orebfuscator] Disabling Orebfuscator v5.5.7
+[18:21:26] [Server thread/INFO]: [EssentialsDiscord] Disabling EssentialsDiscord v2.21.2
+[18:21:26] [Server thread/INFO]: [SkBee] Disabling SkBee v3.16.0
+[18:21:26] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.2-SNAPSHOT
+[18:21:26] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[18:21:26] [Server thread/INFO]: [Geyser-Spigot] Disabled extension MCXboxBroadcast
+[18:21:26] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[18:21:26] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[18:21:26] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.2
+[18:21:26] [Server thread/INFO]: [Skript] Disabling Skript v2.14.1
+[18:21:26] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[18:21:26] [Server thread/INFO]: [Vault] Disabling Vault v2.18.0
+[18:21:26] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.28
+[18:21:26] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[18:21:26] [Server thread/INFO]: [LuckPerms] Closing storage...
+[18:21:26] [Server thread/INFO]: [LuckPerms] Goodbye!
+[18:21:26] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.12.1
+[18:21:26] [Server thread/INFO]: Saving players
+[18:21:26] [WebSocketConnectReadThread-179/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[18:21:26] [Server thread/INFO]: Saving worlds
+[18:21:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.07s
+[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[18:21:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[18:21:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[18:21:27] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[18:21:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:21:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:21:27] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:21:27] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[18:21:27] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[18:21:27] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[18:21:27] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[18:21:27] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
