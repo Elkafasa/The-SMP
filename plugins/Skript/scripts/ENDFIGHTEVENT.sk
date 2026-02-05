@@ -1,10 +1,12 @@
-# Dragon fight bossbars
-on dragon spawn:
-    if bossbar "to_the_end" doesn't exist:
-        create bossbar "to_the_end" titled "&6&lTHE DRAGON IS AWAKE" for all players
-    set bossbar progress of bossbar "to_the_end" to 1.0
+# Dragon fight event hooks (syntax-safe)
 
-after 10 seconds:
-    if bossbar "dragon_pvp" doesn't exist:
-        create bossbar "dragon_pvp" titled "&c&lDRAGON INTERFERENCE: PVP DISABLED" for all players
-    set bossbar progress of bossbar "dragon_pvp" to 1.0
+on spawn of ender dragon:
+    set {event.dragon.active} to true
+    broadcast "&5&l[END EVENT] &dThe Ender Dragon has awakened."
+    wait 10 seconds
+    broadcast "&5&l[END EVENT] &dDragon interference is active. PvP remains disabled during the event."
+
+on death of ender dragon:
+    set {event.dragon.active} to false
+    set {event.glitch.active} to false
+    broadcast "&a&l[END EVENT] The Ender Dragon has been defeated!"

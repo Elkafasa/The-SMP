@@ -1,18 +1,18 @@
+# End lockdown timer (syntax-safe)
 
-# Unlock time in Unix timestamp (seconds since epoch)
-# Feb 19, 2026 15:30:00 UTC+3
-set {_unlock} to 1766295000
+options:
+    end_unlock_unix: 1766295000
 
 every 1 second:
     set {_now} to unix timestamp of now
-    set {_timeleft} to {_unlock} - {_now}
+    set {_timeleft} to {@end_unlock_unix} - {_now}
+
     if {_timeleft} > 0:
-        if bossbar "pre_teleport" doesn't exist:
-            create bossbar "pre_teleport" titled "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%" for all players
-            set bossbar style of bossbar "pre_teleport" to notched 6
-        else:
-            set bossbar title of bossbar "pre_teleport" to "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%"
-            set bossbar progress of bossbar "pre_teleport" to ({_timeleft} / 600) # 10-minute example
-    else if {_timeleft} <= 0 and bossbar "pre_teleport" exists:
-        remove bossbar "pre_teleport"
-        broadcast "&aThe End portals are now unlocked!"
+        set {end.locked} to true
+        set {end.unlock.timeleft} to {_timeleft}
+    else:
+        set {end.locked} to false
+        delete {end.unlock.timeleft}
+        if {end.unlock.announced} is not set:
+            set {end.unlock.announced} to true
+            broadcast "&aThe End portals are now unlocked!"

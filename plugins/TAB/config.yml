@@ -14,11 +14,11 @@ header-footer:
 tablist-name-formatting:
   enabled: true
   disable-condition: '%world%=disabledworld'
-  default-color: '&f'
 scoreboard-teams:
   enabled: true
   enable-collision: true
   invisible-nametags: false
+  can-see-friendly-invisibles: false
   sorting-types:
   - GROUPS:owner,admin,mod,default
   - PLACEHOLDER_A_TO_Z:%player%
@@ -50,6 +50,7 @@ bossbar:
       text: '&b&lSEEDLOAF SMP &7| &fseason 1'
 scoreboard:
   enabled: true
+  delay-on-join-milliseconds: 0
   toggle-command: /sb
   remember-toggle-choice: false
   hidden-by-default: false
@@ -91,12 +92,7 @@ placeholder-output-replacements:
   '%afk%':
     true: ' &o[AFK]&r'
     false: ''
-conditions:
-  is_night:
-    conditions:
-    - '%skript_tab_time%>=13000'
-    - '%skript_tab_time%<23000'
-    type: AND
+conditions: {}
 assign-groups-by-permissions: false
 primary-group-finding-list:
 - Owner
@@ -130,7 +126,9 @@ placeholder-refresh-intervals:
   '%rel_factionsuuid_relation_color%': 500
 playerlist-objective:
   title: TAB
-  value: ''
+  value: '%ping%'
+  fancy-value: '&7Ping: %ping%'
+  disable-condition: '%world%=disabledworld'
   render-type: INTEGER
   enabled: true
 config-version: 5
@@ -138,8 +136,7 @@ components:
   minimessage-support: true
   disable-shadow-for-heads: true
 proxy-support:
-  channel-name-suffix: TAB
-  enabled: true
+  enabled: false
 per-world-playerlist:
   enabled: false
 ping-spoof:

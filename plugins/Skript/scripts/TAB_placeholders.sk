@@ -1,4 +1,2 @@
-# Example placeholder script
-on skript placeholder request "player_health":
-    set {_health} to health of player
-    return "%{_health}%"
+# Placeholder script intentionally disabled in public test repository.
+# Keep this file syntax-valid and empty to avoid load-time parse errors.

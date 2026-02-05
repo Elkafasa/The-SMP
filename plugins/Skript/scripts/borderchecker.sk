@@ -1,5 +1,4 @@
-# World border checker
-every 1 second:
-    set {_size} to size of world border of world "world"
-    if {_size} > 10000:
-        set world border of world "world" to 10000
+# World border enforcement fallback
+
+every 5 minutes:
+    execute console command "minecraft:worldborder set 10000 0"

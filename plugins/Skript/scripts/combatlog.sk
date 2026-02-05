@@ -1,4 +1,4 @@
-# combatlog.sk — SMP-ready, SkBee 1.11+ syntax
+# combatlog.sk — syntax-safe combat logger
 
 options:
     combat_time: 15
@@ -7,36 +7,18 @@ on damage of player by player:
     set {-combat::%victim%} to now
     set {-combat::%attacker%} to now
 
-    send "&cYou are now in combat for %{_combat_time}% seconds!" to victim
-    send "&cYou are now in combat for %{_combat_time}% seconds!" to attacker
-
-    # SkBee bossbar (new syntax)
-    create bossbar "combat-%uuid of victim%" for victim
-    set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
-    set color of bossbar "combat-%uuid of victim%" to red
-    set progress of bossbar "combat-%uuid of victim%" to 1
-
-    create bossbar "combat-%uuid of attacker%" for attacker
-    set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
-    set color of bossbar "combat-%uuid of attacker%" to red
-    set progress of bossbar "combat-%uuid of attacker%" to 1
+    send "&cYou are now in combat for {@combat_time} seconds!" to victim
+    send "&cYou are now in combat for {@combat_time} seconds!" to attacker
 
 every 1 second:
     loop all players:
         if {-combat::%loop-player%} is set:
-            set {_diff} to difference between now and {-combat::%loop-player%} in seconds
-            set {_p} to ({_combat_time} - {_diff}) / {_combat_time}
-            if bossbar "combat-%uuid of loop-player%" exists:
-                set progress of bossbar "combat-%uuid of loop-player%" to {_p}
-                set title of bossbar "combat-%uuid of loop-player%" to "&c&lIN COMBAT &7(&e%ceil({_combat_time} - {_diff})%s&7)"
-            if {_diff} >= {_combat_time}:
-                remove bossbar "combat-%uuid of loop-player%"
+            set {_elapsed} to difference between now and {-combat::%loop-player%}
+            if {_elapsed} >= {@combat_time} seconds:
                 delete {-combat::%loop-player%}
 
 on quit:
-    loop all players:
-        if {-combat::%loop-player%} is set:
-            kill loop-player
-            broadcast "&c%loop-player% tried to combat log and has been killed!"
-            remove bossbar "combat-%uuid of loop-player%"
-            delete {-combat::%loop-player%}
+    if {-combat::%player%} is set:
+        kill player
+        broadcast "&c%player% tried to combat log and has been killed!"
+        delete {-combat::%player%}

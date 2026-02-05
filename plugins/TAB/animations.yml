@@ -44,17 +44,17 @@ health_danger:
 day_colors:
   change-interval: 500
   texts:
-  - '&e%skript_tab_time%'
-  - '&6%skript_tab_time%'
+  - '&eDAY'
+  - '&6DAY'
 night_colors:
   change-interval: 500
   texts:
-  - '&b%skript_tab_time%'
-  - '&3%skript_tab_time%'
+  - '&bNIGHT'
+  - '&3NIGHT'
 bar_colors:
   change-interval: 1000
   texts:
   - BLUE
-  - AQUA
+  - BLUE
   - WHITE
-  - AQUA
+  - BLUE
