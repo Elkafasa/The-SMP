@@ -32,11 +32,21 @@ When unlock occurs:
 
 Broadcast announces the End opening
 
+A 5 minute timer begins before the dragon fight starts the end is still locked/protected by the ender dragon at this time
+
+After that players are teleported to the stronghold (pvp is turned off)
+
+The border surrounds the stronghold and a 10 minute timer is shown, a message reveals that the ender dragon is still protecting people from entering the end
+
+After The 10 minute timer everyone is surrounded by the border and is forced into the end portal
+
 Players are teleported to the End
 
-Dragon fight begins
+The end fight begins yet pvp is still disabled by some sort of glitch caused by the border fighting the ender dragon's lock on the borders
 
-Glitch event activates, adding visual/server-lore effects to indicate the fight has started
+Glitch event activates, adding visual effects to the scoreboard and TAB
+
+Once the ender dragon is defeated the glitch is gone the end portals are unlocked but pvp is still disable for 15 minutes
 
 Combat System
 
@@ -80,7 +90,7 @@ Bossbar colors can use animation:bar_colors placeholders
 
 Rules & Gameplay Mechanics
 
-Ender Chests & Shulker Boxes: Uncraftable/obtainable only after Ender Dragon fight
+Ender Chests & Shulker Boxes: Uncraftable/obtainable before Ender Dragon fight
 
 Maces & Netherite Spears: Uncraftable/unobtainable before Ender Dragon fight
 
