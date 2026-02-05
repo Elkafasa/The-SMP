@@ -1,35 +1,4 @@
-# ==========================================
-# TAB_placeholders.sk
-# Compatible with: skript-placeholders 1.7+
-# ==========================================
-
-on skript placeholder request for the prefix "skript":
-    
-    # 1. World Time (Returns 0-24000 for TAB numeric conditions)
-    if identifier is "tab_time":
-        set {_t} to raw time of world "world"
-        set result to "%{_t}%"
-
-    # 2. Glitch Switch (Returns "true" or "false")
-    if identifier is "tab_glitch_active":
-        if {event.glitch.active} is true:
-            set result to "true"
-        else:
-            set result to "false"
-
-    # 3. Combat Status (Returns formatted text)
-    if identifier is "combat_status":
-        if {-combat::%player%} is set:
-            set result to "&c&lIn Combat"
-        else:
-            set result to "&a&lSafe"
-
-# Helper command for testing
-command /testglitch:
-    permission: admin
-    trigger:
-        if {event.glitch.active} is not true:
-            set {event.glitch.active} to true
-        else:
-            set {event.glitch.active} to false
-        send "&dGlitch mode is now: &l%{event.glitch.active}%"
+# Example placeholder script
+on skript placeholder request "player_health":
+    set {_health} to health of player
+    return "%{_health}%"

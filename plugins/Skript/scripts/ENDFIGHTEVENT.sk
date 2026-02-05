@@ -1,60 +1,10 @@
-# ==========================================
-# ENDFIGHTEVENT.sk
-# ==========================================
+# Dragon fight bossbars
+on dragon spawn:
+    if bossbar "to_the_end" doesn't exist:
+        create bossbar "to_the_end" titled "&6&lTHE DRAGON IS AWAKE" for all players
+    set bossbar progress of bossbar "to_the_end" to 1.0
 
-options:
-    DragonWorld: world_the_end
-
-every 2 seconds:
-    if {dragon_fight_active} is true:
-        set {_dragon_exists} to false
-        loop all entities of type ender dragon in world("{@DragonWorld}"):
-            set {_dragon_exists} to true
-        
-        if {_dragon_exists} is true:
-            if bossbar with id "to_the_end" does not exist:
-                create bossbar with id "to_the_end" titled "&6&lTHE DRAGON IS AWAKE" for all players
-                set bossbar color of bossbar with id "to_the_end" to yellow
-                set bossbar style of bossbar with id "to_the_end" to progress
-        else:
-            execute console command "/sk_trigger_dragon_death"
-    else:
-        if bossbar with id "to_the_end" exists:
-            remove bossbar with id "to_the_end"
-
-on damage of player:
-    if {dragon_fight_active} is true:
-        if attacker is a player:
-            if bossbar with id "dragon_pvp" does not exist:
-                cancel event
-                send "&c&lEVENT &8» &7PvP is disabled while the Dragon lives!" to attacker
-                create bossbar with id "dragon_pvp" titled "&c&lDRAGON INTERFERENCE: PVP DISABLED" for all players
-                set bossbar color of bossbar with id "dragon_pvp" to red
-                set bossbar style of bossbar with id "dragon_pvp" to progress
-                wait 3 seconds
-                if bossbar with id "dragon_pvp" exists:
-                    remove bossbar with id "dragon_pvp"
-            else:
-                cancel event
-
-on death of ender dragon:
-    set {ender_dragon_dead} to true
-    set {dragon_fight_active} to false
-    set {event.glitch.active} to false
-    
-    if bossbar with id "to_the_end" exists:
-        remove bossbar with id "to_the_end"
-    
-    broadcast "&6&l[EVENT] &fThe &8Ender Dragon &fhas fallen!"
-    broadcast "&d&lTHE DIMENSION STABILIZES..."
-    set {border_is_25k} to false 
-
-command /sk_trigger_dragon_death:
-    permission: op
-    trigger:
-        set {ender_dragon_dead} to true
-        set {dragon_fight_active} to false
-        set {event.glitch.active} to false
-        if bossbar with id "to_the_end" exists:
-            remove bossbar with id "to_the_end"
-        broadcast "&a[SYSTEM] Dragon state synchronized to: DEAD."
+after 10 seconds:
+    if bossbar "dragon_pvp" doesn't exist:
+        create bossbar "dragon_pvp" titled "&c&lDRAGON INTERFERENCE: PVP DISABLED" for all players
+    set bossbar progress of bossbar "dragon_pvp" to 1.0

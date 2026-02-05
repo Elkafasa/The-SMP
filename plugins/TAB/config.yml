@@ -1,46 +1,42 @@
 header-footer:
   enabled: true
-  header:
-    - "&b&lSEEDLOAF &3&lSMP"
-    - "&7Welcome &f%player%"
-    - ""
-  footer:
-    - ""
-    - "&7Ping: &f%ping%ms"
-    - "&7Time: &f%server_time_HH:mm%"
-
+  designs:
+    default:
+      display-condition: '%world%!=disabledworld'
+      header:
+      - '&b&lSEEDLOAF &3&lSMP'
+      - '&7Welcome &f%player%'
+      - ''
+      footer:
+      - ''
+      - '&7Ping: &f%ping%ms'
+      - '&7Time: &f%server_time_HH:mm%'
 tablist-name-formatting:
   enabled: true
-  anti-override: true
-  disable-condition: "%world%=disabledworld"
-  default-color: "&f"
-  align-tabsuffix-on-the-right: false
-
+  disable-condition: '%world%=disabledworld'
+  default-color: '&f'
 scoreboard-teams:
   enabled: true
   enable-collision: true
   invisible-nametags: false
-  anti-override: true
   sorting-types:
-    - "GROUPS:owner,admin,mod,default"
-    - "PLACEHOLDER_A_TO_Z:%player%"
+  - GROUPS:owner,admin,mod,default
+  - PLACEHOLDER_A_TO_Z:%player%
   case-sensitive-sorting: true
-  disable-condition: "%world%=disabledworld"
-
+  disable-condition: '%world%=disabledworld'
 yellow-number:
   enabled: true
-  value: "%ping%"
-  disable-condition: "%world%=disabledworld"
-
+  value: '%ping%'
+  disable-condition: '%world%=disabledworld'
 belowname-objective:
   enabled: true
-  number: "%health%"
-  text: "&cHealth"
-  disable-condition: "%world%=disabledworld"
-
+  disable-condition: '%world%=disabledworld'
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+  value: '%health%'
+  title: '&cHealth'
 prevent-spectator-effect:
   enabled: false
-
 bossbar:
   enabled: true
   toggle-command: /bossbar
@@ -48,86 +44,66 @@ bossbar:
   hidden-by-default: false
   bars:
     ServerInfo:
-      style: "PROGRESS"
-      color: "%animation:bar_colors%"
-      progress: "100"
-      text: "&b&lSEEDLOAF SMP &7| &fseason 1"
-
+      style: PROGRESS
+      color: '%animation:bar_colors%'
+      progress: '100'
+      text: '&b&lSEEDLOAF SMP &7| &fseason 1'
 scoreboard:
   enabled: true
   toggle-command: /sb
   remember-toggle-choice: false
   hidden-by-default: false
   scoreboards:
-    # 1. GLITCH MODE (Shows when Skript var {event.glitch.active} is true)
     glitch-sb:
-      display-condition: "%skript_tab_glitch_active%=true"
-      title: "&k&l||&r &4&lERROR &k&l||"
+      display-condition: '%skript_tab_glitch_active%=true'
+      title: '&k&l||&r &4&lERROR &k&l||'
       lines:
-        - "&c&k010101010101"
-        - "&4&lSYSTEM FAILURE"
-        - "&c&k010101010101"
-        - "&4Combat: %skript_combat_status%"
-    # 2. DEFAULT SCOREBOARD
+      - '&c&k010101010101'
+      - '&4&lSYSTEM FAILURE'
+      - '&c&k010101010101'
+      - '&4Combat: %skript_combat_status%'
     default:
-      title: "&b&lSEEDLOAF"
+      title: '&b&lSEEDLOAF'
       lines:
-        - "&7%server_date_dd/MM/yyyy%"
-        - ""
-        - "&f&lPLAYER"
-        - " &7User: &b%player%"
-        - " &7Ping: &b%ping% ms"
-        - ""
-        - "&f&lSERVER"
-        - " &7Online: &b%server_online%"
-        - " &7TPS: &b%server_tps_1_colored%"
-        - ""
-        - "&f&lSTATUS"
-        - " &7Combat: %skript_combat_status%"
-        - ""
-        - "&e&lseedloaf.com"
-
+      - '&7%server_date_dd/MM/yyyy%'
+      - ''
+      - '&f&lPLAYER'
+      - ' &7User: &b%player%'
+      - ' &7Ping: &b%ping% ms'
+      - ''
+      - '&f&lSERVER'
+      - ' &7Online: &b%server_online%'
+      - ' &7TPS: &b%server_tps_1_colored%'
+      - ''
+      - '&f&lSTATUS'
+      - ' &7Combat: %skript_combat_status%'
+      - ''
+      - '&e&lseedloaf.com'
 placeholders:
-  date-format: "dd.MM.yyyy"
-  time-format: "[HH:mm:ss / h:mm a]"
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
   time-offset: 0
   register-tab-expansion: true
-
 placeholder-output-replacements:
-  "%essentials_vanished%":
-    "yes": "&7| Vanished"
-    "no": ""
-  "%afk%":
-    true: " &o[AFK]&r"
-    false: ""
-
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+  '%afk%':
+    true: ' &o[AFK]&r'
+    false: ''
 conditions:
-  # Checks if time is night (13000-23000) using your raw number placeholder
   is_night:
     conditions:
-      - "%skript_tab_time%>=13000"
-      - "%skript_tab_time%<23000"
+    - '%skript_tab_time%>=13000'
+    - '%skript_tab_time%<23000'
     type: AND
-
-placeholderapi-refresh-intervals:
-  default-refresh-interval: 500
-  server:
-    "%server_uptime%": 1000
-    "%server_tps_1_colored%": 1000
-  player:
-    "%player_health%": 200
-    "%player_ping%": 1000
-    "%vault_prefix%": 1000
-  relational:
-    "%rel_factionsuuid_relation_color%": 500
-
 assign-groups-by-permissions: false
 primary-group-finding-list:
-  - Owner
-  - Admin
-  - Mod
-  - Helper
-  - default
+- Owner
+- Admin
+- Mod
+- Helper
+- default
 debug: false
 mysql:
   enabled: false
@@ -139,5 +115,32 @@ mysql:
 use-online-uuid-in-tablist: true
 global-playerlist:
   enabled: false
+  update-latency: false
 layout:
+  enabled: false
+permission-refresh-interval: 1000
+compensate-for-packetevents-bug: false
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 500
+playerlist-objective:
+  title: TAB
+  value: ''
+  render-type: INTEGER
+  enabled: true
+config-version: 5
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+proxy-support:
+  channel-name-suffix: TAB
+  enabled: true
+per-world-playerlist:
+  enabled: false
+ping-spoof:
   enabled: false

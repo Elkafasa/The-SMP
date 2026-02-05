@@ -1,45 +1,5 @@
-# ==========================================
-# borderchecker.sk
-# ==========================================
-
-every 1 minute:
-    if {ender_dragon_dead} is true:
-        if {border_is_25k} is not true:
-            set {border_is_25k} to true
-            broadcast "&6&lEVENT &8» &fThe &8Ender Dragon &fhas fallen!"
-            broadcast "&6&lTHE WORLD BORDER IS EXPANDING TO 25,000 BLOCKS!"
-            
-            execute console command "worldborder center 0 0"
-            execute console command "worldborder set 25000 120"
-            
-            play sound "ui.toast.challenge_complete" with volume 1 and pitch 1 to all players
-    else:
-        # If dragon is alive, force border to 10k (only if it isn't already)
-        if {border_is_25k} is not set:
-            set {_size} to world border size of world "world"
-            if {_size} > 10005:
-                execute console command "worldborder center 0 0"
-                execute console command "worldborder set 10000"
-
-command /resetallprogression:
-    permission: op
-    trigger:
-        delete {ender_dragon_dead}
-        delete {border_is_25k}
-        delete {dragon_fight_active}
-        delete {lockdown_triggered}
-        delete {event.glitch.active}
-        delete {-combat::*}
-        
-        # Safe BossBar Removal (SkBee)
-        if bossbar with id "pre_teleport" exists:
-            remove bossbar with id "pre_teleport"
-        if bossbar with id "to_the_end" exists:
-            remove bossbar with id "to_the_end"
-        if bossbar with id "dragon_pvp" exists:
-            remove bossbar with id "dragon_pvp"
-        
-        execute console command "worldborder set 10000"
-        execute console command "worldborder center 0 0"
-        
-        send "&c[SYSTEM] &7All event variables purged. Border reset to 10,000."
+# World border checker
+every 1 second:
+    set {_size} to size of world border of world "world"
+    if {_size} > 10000:
+        set world border of world "world" to 10000
