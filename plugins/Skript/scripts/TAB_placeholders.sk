@@ -1,2 +1,35 @@
-# Placeholder script intentionally disabled in public test repository.
-# Keep this file syntax-valid and empty to avoid load-time parse errors.
+# Exposes Skript variables to PlaceholderAPI so TAB (with register-tab-expansion: true) can use them.
+# Requires skript-placeholders & PlaceholderAPI installed
+
+on skript placeholder request "skript_combat_status":
+    # Combat active?
+    if {combat.active::%player%} is set:
+        set {_status} to "IN COMBAT"
+    else:
+        set {_status} to "SAFE"
+    set the result to {_status}
+
+on skript placeholder request "skript_combat_timeleft":
+    # Time left from 0 to {@combat_time}, if in combat
+    if {combat.active::%player%} is set:
+        set {_elapsed} to difference between now and {combat.active::%player%} in seconds
+        set {_left} to {@combat_time} - {_elapsed}
+        if {_left} < 0:
+            set {_left} to 0
+        set the result to {_left}
+    else:
+        set the result to "0"
+
+on skript placeholder request "skript_end_locked":
+    if {end.locked} is set and {end.locked} is true:
+        set the result to "YES"
+    else:
+        set the result to "NO"
+
+on skript placeholder request "skript_end_timeleft":
+    if {end.unlock.timeleft} is set:
+        # Convert remaining UNIX seconds into a countdown for TAB
+        set {_sec} to {end.unlock.timeleft}
+        set the result to {_sec}
+    else:
+        set the result to "0"

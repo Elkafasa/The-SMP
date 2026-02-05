@@ -1,18 +1,55 @@
-# End lockdown timer (syntax-safe)
+# endlockdown.sk — End unlock countdown and state
 
 options:
-    end_unlock_unix: 1766295000
+    end_unlock_unix: 1766295000 # UTC timestamp for Feb 19 15:30 (example)
 
+# Update end lock status every second
 every 1 second:
-    set {_now} to unix timestamp of now
-    set {_timeleft} to {@end_unlock_unix} - {_now}
-
-    if {_timeleft} > 0:
+    # If unlock timestamp is still in the future
+    if now is before {@end_unlock_unix}:
+        # Lock state
         set {end.locked} to true
-        set {end.unlock.timeleft} to {_timeleft}
+        # Store remaining time (as timespan)
+        set {end.timeleft} to time until {@end_unlock_unix}
     else:
-        set {end.locked} to false
-        delete {end.unlock.timeleft}
-        if {end.unlock.announced} is not set:
-            set {end.unlock.announced} to true
-            broadcast "&aThe End portals are now unlocked!"
+        # Unlock complete
+        if {end.locked} is set:
+            # Only broadcast once
+            remove {end.locked}
+            broadcast "&a&l[END UNLOCK] &aThe End portals are now unlocked!"
+        # Remove timeleft
+        remove {end.timeleft}
+
+# Prevent End access while locked
+on portal use:
+    if event-entity is player:
+        if {end.timeleft} is set:
+            # Cancel teleport and notify
+            cancel event
+            send "&cThe End is still locked! Wait %time until {@end_unlock_unix}%." to event-entity
+
+# Optional: show a SkBee bossbar during countdown
+# (Requires SkBee bossbars; this will show the remaining seconds)
+every 5 seconds:
+    if {end.timeleft} is set:
+        # Compute remaining seconds
+        set {_remaining} to difference between {@end_unlock_unix} and now in seconds
+        # Format message
+        set {_text} to "&6&lTHE END UNLOCKS IN: &e%{_remaining}%s"
+
+        # Create or update bossbar for all players
+        loop all players:
+            set {_bar} to bossbar named "end_unlock"
+            if {_bar} is not set:
+                # Create it if missing
+                set {_bar} to bossbar named "end_unlock" with title {_text} with color yellow with style segmented 12 with progress 100
+                add loop-player to bossbar players of {_bar}
+            else:
+                # Update title
+                set bossbar title of {_bar} to {_text}
+                # Update approximate progress
+                set bossbar progress of {_bar} to ({_remaining} / (difference between {@end_unlock_unix} and now in seconds) * 100)
+
+    else:
+        # Remove countdown bossbar once unlocked
+        delete bossbar named "end_unlock"

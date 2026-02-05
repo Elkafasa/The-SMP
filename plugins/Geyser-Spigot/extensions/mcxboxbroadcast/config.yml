@@ -19,10 +19,10 @@ friend-sync:
   update-interval: 60
 
   # Should we automatically follow people that follow us
-  auto-follow: true
+  auto-follow: false
 
   # Should we automatically unfollow people that no longer follow us
-  auto-unfollow: true
+  auto-unfollow: false
 
   # Should we automatically send an invite when a friend is added
   initial-invite: true
@@ -30,7 +30,7 @@ friend-sync:
   # Friend expiry settings
   expiry:
     # Should we unfriend people that haven't joined the server in a while
-    enabled: true
+    enabled: false
 
     # The amount of time in days before a friend is considered expired
     days: 15

@@ -1,24 +1,62 @@
-# combatlog.sk — syntax-safe combat logger
+# combatlog.sk — Player-vs-player combat bossbar (SkBee)
 
 options:
     combat_time: 15
 
+# When PvP damage happens
 on damage of player by player:
+    attacker is player
+    victim is player
+
+    # Save combat start times
     set {-combat::%victim%} to now
     set {-combat::%attacker%} to now
 
-    send "&cYou are now in combat for {@combat_time} seconds!" to victim
-    send "&cYou are now in combat for {@combat_time} seconds!" to attacker
+    # Create a unique bossbar name based on UUID
+    set {_idV} to "combat-%uuid of victim%"
+    set {_idA} to "combat-%uuid of attacker%"
 
+    # Remove any old bossbars with same IDs
+    delete bossbar named {_idV}
+    delete bossbar named {_idA}
+
+    # Create bossbars and add players
+    set {_barV} to bossbar named {_idV} with title "&c&lIN COMBAT &7(%{@combat_time}%s)" with color red with style segmented 6 with progress 100
+    add victim to bossbar players of {_barV}
+
+    set {_barA} to bossbar named {_idA} with title "&c&lIN COMBAT &7(%{@combat_time}%s)" with color red with style segmented 6 with progress 100
+    add attacker to bossbar players of {_barA}
+
+# Periodically update bossbars
 every 1 second:
     loop all players:
         if {-combat::%loop-player%} is set:
-            set {_elapsed} to difference between now and {-combat::%loop-player%}
-            if {_elapsed} >= {@combat_time} seconds:
+            # Calculate seconds elapsed
+            set {_elapsed} to difference between now and {-combat::%loop-player%} in seconds
+
+            # Bossbar identifiers for this player
+            set {_id} to "combat-%uuid of loop-player%"
+
+            # If time still remains
+            if {_elapsed} < {@combat_time}:
+                # Calculate percentage for progress 0–100
+                set {_percent} to ( ({@combat_time} - {_elapsed}) * 100 ) / {@combat_time}
+
+                # If bossbar exists, update it
+                if bossbar named {_id} exists:
+                    set bossbar progress of bossbar named {_id} to {_percent}
+                    set bossbar title of bossbar named {_id} to "&c&lIN COMBAT &7(&e%ceil({@combat_time} - {_elapsed})%s&7)"
+            else:
+                # Time expired — clean up
+                delete bossbar named {_id}
                 delete {-combat::%loop-player%}
 
+# On logout cancel or clean up
 on quit:
     if {-combat::%player%} is set:
+        # Optional: kill for combat logging
         kill player
         broadcast "&c%player% tried to combat log and has been killed!"
+        # Remove bossbar
+        delete bossbar named "combat-%uuid of player%"
         delete {-combat::%player%}

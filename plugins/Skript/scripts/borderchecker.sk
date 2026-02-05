@@ -1,4 +1,28 @@
-# World border enforcement fallback
+# borderchecker.sk — enforce the global world border of 10000x10000
 
-every 5 minutes:
-    execute console command "minecraft:worldborder set 10000 0"
+# Define your border radius once
+options:
+    border_radius: 5000
+
+# On join, ensure world border is applied
+on join:
+    # Set world border center at spawn if not set yet
+    execute console command "worldborder center 0 0"
+    execute console command "worldborder set {@border_radius * 2}"
+
+# Every second, enforce border rules
+every 1 second:
+    loop all players:
+        # Only enforce in overworld
+        if loop-player is in world "world":
+            set {_x} to x-coordinate of loop-player
+            set {_z} to z-coordinate of loop-player
+
+            # Check distance from world spawn border axis
+            if abs({_x}) > {@border_radius} or abs({_z}) > {@border_radius}:
+                # Player is outside border → tele back
+                teleport loop-player to spawn location of loop-player's world
+                send "&cYou cannot leave the world border!" to loop-player
+            else if abs({_x}) >= ({@border_radius} - 50) or abs({_z}) >= ({@border_radius} - 50):
+                # Player near border edge → warn
+                send "&eYou are near the world boundary." to loop-player

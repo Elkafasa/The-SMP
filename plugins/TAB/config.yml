@@ -1,143 +1,111 @@
+# TAB plugin configuration for "The SMP"
+config-version: 5
+
+# Register TAB's PlaceholderAPI expansion so it integrates properly
+placeholders:
+  register-tab-expansion: true
+
+# Header & Footer for the TAB list
 header-footer:
   enabled: true
   designs:
     default:
-      display-condition: '%world%!=disabledworld'
       header:
-      - '&b&lSEEDLOAF &3&lSMP'
-      - '&7Welcome &f%player%'
-      - ''
+        - "&b&lTHE SMP"
+        - "&fWelcome &a%player_name%"
+        - "&7Players: &f%server_online%"
       footer:
-      - ''
-      - '&7Ping: &f%ping%ms'
-      - '&7Time: &f%server_time_HH:mm%'
+        - "&7Ping: &f%player_ping%ms"
+        - "&7Time: &f%server_time_HH:mm:ss%"
+
+# Name formatting in player list and collision
 tablist-name-formatting:
   enabled: true
   disable-condition: '%world%=disabledworld'
+
+# Scoreboard teams setup (keeps collision rules unified)
 scoreboard-teams:
   enabled: true
   enable-collision: true
   invisible-nametags: false
   can-see-friendly-invisibles: false
   sorting-types:
-  - GROUPS:owner,admin,mod,default
-  - PLACEHOLDER_A_TO_Z:%player%
-  case-sensitive-sorting: true
+    - GROUPS:owner,admin,mod,default
+    - PLACEHOLDER_A_TO_Z:%player_name%
   disable-condition: '%world%=disabledworld'
+
+# Show ping next to players
 yellow-number:
   enabled: true
-  value: '%ping%'
+  value: '%player_ping%'
   disable-condition: '%world%=disabledworld'
+
+# Below name health display
 belowname-objective:
   enabled: true
   disable-condition: '%world%=disabledworld'
-  fancy-value-default: NPC
-  fancy-value: '&c%health%'
-  value: '%health%'
+  fancy-value: '&c%player_health%'
+  value: '%player_health%'
   title: '&cHealth'
-prevent-spectator-effect:
-  enabled: false
+
+# Bossbar configuration (TAB's own bossbars)
 bossbar:
   enabled: true
   toggle-command: /bossbar
   remember-toggle-choice: false
   hidden-by-default: false
   bars:
-    ServerInfo:
+    server_info:
       style: PROGRESS
-      color: '%animation:bar_colors%'
-      progress: '100'
-      text: '&b&lSEEDLOAF SMP &7| &fseason 1'
+      color: BLUE
+      progress: 100
+      text: '&b&lTHE SMP &7| &fSeason 1'
+
+# Scoreboard display
 scoreboard:
   enabled: true
   delay-on-join-milliseconds: 0
   toggle-command: /sb
   remember-toggle-choice: false
   hidden-by-default: false
+
   scoreboards:
-    glitch-sb:
-      display-condition: '%skript_tab_glitch_active%=true'
-      title: '&k&l||&r &4&lERROR &k&l||'
-      lines:
-      - '&c&k010101010101'
-      - '&4&lSYSTEM FAILURE'
-      - '&c&k010101010101'
-      - '&4Combat: %skript_combat_status%'
     default:
-      title: '&b&lSEEDLOAF'
+      title: '&b&lTHE SMP'
       lines:
-      - '&7%server_date_dd/MM/yyyy%'
-      - ''
-      - '&f&lPLAYER'
-      - ' &7User: &b%player%'
-      - ' &7Ping: &b%ping% ms'
-      - ''
-      - '&f&lSERVER'
-      - ' &7Online: &b%server_online%'
-      - ' &7TPS: &b%server_tps_1_colored%'
-      - ''
-      - '&f&lSTATUS'
-      - ' &7Combat: %skript_combat_status%'
-      - ''
-      - '&e&lseedloaf.com'
-placeholders:
-  date-format: dd.MM.yyyy
-  time-format: '[HH:mm:ss / h:mm a]'
-  time-offset: 0
-  register-tab-expansion: true
-placeholder-output-replacements:
-  '%essentials_vanished%':
-    'yes': '&7| Vanished'
-    'no': ''
-  '%afk%':
-    true: ' &o[AFK]&r'
-    false: ''
-conditions: {}
-assign-groups-by-permissions: false
-primary-group-finding-list:
-- Owner
-- Admin
-- Mod
-- Helper
-- default
+        - '&7Date: &f%server_date_dd/MM/yyyy%'
+        - '&7Time: &f%server_time_HH:mm:ss%'
+        - ''
+        - '&fPlayer Info'
+        - ' &7Name: &a%player_name%'
+        - ' &7Ping: &a%player_ping% ms'
+        - ''
+        - '&fServer Stats'
+        - ' &7Online: &a%server_online%'
+        - ' &7TPS: &a%server_tps_1_colored%'
+        - ''
+        - '&fCombat Status'
+        - ' &7Status: &c%skript_combat_status%'
+        - ' &7Time Left: &e%skript_combat_timeleft%s'
+        - ''
+        - '&fEnd Lock'
+        - ' &7Locked: &c%skript_end_locked%'
+        - ' &7Unlock in: &e%skript_end_timeleft%s'
+        - ''
+        - '&e&lthe-smp.com'
+
+# Debugging (can enable temporarily if needed)
 debug: false
-mysql:
-  enabled: false
-  host: 127.0.0.1
-  port: 3306
-  database: tab
-  username: user
-  password: password
-use-online-uuid-in-tablist: true
-global-playerlist:
-  enabled: false
-  update-latency: false
-layout:
-  enabled: false
-permission-refresh-interval: 1000
-compensate-for-packetevents-bug: false
+
+# Refresh intervals (in ms) – controls how often placeholders update
 placeholder-refresh-intervals:
   default-refresh-interval: 500
-  '%server_uptime%': 1000
   '%server_tps_1_colored%': 1000
   '%player_health%': 200
-  '%player_ping%': 1000
-  '%vault_prefix%': 1000
-  '%rel_factionsuuid_relation_color%': 500
-playerlist-objective:
-  title: TAB
-  value: '%ping%'
-  fancy-value: '&7Ping: %ping%'
-  disable-condition: '%world%=disabledworld'
-  render-type: INTEGER
-  enabled: true
-config-version: 5
-components:
-  minimessage-support: true
-  disable-shadow-for-heads: true
-proxy-support:
-  enabled: false
+  '%player_ping%': 500
+  '%skript_combat_timeleft%': 500
+  '%skript_end_timeleft%': 1000
+
+# Optional: per-world objectives (disabled here)
 per-world-playerlist:
-  enabled: false
-ping-spoof:
   enabled: false

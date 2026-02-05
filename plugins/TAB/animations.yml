@@ -1,60 +1,41 @@
-glitch_vibrant:
-  change-interval: 100
+# animations.yml for TAB plugin (v5.x)
+# Define multiple animations with a change interval (ms) + frames.
+# Use %animation:<name>% in your config.yml.
+
+TitleWave:
+  change-interval: 500
   texts:
-  - '&d&kxxx &5&lSYSTEM ERROR &d&kxxx'
-  - '&5&kxxx &d&lFATAL ERROR &5&kxxx'
-  - '&d&lG&5&lL&d&lI&5&lT&d&lC&5&lH'
-  - '&c&lE&4&lR&c&lR&4&lO&c&lR'
-glitch_line:
-  change-interval: 150
+    - "&b&lTHE SMP"
+    - "&3&lTHE SMP"
+    - "&b&lTHE SMP"
+    - "&3&lTHE SMP"
+    - "&b&lTHE SMP"
+
+CombatPulse:
+  change-interval: 300
   texts:
-  - '&d&k10101010101010'
-  - '&5&k01010101010101'
-  - '&d&o#$@&5&l!&d&o&*^%%'
-  - '&5&o*&d&l%&5&o^&d&l$!&5&o@&d&l#'
-ram_bar:
+    - "&cIN COMBAT"
+    - "&4IN COMBAT"
+    - "&cIN COMBAT"
+    - "&4IN COMBAT"
+
+EndCountdown:
   change-interval: 1000
   texts:
-  - '&8[&f%progressbar_percentage_memory-used%&8]'
-ip_glow:
+    - "&6End Unlocking Soon"
+    - "&e%skript_end_timeleft%s &6seconds left"
+    - "&6End Unlocking Soon"
+    - "&e%skript_end_timeleft%s &6seconds left"
+
+RainbowSlash:
   change-interval: 200
   texts:
-  - '&e&obetterthanchoosmp.sdlf.fun'
-  - '&6&obetterthanchoosmp.sdlf.fun'
-  - '&f&obetterthanchoosmp.sdlf.fun'
-  - '&6&obetterthanchoosmp.sdlf.fun'
-health_safe:
+    - "&c/ &6\\ &e/ &a\\"
+    - "&6\\ &e/ &a\\ &c/"
+    - "&e/ &a\\ &c/ &6\\"
+    - "&a\\ &c/ &6\\ &e/"
+
+StaticServerInfo:
   change-interval: 1000
   texts:
-  - '&a%player_health%'
-  - '&2%player_health%'
-health_warning:
-  change-interval: 400
-  texts:
-  - '&e%player_health%'
-  - '&6%player_health%'
-  - '&f%player_health%'
-health_danger:
-  change-interval: 150
-  texts:
-  - '&c%player_health%'
-  - '&4%player_health%'
-  - '&f%player_health%'
-  - '&c%player_health%'
-day_colors:
-  change-interval: 500
-  texts:
-  - '&eDAY'
-  - '&6DAY'
-night_colors:
-  change-interval: 500
-  texts:
-  - '&bNIGHT'
-  - '&3NIGHT'
-bar_colors:
-  change-interval: 1000
-  texts:
-  - BLUE
-  - BLUE
-  - WHITE
-  - BLUE
+    - "&b&lTHE SMP &7| &fSeason 1"
