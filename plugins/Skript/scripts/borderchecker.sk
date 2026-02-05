@@ -31,14 +31,6 @@ command /resetallprogression:
         delete {event.glitch.active}
         delete {-combat::*}
         
-        # Safe BossBar Removal (SkBee)
-        if bossbar with id "pre_teleport" exists:
-            remove bossbar with id "pre_teleport"
-        if bossbar with id "to_the_end" exists:
-            remove bossbar with id "to_the_end"
-        if bossbar with id "dragon_pvp" exists:
-            remove bossbar with id "dragon_pvp"
-        
         execute console command "worldborder set 10000"
         execute console command "worldborder center 0 0"
         

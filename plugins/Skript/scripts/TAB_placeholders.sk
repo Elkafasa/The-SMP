@@ -3,26 +3,24 @@
 # Compatible with: skript-placeholders 1.7+
 # ==========================================
 
-on skript placeholder request for the prefix "skript":
-    
-    # 1. World Time (Returns 0-24000 for TAB numeric conditions)
-    if identifier is "tab_time":
-        set {_t} to raw time of world "world"
-        set result to "%{_t}%"
+placeholderapi placeholder with prefix "skript":
+    # 1) World time placeholder -> %skript_tab_time%
+    if the identifier is "tab_time":
+        set the result to "%raw time of world \"world\"%"
 
-    # 2. Glitch Switch (Returns "true" or "false")
-    if identifier is "tab_glitch_active":
+    # 2) Glitch active placeholder -> %skript_tab_glitch_active%
+    else if the identifier is "tab_glitch_active":
         if {event.glitch.active} is true:
-            set result to "true"
+            set the result to "true"
         else:
-            set result to "false"
+            set the result to "false"
 
-    # 3. Combat Status (Returns formatted text)
-    if identifier is "combat_status":
+    # 3) Combat status placeholder -> %skript_combat_status%
+    else if the identifier is "combat_status":
         if {-combat::%player%} is set:
-            set result to "&c&lIn Combat"
+            set the result to "&c&lIn Combat"
         else:
-            set result to "&a&lSafe"
+            set the result to "&a&lSafe"
 
 # Helper command for testing
 command /testglitch:

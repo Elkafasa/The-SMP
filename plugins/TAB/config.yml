@@ -1,5 +1,6 @@
 header-footer:
   enabled: true
+  disable-condition: "%world%=disabledworld"
   header:
     - "&b&lSEEDLOAF &3&lSMP"
     - "&7Welcome &f%player%"
@@ -13,11 +14,10 @@ tablist-name-formatting:
   enabled: true
   anti-override: true
   disable-condition: "%world%=disabledworld"
-  default-color: "&f"
-  align-tabsuffix-on-the-right: false
 
 scoreboard-teams:
   enabled: true
+  can-see-friendly-invisibles: false
   enable-collision: true
   invisible-nametags: false
   anti-override: true
@@ -55,6 +55,7 @@ bossbar:
 
 scoreboard:
   enabled: true
+  delay-on-join-milliseconds: 0
   toggle-command: /sb
   remember-toggle-choice: false
   hidden-by-default: false
@@ -120,6 +121,12 @@ placeholderapi-refresh-intervals:
     "%vault_prefix%": 1000
   relational:
     "%rel_factionsuuid_relation_color%": 500
+
+playerlist-objective:
+  enabled: false
+  value: "%ping%"
+  fancy-value: "&7Ping: %ping%"
+  disable-condition: "%world%=disabledworld"
 
 assign-groups-by-permissions: false
 primary-group-finding-list:

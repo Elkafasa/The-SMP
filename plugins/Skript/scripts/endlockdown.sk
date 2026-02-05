@@ -7,53 +7,47 @@ options:
     LockMessage: &c&lTHE END &8» &7The dimension is sealed until &eFeb 19, 15:30&7.
 
 function getUnlockDate() :: date:
-    set {_d} to "{@UnlockDate}" parsed as date
-    if {_d} is not set:
-        set {_d} to "2026/02/19 15:30:00" parsed as date
+    # Skript 2.14 date parsing format
+    set {_d} to "{@UnlockDate}" parsed as "yyyy-MM-dd HH:mm:ss"
     return {_d}
 
 on right click on end portal frame:
     set {_unlock} to getUnlockDate()
-    if now < {_unlock}:
-        if player's tool is eye of ender:
-            cancel event
-            send "{@LockMessage}" to player
+    if {_unlock} is set:
+        if now < {_unlock}:
+            if player's tool is eye of ender:
+                cancel event
+                send "{@LockMessage}" to player
 
 on portal enter:
     set {_unlock} to getUnlockDate()
-    if now < {_unlock}:
-        if player is not in world "world_the_end":
-            cancel event
-            send "{@LockMessage}" to player
+    if {_unlock} is set:
+        if now < {_unlock}:
+            if player is not in world "world_the_end":
+                cancel event
+                send "{@LockMessage}" to player
 
 every 1 second:
     set {_unlock} to getUnlockDate()
+    if {_unlock} is not set:
+        stop
+
     if {_unlock} > now:
         set {_timeleft} to difference between {_unlock} and now
         if {_timeleft} is less than 5 minutes:
-            if bossbar with id "pre_teleport" does not exist:
-                create bossbar with id "pre_teleport" titled "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%" for all players
-                set bossbar color of bossbar with id "pre_teleport" to purple
-                set bossbar style of bossbar with id "pre_teleport" to notched 6
-            else:
-                set bossbar title of bossbar with id "pre_teleport" to "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%"
-                set {_s} to total seconds of {_timeleft}
-                set {_percent} to ({_s} / 300) * 100
-                set bossbar value of bossbar with id "pre_teleport" to {_percent}
+            send action bar "&5&lTHE END UNLOCKS IN: &d&l%{_timeleft}%" to all players
 
     else if now >= {_unlock}:
         if {lockdown_triggered} is not set:
             set {lockdown_triggered} to true
-            if bossbar with id "pre_teleport" exists:
-                remove bossbar with id "pre_teleport"
-            
+
             broadcast "&5&l[THE END] &dThe seal has broken! Teleporting in 10s..."
             wait 10 seconds
-            
+
             loop all players:
                 if loop-player is not in world "world_the_end":
                     teleport loop-player to location(0, 65, 0, world("world_the_end"))
                     send "&d&k||&5&l THE VOID CONSUMES YOU &d&k||" to loop-player
-            
+
             set {dragon_fight_active} to true
             set {event.glitch.active} to true

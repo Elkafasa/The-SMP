@@ -55,6 +55,8 @@ bar_colors:
   change-interval: 1000
   texts:
   - BLUE
-  - AQUA
-  - WHITE
-  - AQUA
+  - PURPLE
+  - PINK
+  - RED
+  - YELLOW
+  - GREEN
