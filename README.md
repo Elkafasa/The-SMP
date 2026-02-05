@@ -9,31 +9,36 @@ Server Launch Date: February 5, 2026
 
 End Portals Unlock: February 19, 2026
 
-Ender Dragon Fight: Begins after the End portals unlock sequence completes
+Ender Dragon Fight: Begins after the End unlock sequence completes
 
 World & Border
+Starting World Border
 
-Starting World Border: 10,000 × 10,000 blocks
+10,000 × 10,000 blocks
 
-Border Expansion:
+Border Expansion
 
-Expands through specific achievements, including the Ender Dragon’s death
+The world border expands through specific progression achievements
 
-More achievements may be added later to influence border size
+Ender Dragon death is a major expansion trigger
+
+Additional achievements may be added in the future to further affect border size
 
 Season Resets
 
-Season resets can happen, but are not guaranteed at a specific date
+Season resets can occur, but are not guaranteed at a fixed date.
 
-A reset may occur if:
+A reset may happen if:
 
 Server activity drops too low
 
-A majority of the server agrees via a vote that a reset is necessary
+A majority of active players vote that a reset is necessary
+
+Resets are player-driven or activity-driven, not automatic.
 
 End Dimension & Dragon Event Flow
 
-The End is heavily scripted and event-driven.
+The End is fully scripted and operates as a server-wide event.
 
 Before Unlock
 
@@ -41,21 +46,23 @@ The End dimension is locked until Feb 19, 2026 at 15:30 (server time)
 
 Bossbar pre_teleport displays a live countdown
 
-Right-clicking End portal frames or attempting to enter the End is blocked with a message
+Attempting to:
+
+Right-click End portal frames
+
+Enter the End
+is blocked with a message
 
 Unlock Sequence
+Announcement
 
-When the unlock time is reached:
-
-Announcement Broadcast
-
-The End opening is announced server-wide
+A server-wide broadcast announces the End opening
 
 5-Minute Pre-Fight Lock
 
 The End remains locked and protected
 
-The Ender Dragon is still preventing access
+The Ender Dragon is still preventing entry
 
 Stronghold Phase
 
@@ -63,9 +70,9 @@ Players are teleported to the stronghold
 
 PvP is disabled
 
-A border surrounds the stronghold
+A world border surrounds the stronghold
 
-A 10-minute timer appears
+A 10-minute timer is displayed
 
 Messages explain that the dragon is still protecting the End
 
@@ -81,13 +88,21 @@ Dragon Fight Begins
 
 Players are teleported to the End
 
-PvP remains disabled due to a lore-based “glitch” caused by:
+PvP remains disabled
+
+A lore-based “glitch event” activates due to:
 
 The world border
 
 The dragon’s control over the End
 
-Glitch event activates, affecting TAB and scoreboard visuals
+Glitch effects appear in:
+
+TAB
+
+Scoreboards
+
+Bossbars
 
 Post-Dragon
 
@@ -97,23 +112,35 @@ Glitch effects are removed
 
 End portals unlock fully
 
-PvP remains disabled for 15 additional minutes
+PvP remains disabled for an additional 15 minutes
+
+The world border expands as part of progression
 
 Combat System (Anti-Combat Log)
 
 PvP combat is tracked using:
+
 {-combat::%player%}
+
+Combat Behavior
 
 When players fight:
 
-A bossbar appears showing a countdown in seconds
+A bossbar appears showing a 15-second countdown
 
 Both attacker and victim receive a bossbar
 
-Bossbars update every second and disappear after 15 seconds
+Bossbars:
+
+Update every second
+
+Disappear after 15 seconds
 
 Bossbar IDs use dynamic UUIDs:
+
 combat_%uuid%
+
+Combat Logging
 
 Logging out during combat:
 
@@ -121,9 +148,12 @@ Instantly kills the player
 
 Broadcasts a combat-log message to the server
 
-Integrated with TAB scoreboards and placeholders
+Integration
 
-Non-player damage (mobs, fall damage, etc.) does not trigger combat
+Fully integrated with TAB scoreboards and placeholders
+
+Only player-caused damage triggers combat
+(mobs, fall damage, etc. do not)
 
 TAB Plugin Configuration
 Animations (animations.yml)
@@ -136,7 +166,7 @@ ram_bar – Memory usage display
 
 ip_glow – Animated server IP
 
-health_safe / warning / danger – Color-based health display
+health_safe / health_warning / health_danger – Color-based health display
 
 day_colors / night_colors – Time-based color cycling
 
@@ -146,16 +176,20 @@ TAB Config (config.yml)
 
 Custom tablist headers and footers
 
-Multiple scoreboards with conditions
+Multiple conditional scoreboards
 
-glitch-sb scoreboard displays only when {event.glitch.active} is true
+glitch-sb scoreboard only displays when:
+
+{event.glitch.active} = true
+
 
 Anti-override enabled to prevent other plugins from replacing values
 
-Bossbars can use animated colors via animation:bar_colors
+Bossbars can use animated colors via:
+
+animation:bar_colors
 
 Gameplay Rules & Restrictions
-
 Ender Chests & Shulker Boxes
 
 Uncraftable / unobtainable before the Ender Dragon fight
@@ -172,11 +206,12 @@ No global item bans
 
 Voice Chat
 
-Required to join
+Required to play
 
 Uses Simple Voice Chat
 
-Install here:
+Install:
+
 https://modrinth.com/plugin/simple-voice-chat
 
 Commands
@@ -185,7 +220,13 @@ Commands
 
 /home / /sethome – Teleport to saved locations
 
-/resetallprogression – Admin command to reset all event variables and borders
+/resetallprogression – Admin command to reset:
+
+Event variables
+
+Bossbars
+
+World border
 
 /testglitch – Toggle glitch mode (testing only)
 
@@ -193,7 +234,7 @@ Combat Logging Summary
 
 PvP starts a 15-second combat timer
 
-Timer is displayed via a bossbar
+Timer is shown via a bossbar
 
 Logging out during combat results in death
 
