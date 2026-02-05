@@ -1,301 +1,301 @@
-[14:25:02] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.8; Homebrew Homebrew) on Mac OS X 26.1 (aarch64)
-[14:25:02] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-103-main@e5718dc (2026-02-04T19:08:57Z) for Minecraft 1.21.11
-[14:25:02] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[14:25:03] [ServerMain/INFO]: [PluginInitializerManager] Initialized 32 plugins
-[14:25:03] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (3):
+[14:27:56] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.8; Homebrew Homebrew) on Mac OS X 26.1 (aarch64)
+[14:27:56] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-103-main@e5718dc (2026-02-04T19:08:57Z) for Minecraft 1.21.11
+[14:27:56] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:27:57] [ServerMain/INFO]: [PluginInitializerManager] Initialized 32 plugins
+[14:27:57] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (3):
  - JEIRecipeBridge (1.0.0), MCOptimizer (1.2.2), SkBee (3.16.0)
-[14:25:03] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (29):
+[14:27:57] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (29):
  - BedrockMovementFix (${version}), BlockSigningPlugin (2.9), Chunky (1.4.40), Craftorithm (1.10.25-20260112), Essentials (2.21.2), EssentialsDiscord (2.21.2), EssentialsDiscordLink (2.21.2), Geyser-Spigot (2.9.2-SNAPSHOT), GrimAC (2.3.73-daa3bfe), HomePlugin (0.8.6-main-SNAPSHOT), JustTPA (20250220c), KnockbackSync (1.3.6-dev-b132), LuckPerms (5.5.28), Orebfuscator (5.5.7), PlaceholderAPI (2.12.1), PreLoginWhitelist (1.3), ProtocolLib (5.4.0), SkinsRestorer (15.10.0), Skript (2.14.1), TAB (5.5.0), Vault (2.18.0), WorldEdit (7.4.0+7381-3decaf0), floodgate (2.2.5-SNAPSHOT (b126-096c605)), packetevents (2.11.2), skript-gui (1.3.1), skript-particle (1.4.0), skript-placeholders (1.7.0), skript-yaml (1.7.2), voicechat (2.6.11)
-[14:25:08] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[14:25:08] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[14:25:09] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 358.1ms
-[14:25:10] [ServerMain/INFO]: Loaded 1470 recipes
-[14:25:10] [ServerMain/INFO]: Loaded 1584 advancements
-[14:25:10] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[14:25:10] [Server thread/INFO]: Loading properties
-[14:25:10] [Server thread/INFO]: This server is running Paper version 1.21.11-103-main@e5718dc (2026-02-04T19:08:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[14:25:10] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[14:25:10] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[14:25:10] [Server thread/INFO]: Using 4 threads for Netty based IO
-[14:25:10] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
-[14:25:10] [Server thread/INFO]: Default game type: SURVIVAL
-[14:25:10] [Server thread/INFO]: Generating keypair
-[14:25:10] [Server thread/INFO]: Starting Minecraft server on *:25565
-[14:25:10] [Server thread/INFO]: Paper: Using libdeflate (macOS ARM64 / Apple Silicon) compression from Velocity.
-[14:25:10] [Server thread/INFO]: Paper: Using native (macOS ARM64 / Apple Silicon) cipher from Velocity.
-[14:25:11] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.1
-[14:25:16] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.28
-[14:25:16] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[14:25:16] [Server thread/INFO]: [Vault] Loading server plugin Vault v2.18.0
-[14:25:16] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.2
-[14:25:16] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b126-096c605)
-[14:25:17] [Server thread/WARN]: [floodgate] en_SA is not a supported Floodgate language.
-[14:25:17] [Server thread/INFO]: [floodgate] Took 957ms to boot Floodgate
-[14:25:17] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.14.1
-[14:25:17] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
-[14:25:17] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.11) has not yet been tested! Proceed with caution.
-[14:25:17] [Server thread/INFO]: [EssentialsDiscord] Loading server plugin EssentialsDiscord v2.21.2
-[14:25:17] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.2-SNAPSHOT
-[14:25:18] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[14:25:18] [Server thread/INFO]: [Geyser-Spigot] Enabled extension MCXboxBroadcast
-[14:25:18] [Server thread/INFO]: [Geyser-Spigot] Loaded 1 extension(s)
-[14:25:18] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.16.0
-[14:25:18] [Server thread/INFO]: [skript-gui] Loading server plugin skript-gui v1.3.1
-[14:25:18] [Server thread/INFO]: [HomePlugin] Loading server plugin HomePlugin v0.8.6-main-SNAPSHOT
-[14:25:18] [Server thread/INFO]: [KnockbackSync] Loading server plugin KnockbackSync v1.3.6-dev-b132
-[14:25:19] [Server thread/INFO]: [Orebfuscator] Loading server plugin Orebfuscator v5.5.7
-[14:25:19] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.11
-[14:25:19] [Server thread/INFO]: [skript-placeholders] Loading server plugin skript-placeholders v1.7.0
-[14:25:19] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Loading server plugin EssentialsDiscordLink v2.21.2
-[14:25:19] [Server thread/INFO]: [PreLoginWhitelist] Loading server plugin PreLoginWhitelist v1.3
-[14:25:19] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.11.2
-[14:25:20] [Server thread/INFO]: [BlockSigningPlugin] Loading server plugin BlockSigningPlugin v2.9
-[14:25:20] [Server thread/INFO]: [Craftorithm] Loading server plugin Craftorithm v1.10.25-20260112
-[14:25:20] [Server thread/INFO]: [BedrockMovementFix] Loading server plugin BedrockMovementFix v${version}
-[14:25:20] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.10.0
-[14:25:20] [Server thread/INFO]: [JEIRecipeBridge] Loading server plugin JEIRecipeBridge v1.0.0
-[14:25:20] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.5.0
-[14:25:20] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.7.2
-[14:25:20] [Server thread/INFO]: [GrimAC] Loading server plugin GrimAC v2.3.73-daa3bfe
-[14:25:20] [Server thread/INFO]: [GrimAC] Loading PacketEvents...
-[14:25:21] [Server thread/INFO]: [skript-particle] Loading server plugin skript-particle v1.4.0
-[14:25:21] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
-[14:25:21] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.0+7381-3decaf0
-[14:25:22] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@51115279]
-[14:25:22] [Server thread/INFO]: [MCOptimizer] Loading server plugin MCOptimizer v1.2.2
-[14:25:22] [Server thread/INFO]: [JustTPA] Loading server plugin JustTPA v20250220c
-[14:25:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[14:25:22] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.28
-[14:25:23] [Server thread/INFO]:         __    
-[14:25:23] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.28
-[14:25:23] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[14:25:23] [Server thread/INFO]: 
-[14:25:23] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[14:25:23] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[14:25:24] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[14:25:24] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1872ms)
-[14:25:24] [Server thread/INFO]: [Vault] Enabling Vault v2.18.0
-[14:25:24] [Server thread/INFO]: [Vault] Enabled Version 2.18.0
-[14:25:24] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[14:25:24] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
-[14:25:24] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.10.0
-[14:25:25] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.11.
-[14:25:25] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[14:25:25] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[14:25:25] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.10.0]
-[14:25:25] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
-[14:25:25] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.0+7381-3decaf0
-[14:25:25] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[14:25:25] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[14:25:26] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Enabling MCOptimizer v1.2.2
-[14:25:26] [Server thread/INFO]: [MCOptimizer] 
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ╔════════════════════════════════════════════╗
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║            MCOptimizer Plugin              ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║    Optimize your server with minimal       ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║            CPU/RAM overhead!               ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ╠════════════════════════════════════════════╣
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║ Created by: juicyyfruittsnackss            ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║ Support: https://dcs.gg/fruitsnacks/       ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║ Projects: https://fruitsnacks.xyz          ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ║ Version: 1.2.2                            ║
-[14:25:26] [Server thread/INFO]: [MCOptimizer] ╚════════════════════════════════════════════╝
-[14:25:26] [Server thread/INFO]: [MCOptimizer] 
-[14:25:26] [Server thread/INFO]: [MCOptimizer] For support go to: https://dcs.gg/fruitsnacks/
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Check https://fruitsnacks.xyz for upcoming projects
-[14:25:26] [Server thread/INFO]: [MCOptimizer] 
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Using existing data folder at: /Users/ahmedelkafas/Downloads/thesmpplugins/The-SMP/plugins/MCOptimizer
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Loading configuration...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Configuration loaded successfully
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing chunk management...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Chunk Manager initialized. Max chunks per tick: 0
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing entity optimization...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Entity Optimizer initialized. Max entities per chunk: 25
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing redstone optimization...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Redstone Optimizer initialized. Max updates per tick: 100
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing mob culling...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Mob Culling Manager initialized. Max mobs per world: 1000
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing performance monitor...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Web panel functionality has been removed
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing configuration analyzer...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing memory leak detector...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Memory leak detection started. Checking every 15 minutes.
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing entity distance limiter...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Entity distance limiting started
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing TNT optimizer...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] TNT optimizer initialized
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing task optimizer...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Task optimization started
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Network optimization disabled
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing AFK manager...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] AFK manager initialized
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Stress testing disabled
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing performance report manager...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Loaded 15 existing performance reports
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Performance report manager initialized
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Plugin integration API disabled
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing cross-platform support (forced enabled)...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: Geyser-Spigot v2.9.2-SNAPSHOT
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: floodgate v2.2.5-SNAPSHOT (b126-096c605)
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: Floodgate v2.2.5-SNAPSHOT (b126-096c605)
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Universal cross-platform support initialized - compatible with all bridge solutions
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Initializing lag prediction system...
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Lag prediction enabled (interval: 30s, points: 60)
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Web interface enabled (port: 8080, auth: disabled)
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Started lag prediction task (interval: 30s)
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Lag prediction web interface available at: http://localhost:8080/
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Registering mcoptimizer command manually
-[14:25:26] [Server thread/INFO]: [MCOptimizer] Metrics collection enabled
-[14:25:26] [Server thread/INFO]: [MCOptimizer] MCOptimizer v1.2.2 enabled successfully
-[14:25:26] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[14:25:26] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[14:25:26] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[14:25:26] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[14:25:26] [Server thread/INFO]: Preparing level "world"
-[14:25:27] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[14:25:27] [Server thread/INFO]: Prepared spawn area in 1 ms
-[14:25:27] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[14:25:27] [Server thread/INFO]: Prepared spawn area in 0 ms
-[14:25:27] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[14:25:27] [Server thread/INFO]: Prepared spawn area in 0 ms
-[14:25:27] [Server thread/INFO]: Done preparing level "world" (0.588s)
-[14:25:27] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.1
-[14:25:27] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[14:25:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: vaultunlocked [2.13.1]
-[14:25:27] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.10.0
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: fcb9320
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[14:25:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
-[14:25:27] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[14:25:27] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[14:25:27] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[14:25:27] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[14:25:28] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
-[14:25:28] [Server thread/INFO]: [Essentials] Using locale en_SA
-[14:25:28] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[14:25:28] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[14:25:28] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[14:25:28] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b126-096c605)
-[14:25:29] [Server thread/INFO]: [Skript] Enabling Skript v2.14.1
-[14:25:30] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[14:25:30] [Server thread/INFO]: [EssentialsDiscord] Enabling EssentialsDiscord v2.21.2
-[14:25:30] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[14:25:30] [Server thread/INFO]: [EssentialsDiscord] Starting Metrics. Opt-out using the global bStats config.
-[14:25:30] [Server thread/INFO]: [EssentialsDiscord] Attempting to login to Discord...
-[14:25:33] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript] Loaded 5684 aliases in 2474ms
-[14:25:33] [Server thread/ERROR]: [EssentialsDiscord] An error occurred while logging into Discord, which has caused the plugin to disable itself: 
+[14:28:03] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[14:28:03] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[14:28:03] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 320.8ms
+[14:28:04] [ServerMain/INFO]: Loaded 1470 recipes
+[14:28:04] [ServerMain/INFO]: Loaded 1584 advancements
+[14:28:04] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[14:28:04] [Server thread/INFO]: Loading properties
+[14:28:04] [Server thread/INFO]: This server is running Paper version 1.21.11-103-main@e5718dc (2026-02-04T19:08:57Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[14:28:04] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[14:28:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:28:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:28:05] [Server thread/INFO]: [MoonriseCommon] Paper is using 2 worker threads, 1 I/O threads
+[14:28:05] [Server thread/INFO]: Default game type: SURVIVAL
+[14:28:05] [Server thread/INFO]: Generating keypair
+[14:28:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:28:05] [Server thread/INFO]: Paper: Using libdeflate (macOS ARM64 / Apple Silicon) compression from Velocity.
+[14:28:05] [Server thread/INFO]: Paper: Using native (macOS ARM64 / Apple Silicon) cipher from Velocity.
+[14:28:05] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.1
+[14:28:08] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.28
+[14:28:09] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[14:28:09] [Server thread/INFO]: [Vault] Loading server plugin Vault v2.18.0
+[14:28:09] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.2
+[14:28:09] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[14:28:09] [Server thread/WARN]: [floodgate] en_SA is not a supported Floodgate language.
+[14:28:09] [Server thread/INFO]: [floodgate] Took 515ms to boot Floodgate
+[14:28:09] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.14.1
+[14:28:09] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[14:28:09] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.11) has not yet been tested! Proceed with caution.
+[14:28:10] [Server thread/INFO]: [EssentialsDiscord] Loading server plugin EssentialsDiscord v2.21.2
+[14:28:10] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.2-SNAPSHOT
+[14:28:10] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[14:28:10] [Server thread/INFO]: [Geyser-Spigot] Enabled extension MCXboxBroadcast
+[14:28:10] [Server thread/INFO]: [Geyser-Spigot] Loaded 1 extension(s)
+[14:28:10] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.16.0
+[14:28:10] [Server thread/INFO]: [skript-gui] Loading server plugin skript-gui v1.3.1
+[14:28:10] [Server thread/INFO]: [HomePlugin] Loading server plugin HomePlugin v0.8.6-main-SNAPSHOT
+[14:28:10] [Server thread/INFO]: [KnockbackSync] Loading server plugin KnockbackSync v1.3.6-dev-b132
+[14:28:11] [Server thread/INFO]: [Orebfuscator] Loading server plugin Orebfuscator v5.5.7
+[14:28:11] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.11
+[14:28:11] [Server thread/INFO]: [skript-placeholders] Loading server plugin skript-placeholders v1.7.0
+[14:28:11] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Loading server plugin EssentialsDiscordLink v2.21.2
+[14:28:11] [Server thread/INFO]: [PreLoginWhitelist] Loading server plugin PreLoginWhitelist v1.3
+[14:28:11] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.11.2
+[14:28:13] [Server thread/INFO]: [BlockSigningPlugin] Loading server plugin BlockSigningPlugin v2.9
+[14:28:13] [Server thread/INFO]: [Craftorithm] Loading server plugin Craftorithm v1.10.25-20260112
+[14:28:13] [Server thread/INFO]: [BedrockMovementFix] Loading server plugin BedrockMovementFix v${version}
+[14:28:13] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.10.0
+[14:28:13] [Server thread/INFO]: [JEIRecipeBridge] Loading server plugin JEIRecipeBridge v1.0.0
+[14:28:13] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.5.0
+[14:28:13] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.7.2
+[14:28:13] [Server thread/INFO]: [GrimAC] Loading server plugin GrimAC v2.3.73-daa3bfe
+[14:28:13] [Server thread/INFO]: [GrimAC] Loading PacketEvents...
+[14:28:13] [Server thread/INFO]: [skript-particle] Loading server plugin skript-particle v1.4.0
+[14:28:13] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[14:28:13] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.0+7381-3decaf0
+[14:28:14] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@626acc75]
+[14:28:14] [Server thread/INFO]: [MCOptimizer] Loading server plugin MCOptimizer v1.2.2
+[14:28:14] [Server thread/INFO]: [JustTPA] Loading server plugin JustTPA v20250220c
+[14:28:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:28:14] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.28
+[14:28:15] [Server thread/INFO]:         __    
+[14:28:15] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.28
+[14:28:15] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[14:28:15] [Server thread/INFO]: 
+[14:28:15] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[14:28:15] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[14:28:15] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[14:28:16] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1280ms)
+[14:28:16] [Server thread/INFO]: [Vault] Enabling Vault v2.18.0
+[14:28:16] [Server thread/INFO]: [Vault] Enabled Version 2.18.0
+[14:28:16] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[14:28:16] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[14:28:16] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.10.0
+[14:28:17] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.11.
+[14:28:17] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[14:28:17] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[14:28:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.10.0]
+[14:28:17] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[14:28:17] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.0+7381-3decaf0
+[14:28:17] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[14:28:17] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[14:28:18] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Enabling MCOptimizer v1.2.2
+[14:28:18] [Server thread/INFO]: [MCOptimizer] 
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ╔════════════════════════════════════════════╗
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║            MCOptimizer Plugin              ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║    Optimize your server with minimal       ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║            CPU/RAM overhead!               ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ╠════════════════════════════════════════════╣
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║ Created by: juicyyfruittsnackss            ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║ Support: https://dcs.gg/fruitsnacks/       ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║ Projects: https://fruitsnacks.xyz          ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ║ Version: 1.2.2                            ║
+[14:28:18] [Server thread/INFO]: [MCOptimizer] ╚════════════════════════════════════════════╝
+[14:28:18] [Server thread/INFO]: [MCOptimizer] 
+[14:28:18] [Server thread/INFO]: [MCOptimizer] For support go to: https://dcs.gg/fruitsnacks/
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Check https://fruitsnacks.xyz for upcoming projects
+[14:28:18] [Server thread/INFO]: [MCOptimizer] 
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Using existing data folder at: /Users/ahmedelkafas/Downloads/thesmpplugins/The-SMP/plugins/MCOptimizer
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Loading configuration...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Configuration loaded successfully
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing chunk management...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Chunk Manager initialized. Max chunks per tick: 0
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing entity optimization...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Entity Optimizer initialized. Max entities per chunk: 25
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing redstone optimization...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Redstone Optimizer initialized. Max updates per tick: 100
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing mob culling...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Mob Culling Manager initialized. Max mobs per world: 1000
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing performance monitor...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Web panel functionality has been removed
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing configuration analyzer...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing memory leak detector...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Memory leak detection started. Checking every 15 minutes.
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing entity distance limiter...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Entity distance limiting started
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing TNT optimizer...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] TNT optimizer initialized
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing task optimizer...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Task optimization started
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Network optimization disabled
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing AFK manager...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] AFK manager initialized
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Stress testing disabled
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing performance report manager...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Loaded 16 existing performance reports
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Performance report manager initialized
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Plugin integration API disabled
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing cross-platform support (forced enabled)...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: Geyser-Spigot v2.9.2-SNAPSHOT
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Cross-platform bridge detected: Floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Universal cross-platform support initialized - compatible with all bridge solutions
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Initializing lag prediction system...
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Lag prediction enabled (interval: 30s, points: 60)
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Web interface enabled (port: 8080, auth: disabled)
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Started lag prediction task (interval: 30s)
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Lag prediction web interface available at: http://localhost:8080/
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Registering mcoptimizer command manually
+[14:28:18] [Server thread/INFO]: [MCOptimizer] Metrics collection enabled
+[14:28:18] [Server thread/INFO]: [MCOptimizer] MCOptimizer v1.2.2 enabled successfully
+[14:28:18] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:28:18] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:28:18] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:28:18] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:28:18] [Server thread/INFO]: Preparing level "world"
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.10.0
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: fcb9320
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[14:28:19] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[14:28:19] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[14:28:19] [Server thread/INFO]: Prepared spawn area in 1 ms
+[14:28:19] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[14:28:19] [Server thread/INFO]: Prepared spawn area in 0 ms
+[14:28:19] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[14:28:19] [Server thread/INFO]: Prepared spawn area in 0 ms
+[14:28:19] [Server thread/INFO]: Done preparing level "world" (1.033s)
+[14:28:19] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.1
+[14:28:20] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[14:28:20] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: vaultunlocked [2.13.1]
+[14:28:20] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
+[14:28:20] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[14:28:20] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[14:28:20] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[14:28:21] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
+[14:28:21] [Server thread/INFO]: [Essentials] Using locale en_SA
+[14:28:21] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[14:28:22] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[14:28:22] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[14:28:22] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[14:28:22] [Server thread/INFO]: [Skript] Enabling Skript v2.14.1
+[14:28:24] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[14:28:25] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[14:28:25] [Server thread/INFO]: [EssentialsDiscord] Enabling EssentialsDiscord v2.21.2
+[14:28:25] [Server thread/INFO]: [EssentialsDiscord] Starting Metrics. Opt-out using the global bStats config.
+[14:28:25] [Server thread/INFO]: [EssentialsDiscord] Attempting to login to Discord...
+[14:28:28] [Server thread/ERROR]: [EssentialsDiscord] An error occurred while logging into Discord, which has caused the plugin to disable itself: 
 The provided token is invalid!
-[14:25:33] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.2-SNAPSHOT
-[14:25:34] [Server thread/INFO]: [SkBee] Enabling SkBee v3.16.0
-[14:25:35] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] It looks like another addon registered 'respawn reason' already.
-[14:25:35] [Server thread/INFO]: [SkBee] You may have to use their RespawnReason in SkBee's syntaxes.
-[14:25:35] [Server thread/INFO]: [SkBee] It looks like another addon registered 'EntityEffect' already.
-[14:25:35] [Server thread/INFO]: [SkBee] You may have to use their EntityEffects in SkBee's 'play entity effect' effect.
-[14:25:35] [Server thread/INFO]: [SkBee] Loading NBTApi...
-[14:25:35] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.11! Trying to find NMS support
-[14:25:35] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R7' loaded!
-[14:25:35] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
-[14:25:35] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee]  - Do note these elements are in Skript as 'Experimental'
-[14:25:35] [Server thread/INFO]: [SkBee]  - If issues arise, disable this feature and use Skript's elements instead
-[14:25:35] [Server thread/INFO]: [SkBee] Dialog Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Display Entity Elements disabled via config
-[14:25:35] [Server thread/INFO]: [SkBee] Fastboard[Adventure] Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Particle Elements disable (now in Skript)
-[14:25:35] [Server thread/INFO]: [SkBee] Property Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Scoreboard Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
-[14:25:35] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
-[14:25:35] [Server thread/INFO]: [SkBee] Loaded SkBee (449) elements:
-[14:25:35] [Server thread/INFO]: [SkBee]  - 56 events
-[14:25:35] [Server thread/INFO]: [SkBee]  - 72 effects
-[14:25:35] [Server thread/INFO]: [SkBee]  - 243 expressions
-[14:25:35] [Server thread/INFO]: [SkBee]  - 27 conditions
-[14:25:35] [Server thread/INFO]: [SkBee]  - 51 sections
-[14:25:35] [Server thread/INFO]: [SkBee]  - 11 properties
-[14:25:35] [Server thread/INFO]: [SkBee] Checking for update...
-[14:25:36] [Server thread/INFO]: [SkBee] Plugin is up to date!
-[14:25:36] [Server thread/INFO]: [SkBee] Successfully enabled v3.16.0 in 1.81 seconds
-[14:25:36] [Server thread/INFO]: [skript-gui] Enabling skript-gui v1.3.1
-[14:25:36] [Server thread/INFO]: [Skript]     Missing version in default.lang
-[14:25:36] [Server thread/INFO]: [HomePlugin] Enabling HomePlugin v0.8.6-main-SNAPSHOT
-[14:25:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: homeplugin [0.8.6-main-SNAPSHOT]
-[14:25:36] [Server thread/INFO]: [HomePlugin] PlaceholderAPI detected. Placeholders enabled.
-[14:25:36] [Server thread/INFO]: [HomePlugin] Redis disabled in config. Skipping Redis setup.
-[14:25:36] [Server thread/INFO]: [HomePlugin] Using YAML storage.
-[14:25:36] [Server thread/INFO]: [HomePlugin] Registering Homes...
-[14:25:36] [Server thread/INFO]: [HomePlugin] Registering Spawns...
-[14:25:36] [Server thread/INFO]: [HomePlugin] Registering commands...
-[14:25:37] [Server thread/INFO]: [HomePlugin] Registering events...
-[14:25:37] [Server thread/WARN]: [HomePlugin] No plugin extensions detected.
-[14:25:37] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
-[14:25:37] [Server thread/INFO]: [HomePlugin] HomePlugin started successfully!
-[14:25:37] [Server thread/INFO]: [HomePlugin] Language: FRENCH
-[14:25:37] [Server thread/INFO]: [HomePlugin] Storage: YAML
-[14:25:37] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
-[14:25:37] [Server thread/INFO]: [KnockbackSync] Enabling KnockbackSync v1.3.6-dev-b132
-[14:25:37] [Server thread/INFO]: [KnockbackSync] Checking for updates...
-[14:25:37] [Server thread/INFO]: [Orebfuscator] Enabling Orebfuscator v5.5.7
-[14:25:37] [Server thread/INFO]: [Orebfuscator] Searching NMS adapter for server version "v1_21_R7_mojang"!
-[14:25:37] [Server thread/INFO]: [Orebfuscator] NMS adapter for server version "v1_21_R7_mojang" found!
-[14:25:37] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.11
-[14:25:37] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.11-R0.1
-[14:25:37] [Server thread/INFO]: [voicechat] Compatibility version 20
-[14:25:37] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[14:25:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: voicechat [2.6.11]
-[14:25:37] [Server thread/INFO]: [voicechat] Successfully registered PlaceholderAPI expansion
-[14:25:37] [Server thread/INFO]: [skript-placeholders] Enabling skript-placeholders v1.7.0
-[14:25:37] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Enabling EssentialsDiscordLink v2.21.2
-[14:25:37] [Server thread/ERROR]: Error occurred while enabling EssentialsDiscordLink v2.21.2 (Is it up to date?)
+[14:28:28] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.2-SNAPSHOT
+[14:28:28] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5684 aliases in 2693ms
+[14:28:29] [Server thread/INFO]: [SkBee] Enabling SkBee v3.16.0
+[14:28:29] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] It looks like another addon registered 'respawn reason' already.
+[14:28:30] [Server thread/INFO]: [SkBee] You may have to use their RespawnReason in SkBee's syntaxes.
+[14:28:30] [Server thread/INFO]: [SkBee] It looks like another addon registered 'EntityEffect' already.
+[14:28:30] [Server thread/INFO]: [SkBee] You may have to use their EntityEffects in SkBee's 'play entity effect' effect.
+[14:28:30] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[14:28:30] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.11! Trying to find NMS support
+[14:28:30] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R7' loaded!
+[14:28:30] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[14:28:30] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee]  - Do note these elements are in Skript as 'Experimental'
+[14:28:30] [Server thread/INFO]: [SkBee]  - If issues arise, disable this feature and use Skript's elements instead
+[14:28:30] [Server thread/INFO]: [SkBee] Dialog Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Display Entity Elements disabled via config
+[14:28:30] [Server thread/INFO]: [SkBee] Fastboard[Adventure] Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Particle Elements disable (now in Skript)
+[14:28:30] [Server thread/INFO]: [SkBee] Property Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Scoreboard Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[14:28:30] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
+[14:28:30] [Server thread/INFO]: [SkBee] Loaded SkBee (449) elements:
+[14:28:30] [Server thread/INFO]: [SkBee]  - 56 events
+[14:28:30] [Server thread/INFO]: [SkBee]  - 72 effects
+[14:28:30] [Server thread/INFO]: [SkBee]  - 243 expressions
+[14:28:30] [Server thread/INFO]: [SkBee]  - 27 conditions
+[14:28:30] [Server thread/INFO]: [SkBee]  - 51 sections
+[14:28:30] [Server thread/INFO]: [SkBee]  - 11 properties
+[14:28:30] [Server thread/INFO]: [SkBee] Checking for update...
+[14:28:31] [Server thread/INFO]: [SkBee] Plugin is up to date!
+[14:28:31] [Server thread/INFO]: [SkBee] Successfully enabled v3.16.0 in 1.35 seconds
+[14:28:31] [Server thread/INFO]: [skript-gui] Enabling skript-gui v1.3.1
+[14:28:31] [Server thread/INFO]: [Skript]     Missing version in default.lang
+[14:28:31] [Server thread/INFO]: [HomePlugin] Enabling HomePlugin v0.8.6-main-SNAPSHOT
+[14:28:31] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: homeplugin [0.8.6-main-SNAPSHOT]
+[14:28:31] [Server thread/INFO]: [HomePlugin] PlaceholderAPI detected. Placeholders enabled.
+[14:28:31] [Server thread/INFO]: [HomePlugin] Redis disabled in config. Skipping Redis setup.
+[14:28:31] [Server thread/INFO]: [HomePlugin] Using YAML storage.
+[14:28:31] [Server thread/INFO]: [HomePlugin] Registering Homes...
+[14:28:31] [Server thread/INFO]: [HomePlugin] Registering Spawns...
+[14:28:31] [Server thread/INFO]: [HomePlugin] Registering commands...
+[14:28:31] [Server thread/INFO]: [HomePlugin] Registering events...
+[14:28:31] [Server thread/WARN]: [HomePlugin] No plugin extensions detected.
+[14:28:31] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[14:28:31] [Server thread/INFO]: [HomePlugin] HomePlugin started successfully!
+[14:28:31] [Server thread/INFO]: [HomePlugin] Language: FRENCH
+[14:28:31] [Server thread/INFO]: [HomePlugin] Storage: YAML
+[14:28:31] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[14:28:31] [Server thread/INFO]: [KnockbackSync] Enabling KnockbackSync v1.3.6-dev-b132
+[14:28:31] [Server thread/INFO]: [KnockbackSync] Checking for updates...
+[14:28:31] [Server thread/INFO]: [Orebfuscator] Enabling Orebfuscator v5.5.7
+[14:28:31] [Server thread/INFO]: [Orebfuscator] Searching NMS adapter for server version "v1_21_R7_mojang"!
+[14:28:31] [Server thread/INFO]: [Orebfuscator] NMS adapter for server version "v1_21_R7_mojang" found!
+[14:28:32] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.11
+[14:28:32] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.11-R0.1
+[14:28:32] [Server thread/INFO]: [voicechat] Compatibility version 20
+[14:28:32] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[14:28:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: voicechat [2.6.11]
+[14:28:32] [Server thread/INFO]: [voicechat] Successfully registered PlaceholderAPI expansion
+[14:28:32] [Server thread/INFO]: [skript-placeholders] Enabling skript-placeholders v1.7.0
+[14:28:32] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Enabling EssentialsDiscordLink v2.21.2
+[14:28:32] [Server thread/ERROR]: Error occurred while enabling EssentialsDiscordLink v2.21.2 (Is it up to date?)
 java.lang.NullPointerException: Cannot invoke "net.essentialsx.api.v2.services.discord.DiscordService.getRole(String)" because the return value of "net.essentialsx.discordlink.EssentialsDiscordLink.getApi()" is null
 	at EssentialsXDiscordLink-2.21.2.jar//net.essentialsx.discordlink.rolesync.RoleSyncManager.onReload(RoleSyncManager.java:147) ~[?:?]
 	at EssentialsXDiscordLink-2.21.2.jar//net.essentialsx.discordlink.rolesync.RoleSyncManager.<init>(RoleSyncManager.java:33) ~[?:?]
@@ -311,193 +311,206 @@ java.lang.NullPointerException: Cannot invoke "net.essentialsx.api.v2.services.d
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1258) ~[paper-1.21.11.jar:1.21.11-103-e5718dc]
 	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-103-e5718dc]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[14:25:37] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Disabling EssentialsDiscordLink v2.21.2
-[14:25:37] [Server thread/INFO]: [PreLoginWhitelist] Enabling PreLoginWhitelist v1.3
-[14:25:37] [Server thread/INFO]: [packetevents] Enabling packetevents v2.11.2
-[14:25:37] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
-[14:25:37] [Server thread/INFO]: [BlockSigningPlugin] Enabling BlockSigningPlugin v2.9
-[14:25:37] [Server thread/WARN]: [BlockSigningPlugin] Invalid material in onlyscan: SPAWNER_MINECART
-[14:25:37] [Server thread/INFO]: [Craftorithm] Enabling Craftorithm v1.10.25-20260112
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix] Enabling BedrockMovementFix v${version}
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix] Successfully hooked into Floodgate API!
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix] Paper PlayerFailMoveEvent detected - using advanced movement fix!
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix] ===========================================
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix] BedrockMovementFix v1.0.0 enabled!
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix]   Enabled: true
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix]   Bedrock Only: true
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix]   Debug Mode: true
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix]   Verbose Debug: false
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix]   Floodgate: DETECTED - will apply to Bedrock players only
-[14:25:38] [Server thread/INFO]: [BedrockMovementFix] ===========================================
-[14:25:38] [Server thread/INFO]: [JEIRecipeBridge] Enabling JEIRecipeBridge v1.0.0
-[14:25:38] [Server thread/INFO]: [TAB] Enabling TAB v5.5.0
-[14:25:38] [Server thread/INFO]: [TAB] [config.yml] [Hint] Refresh interval of %rel_factionsuuid_relation_color% is same as default interval, therefore there is no need to override it.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Missing configuration section "scoreboard.delay-on-join-milliseconds" of type Integer, using default value 0.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default-color". Valid keys: [enabled, disable-condition]
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support: Missing configuration section "proxy-support.type" of type String, using default value PLUGIN.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.plugin: Missing configuration section "proxy-support.plugin.name" of type String, using default value RedisBungee.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.redis: Missing configuration section "proxy-support.redis.url" of type String, using default value redis://:password@localhost:6379/0.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.exchange" of type String, using default value plugin.
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.url" of type String, using default value amqp://guest:guest@localhost:5672/%2F.
-[14:25:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [5.5.0]
-[14:25:38] [Server thread/INFO]: [TAB] [WARN] Found a total of 11 issues.
-[14:25:38] [Server thread/INFO]: [TAB] Enabled in 292ms
-[14:25:38] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.7.2
-[14:25:38] [Server thread/INFO]: [GrimAC] Enabling GrimAC v2.3.73-daa3bfe
-[14:25:38] [Server thread/INFO]: [GrimAC] Registering packets...
-[14:25:38] [Server thread/INFO]: [GrimAC] Registering tick schedulers...
-[14:25:38] [Server thread/INFO]: Grim Version: 2.3.73-daa3bfe
-[14:25:38] [Server thread/INFO]: [GrimAC] Registering singular bukkit event... (PistonEvent)
-[14:25:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: grim [2.3.73-daa3bfe]
-[14:25:38] [Server thread/INFO]: [skript-particle] Enabling skript-particle v1.4.0
-[14:25:38] [Server thread/INFO]: [skript-particle] Successfully enabled skript-particle.
-[14:25:38] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
-[14:25:38] [Server thread/INFO]: [JustTPA] Enabling JustTPA v20250220c
-[14:25:38] [Server thread/INFO]: [JustTPA] JustTPA initialized
-[14:25:38] [Server thread/INFO]: [JustTPA] bStats enabled
-[14:25:38] [Server thread/INFO]: [JustTPA] Checking for updates...
-[14:25:39] [Server thread/INFO]: [spark] Starting background profiler...
-[14:25:39] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.11.2)
-[14:25:40] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
-[14:25:40] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[14:25:44] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[14:25:44] [Server thread/INFO]: [Geyser-Spigot] 
-[14:25:44] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.2-b1049 (git-master-21c1c32)
-[14:25:44] [Server thread/INFO]: [Geyser-Spigot] 
-[14:25:44] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[14:25:48] [Server thread/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[14:25:48] [Server thread/INFO]: [Geyser-Spigot] [mcxboxbroadcast] Starting MCXboxBroadcast Extension build 128 (git-master-0645544) for Bedrock 1.21.130 (898)
-[14:25:48] [Server thread/INFO]: [Geyser-Spigot] Done (4.75s)! Run /geyser help for help!
-[14:25:49] [Server thread/INFO]: Starting remote control listener
-[14:25:49] [Server thread/INFO]: Thread RCON Listener started
-[14:25:49] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[14:25:49] [Server thread/INFO]: Running delayed init tasks
-[14:25:49] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v2.18.0)!
-[14:25:49] [Craft Scheduler Thread - 4 - MCOptimizer/INFO]: [MCOptimizer] Started web interface on 0.0.0.0:8080
-[14:25:49] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
-[14:25:49] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Update checking disabled in config.
-[14:25:49] [Server thread/INFO]: [Skript] Loading variables...
-[14:25:49] [Server thread/INFO]: [Skript] Loaded 0 variables in 0.0 seconds
-[14:25:49] [Server thread/INFO]: [Skript] Line 2: (ENDFIGHTEVENT.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this structure: on dragon spawn
-[14:25:49] [Server thread/INFO]:     Line: on dragon spawn:
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 7: (ENDFIGHTEVENT.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this structure: after 10 seconds
-[14:25:49] [Server thread/INFO]:     Line: after 10 seconds:
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 2: (TAB_placeholders.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this structure: on skript placeholder request "player_health"
-[14:25:49] [Server thread/INFO]:     Line: on skript placeholder request "player_health":
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 4: (endlockdown.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this structure: set {_unlock} to 1766295000
-[14:25:49] [Server thread/INFO]:     Line: set {_unlock} to 1766295000
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 3: (borderchecker.sk)
-[14:25:49] [Server thread/INFO]:     The expression 'world border of the world with name "world"' returns the following types that do not have the size property: world border
-[14:25:49] [Server thread/INFO]:     Line: set {_size} to size of world border of world "world"
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 5: (borderchecker.sk)
-[14:25:49] [Server thread/INFO]:     world border of the world with name "world" can't be set to '10000' because the latter is not a world border
-[14:25:49] [Server thread/INFO]:     Line: set world border of world "world" to 10000
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 14: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar "combat-%uuid of victim%" for victim
-[14:25:49] [Server thread/INFO]:     Line: create bossbar "combat-%uuid of victim%" for victim
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 15: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
-[14:25:49] [Server thread/INFO]:     Line: set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 16: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set color of bossbar "combat-%uuid of victim%" to red
-[14:25:49] [Server thread/INFO]:     Line: set color of bossbar "combat-%uuid of victim%" to red
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 17: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set progress of bossbar "combat-%uuid of victim%" to 1
-[14:25:49] [Server thread/INFO]:     Line: set progress of bossbar "combat-%uuid of victim%" to 1
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 19: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar "combat-%uuid of attacker%" for attacker
-[14:25:49] [Server thread/INFO]:     Line: create bossbar "combat-%uuid of attacker%" for attacker
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 20: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
-[14:25:49] [Server thread/INFO]:     Line: set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 21: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set color of bossbar "combat-%uuid of attacker%" to red
-[14:25:49] [Server thread/INFO]:     Line: set color of bossbar "combat-%uuid of attacker%" to red
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 22: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set progress of bossbar "combat-%uuid of attacker%" to 1
-[14:25:49] [Server thread/INFO]:     Line: set progress of bossbar "combat-%uuid of attacker%" to 1
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 27: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: set {_diff} to difference between now and {-combat::%loop-player%} in seconds
-[14:25:49] [Server thread/INFO]:     Line: set {_diff} to difference between now and {-combat::%loop-player%} in seconds
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 29: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition: 'bossbar "combat-%uuid of loop-player%" exists'
-[14:25:49] [Server thread/INFO]:     Line: if bossbar "combat-%uuid of loop-player%" exists:
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 33: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar "combat-%uuid of loop-player%"
-[14:25:49] [Server thread/INFO]:     Line: remove bossbar "combat-%uuid of loop-player%"
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 41: (combatlog.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar "combat-%uuid of loop-player%"
-[14:25:49] [Server thread/INFO]:     Line: remove bossbar "combat-%uuid of loop-player%"
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 10: (endlockdown.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this condition: 'bossbar "pre_teleport" doesn't exist'
-[14:25:49] [Server thread/INFO]:     Line: if bossbar "pre_teleport" doesn't exist:
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 13: (endlockdown.sk)
-[14:25:49] [Server thread/INFO]:     'else' has to be placed just after another 'if' or 'else if' section
-[14:25:49] [Server thread/INFO]:     Line: else:
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Line 16: (endlockdown.sk)
-[14:25:49] [Server thread/INFO]:     Can't understand this effect: else
-[14:25:49] [Server thread/INFO]:     Line: else if {_timeleft} <= 0 and bossbar "pre_teleport" exists:
-[14:25:49] [Server thread/INFO]:  
-[14:25:49] [Server thread/INFO]: [Skript] Loaded 5 scripts with a total of 6 structures in 0.7 seconds
-[14:25:49] [Server thread/INFO]: [Skript] Finished loading.
-[14:25:49] [Server thread/INFO]: [Craftorithm] Found Vault, hooked successfully.
-[14:25:49] [Server thread/INFO]: [Craftorithm] Converted listener: io.github.apickledwalrus.skriptgui.gui.events.GUIEvents
-[14:25:49] [Server thread/INFO]: [Craftorithm] Converted listener: net.skinsrestorer.bukkit.listener.InventoryListener
-[14:25:49] [Server thread/INFO]: [Craftorithm] Converted listener: org.crazyhouse.blocksigningplugin.EventListener
-[14:25:49] [Server thread/INFO]: [Craftorithm] Plugin loaded successfully.
-[14:25:49] [Server thread/INFO]: Done (48.552s)! For help, type "help"
-[14:25:50] [Server thread/INFO]: [voicechat] Loading plugins
-[14:25:50] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[14:25:50] [Server thread/INFO]: [voicechat] Initializing plugins
-[14:25:50] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[14:25:50] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[14:25:50] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'protea.seedloaf.com:49276'
-[14:25:50] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
-[14:25:50] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: world [1.2.3]
-[14:25:50] [Server thread/INFO]: 2 placeholder hook(s) registered!
-[14:25:50] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
-[14:25:50] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Starting SessionManager...
-[14:25:50] [MCXboxBroadcast Thread-1/WARN]: [Geyser-Spigot] Extension MCXboxBroadcast loads class reactor.netty.http.client.HttpClient from an external source. This can change at any time and break the extension, additionally to potentially causing unexpected behaviour!
-[14:25:50] [Craft Scheduler Thread - 11 - JustTPA/WARN]: [JustTPA] Failed to check for updates
-[14:25:51] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloading: dev-builds.txt
-[14:25:52] [Craft Scheduler Thread - 13 - GrimAC/INFO]: New GrimAC version found! Version 2.3.73-f118b5c is available to be downloaded here: https://modrinth.com/plugin/grimac
-[14:25:52] [Craft Scheduler Thread - 9 - KnockbackSync/INFO]: [KnockbackSync] You are running a development build newer than the latest release.
-[14:25:54] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 1 build(s) behind ***
-[14:25:54] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
-[14:25:56] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloaded: dev-builds.txt
-[14:25:56] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloading: releases.txt
-[14:25:58] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloaded: releases.txt
-[14:26:00] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Successfully authenticated as TheRealRexo3740 (2535439467516037) with 13/2000 friends
-[14:26:00] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Creating Xbox LIVE session...
-[14:26:06] [WebSocketConnectReadThread-268/WARN]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] RTA Websocket [null] error: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[14:28:32] [Server thread/INFO]: [net.essentialsx.discordlink.EssentialsDiscordLink] Disabling EssentialsDiscordLink v2.21.2
+[14:28:32] [Server thread/INFO]: [PreLoginWhitelist] Enabling PreLoginWhitelist v1.3
+[14:28:32] [Server thread/INFO]: [packetevents] Enabling packetevents v2.11.2
+[14:28:32] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[14:28:32] [Server thread/INFO]: [BlockSigningPlugin] Enabling BlockSigningPlugin v2.9
+[14:28:32] [Server thread/WARN]: [BlockSigningPlugin] Invalid material in onlyscan: SPAWNER_MINECART
+[14:28:32] [Server thread/INFO]: [Craftorithm] Enabling Craftorithm v1.10.25-20260112
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix] Enabling BedrockMovementFix v${version}
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix] Successfully hooked into Floodgate API!
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix] Paper PlayerFailMoveEvent detected - using advanced movement fix!
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix] ===========================================
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix] BedrockMovementFix v1.0.0 enabled!
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix]   Enabled: true
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix]   Bedrock Only: true
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix]   Debug Mode: true
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix]   Verbose Debug: false
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix]   Floodgate: DETECTED - will apply to Bedrock players only
+[14:28:32] [Server thread/INFO]: [BedrockMovementFix] ===========================================
+[14:28:32] [Server thread/INFO]: [JEIRecipeBridge] Enabling JEIRecipeBridge v1.0.0
+[14:28:32] [Server thread/INFO]: [TAB] Enabling TAB v5.5.0
+[14:28:32] [Server thread/INFO]: [TAB] [config.yml] [Hint] Refresh interval of %rel_factionsuuid_relation_color% is same as default interval, therefore there is no need to override it.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard: Missing configuration section "scoreboard.delay-on-join-milliseconds" of type Integer, using default value 0.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] tablist-name-formatting: Configuration section "tablist-name-formatting" has unknown key "default-color". Valid keys: [enabled, disable-condition]
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support: Missing configuration section "proxy-support.type" of type String, using default value PLUGIN.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.plugin: Missing configuration section "proxy-support.plugin.name" of type String, using default value RedisBungee.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.redis: Missing configuration section "proxy-support.redis.url" of type String, using default value redis://:password@localhost:6379/0.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.exchange" of type String, using default value plugin.
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.url" of type String, using default value amqp://guest:guest@localhost:5672/%2F.
+[14:28:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: tab [5.5.0]
+[14:28:33] [Server thread/INFO]: [TAB] [WARN] Found a total of 11 issues.
+[14:28:33] [Server thread/INFO]: [TAB] Enabled in 347ms
+[14:28:33] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.7.2
+[14:28:33] [Server thread/INFO]: [GrimAC] Enabling GrimAC v2.3.73-daa3bfe
+[14:28:33] [Server thread/INFO]: [GrimAC] Registering packets...
+[14:28:33] [Server thread/INFO]: [GrimAC] Registering tick schedulers...
+[14:28:33] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.11.2)
+[14:28:33] [Server thread/INFO]: Grim Version: 2.3.73-daa3bfe
+[14:28:33] [Server thread/INFO]: [GrimAC] Registering singular bukkit event... (PistonEvent)
+[14:28:33] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: grim [2.3.73-daa3bfe]
+[14:28:33] [Server thread/INFO]: [skript-particle] Enabling skript-particle v1.4.0
+[14:28:33] [Server thread/INFO]: [skript-particle] Successfully enabled skript-particle.
+[14:28:33] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[14:28:33] [Server thread/INFO]: [JustTPA] Enabling JustTPA v20250220c
+[14:28:33] [Server thread/INFO]: [JustTPA] JustTPA initialized
+[14:28:33] [Server thread/INFO]: [JustTPA] bStats enabled
+[14:28:33] [Server thread/INFO]: [JustTPA] Checking for updates...
+[14:28:34] [Server thread/INFO]: [spark] Starting background profiler...
+[14:28:34] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
+[14:28:36] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[14:28:38] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[14:28:38] [Server thread/INFO]: [Geyser-Spigot] 
+[14:28:38] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.2-b1049 (git-master-21c1c32)
+[14:28:38] [Server thread/INFO]: [Geyser-Spigot] 
+[14:28:38] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[14:28:45] [Server thread/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[14:28:45] [Server thread/INFO]: [Geyser-Spigot] [mcxboxbroadcast] Starting MCXboxBroadcast Extension build 128 (git-master-0645544) for Bedrock 1.21.130 (898)
+[14:28:45] [Server thread/INFO]: [Geyser-Spigot] Done (7.303s)! Run /geyser help for help!
+[14:28:46] [Server thread/INFO]: Starting remote control listener
+[14:28:46] [Server thread/INFO]: Thread RCON Listener started
+[14:28:46] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[14:28:46] [Server thread/INFO]: Running delayed init tasks
+[14:28:46] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v2.18.0)!
+[14:28:46] [Craft Scheduler Thread - 4 - MCOptimizer/INFO]: [MCOptimizer] Started web interface on 0.0.0.0:8080
+[14:28:46] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[14:28:46] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Update checking disabled in config.
+[14:28:46] [Server thread/INFO]: [Skript] Loading variables...
+[14:28:46] [Server thread/INFO]: [Skript] Loaded 0 variables in 0.1 seconds
+[14:28:46] [Server thread/INFO]: [Skript] Line 2: (ENDFIGHTEVENT.sk)
+[14:28:46] [Server thread/INFO]:     Can't understand this structure: on dragon spawn
+[14:28:46] [Server thread/INFO]:     Line: on dragon spawn:
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 7: (ENDFIGHTEVENT.sk)
+[14:28:46] [Server thread/INFO]:     Can't understand this structure: after 10 seconds
+[14:28:46] [Server thread/INFO]:     Line: after 10 seconds:
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 2: (TAB_placeholders.sk)
+[14:28:46] [Server thread/INFO]:     Can't understand this structure: on skript placeholder request "player_health"
+[14:28:46] [Server thread/INFO]:     Line: on skript placeholder request "player_health":
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 4: (endlockdown.sk)
+[14:28:46] [Server thread/INFO]:     Can't understand this structure: set {_unlock} to 1766295000
+[14:28:46] [Server thread/INFO]:     Line: set {_unlock} to 1766295000
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 3: (borderchecker.sk)
+[14:28:46] [Server thread/INFO]:     The expression 'world border of the world with name "world"' returns the following types that do not have the size property: world border
+[14:28:46] [Server thread/INFO]:     Line: set {_size} to size of world border of world "world"
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 5: (borderchecker.sk)
+[14:28:46] [Server thread/INFO]:     world border of the world with name "world" can't be set to '10000' because the latter is not a world border
+[14:28:46] [Server thread/INFO]:     Line: set world border of world "world" to 10000
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 14: (combatlog.sk)
+[14:28:46] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar "combat-%uuid of victim%" for victim
+[14:28:46] [Server thread/INFO]:     Line: create bossbar "combat-%uuid of victim%" for victim
+[14:28:46] [Server thread/INFO]:  
+[14:28:46] [Server thread/INFO]: [Skript] Line 15: (combatlog.sk)
+[14:28:46] [Server thread/INFO]:     Can't understand this condition/effect: set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
+[14:28:46] [Server thread/INFO]:     Line: set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
+[14:28:46] [Server thread/INFO]:  
+[14:28:47] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Starting SessionManager...
+[14:28:47] [Server thread/INFO]: [Skript] Line 16: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: set color of bossbar "combat-%uuid of victim%" to red
+[14:28:47] [Server thread/INFO]:     Line: set color of bossbar "combat-%uuid of victim%" to red
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 17: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: set progress of bossbar "combat-%uuid of victim%" to 1
+[14:28:47] [Server thread/INFO]:     Line: set progress of bossbar "combat-%uuid of victim%" to 1
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 19: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: create bossbar "combat-%uuid of attacker%" for attacker
+[14:28:47] [Server thread/INFO]:     Line: create bossbar "combat-%uuid of attacker%" for attacker
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Craft Scheduler Thread - 7 - JustTPA/WARN]: [JustTPA] Failed to check for updates
+[14:28:47] [MCXboxBroadcast Thread-1/WARN]: [Geyser-Spigot] Extension MCXboxBroadcast loads class reactor.netty.http.client.HttpClient from an external source. This can change at any time and break the extension, additionally to potentially causing unexpected behaviour!
+[14:28:47] [Server thread/INFO]: [Skript] Line 20: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
+[14:28:47] [Server thread/INFO]:     Line: set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 21: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: set color of bossbar "combat-%uuid of attacker%" to red
+[14:28:47] [Server thread/INFO]:     Line: set color of bossbar "combat-%uuid of attacker%" to red
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 22: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: set progress of bossbar "combat-%uuid of attacker%" to 1
+[14:28:47] [Server thread/INFO]:     Line: set progress of bossbar "combat-%uuid of attacker%" to 1
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 27: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: set {_diff} to difference between now and {-combat::%loop-player%} in seconds
+[14:28:47] [Server thread/INFO]:     Line: set {_diff} to difference between now and {-combat::%loop-player%} in seconds
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 29: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition: 'bossbar "combat-%uuid of loop-player%" exists'
+[14:28:47] [Server thread/INFO]:     Line: if bossbar "combat-%uuid of loop-player%" exists:
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 33: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar "combat-%uuid of loop-player%"
+[14:28:47] [Server thread/INFO]:     Line: remove bossbar "combat-%uuid of loop-player%"
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 41: (combatlog.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition/effect: remove bossbar "combat-%uuid of loop-player%"
+[14:28:47] [Server thread/INFO]:     Line: remove bossbar "combat-%uuid of loop-player%"
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 10: (endlockdown.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this condition: 'bossbar "pre_teleport" doesn't exist'
+[14:28:47] [Server thread/INFO]:     Line: if bossbar "pre_teleport" doesn't exist:
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 13: (endlockdown.sk)
+[14:28:47] [Server thread/INFO]:     'else' has to be placed just after another 'if' or 'else if' section
+[14:28:47] [Server thread/INFO]:     Line: else:
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Line 16: (endlockdown.sk)
+[14:28:47] [Server thread/INFO]:     Can't understand this effect: else
+[14:28:47] [Server thread/INFO]:     Line: else if {_timeleft} <= 0 and bossbar "pre_teleport" exists:
+[14:28:47] [Server thread/INFO]:  
+[14:28:47] [Server thread/INFO]: [Skript] Loaded 5 scripts with a total of 6 structures in 1.38 seconds
+[14:28:47] [Server thread/INFO]: [Skript] Finished loading.
+[14:28:47] [Craft Scheduler Thread - 12 - GrimAC/INFO]: New GrimAC version found! Version 2.3.73-f118b5c is available to be downloaded here: https://modrinth.com/plugin/grimac
+[14:28:47] [Server thread/INFO]: [Craftorithm] Found Vault, hooked successfully.
+[14:28:47] [Server thread/INFO]: [Craftorithm] Converted listener: io.github.apickledwalrus.skriptgui.gui.events.GUIEvents
+[14:28:47] [Server thread/INFO]: [Craftorithm] Converted listener: net.skinsrestorer.bukkit.listener.InventoryListener
+[14:28:47] [Server thread/INFO]: [Craftorithm] Converted listener: org.crazyhouse.blocksigningplugin.EventListener
+[14:28:47] [Server thread/INFO]: [Craftorithm] Plugin loaded successfully.
+[14:28:47] [Server thread/INFO]: Done (52.299s)! For help, type "help"
+[14:28:47] [Server thread/INFO]: [voicechat] Loading plugins
+[14:28:47] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[14:28:47] [Server thread/INFO]: [voicechat] Initializing plugins
+[14:28:47] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[14:28:47] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[14:28:47] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'protea.seedloaf.com:49276'
+[14:28:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[14:28:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: world [1.2.3]
+[14:28:47] [Server thread/INFO]: 2 placeholder hook(s) registered!
+[14:28:47] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[14:28:48] [Craft Scheduler Thread - 9 - KnockbackSync/INFO]: [KnockbackSync] You are running a development build newer than the latest release.
+[14:28:48] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloading: dev-builds.txt
+[14:28:49] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 2 build(s) behind ***
+[14:28:49] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[14:28:52] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloaded: dev-builds.txt
+[14:28:52] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloading: releases.txt
+[14:28:54] [Craft Scheduler Thread - 8 - KnockbackSync/INFO]: [KnockbackSync] Downloaded: releases.txt
+[14:28:56] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Successfully authenticated as TheRealRexo3740 (2535439467516037) with 13/2000 friends
+[14:28:56] [MCXboxBroadcast Thread-1/INFO]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Creating Xbox LIVE session...
+[14:29:00] [MCXboxBroadcast Thread-1/WARN]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Failed to create xbox session!
+com.rtm516.mcxboxbroadcast.core.exceptions.SessionCreationException: Unable to get connectionId for session: java.lang.Exception: RTA Websocket [null] disconnected before connectionId was received
+	at com.rtm516.mcxboxbroadcast.core.SessionManagerCore.createSession(SessionManagerCore.java:239) ~[?:?]
+	at com.rtm516.mcxboxbroadcast.core.SessionManagerCore.init(SessionManagerCore.java:180) ~[?:?]
+	at com.rtm516.mcxboxbroadcast.core.SessionManager.init(SessionManager.java:79) ~[?:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.geyser.MCXboxBroadcastExtension.createSession(MCXboxBroadcastExtension.java:238) ~[?:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.geyser.MCXboxBroadcastExtension.lambda$onPostInitialize$4(MCXboxBroadcastExtension.java:205) ~[?:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[14:29:00] [WebSocketConnectReadThread-271/WARN]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] RTA Websocket [null] error: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130) ~[?:?]
 	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383) ~[?:?]
@@ -532,26 +545,129 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297) ~[?:?]
 	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383) ~[?:?]
 	... 19 more
-[14:26:06] [MCXboxBroadcast Thread-1/WARN]: [Geyser-Spigot] [mcxboxbroadcast] [Primary Session] Failed to create xbox session!
-com.rtm516.mcxboxbroadcast.core.exceptions.SessionCreationException: Unable to get connectionId for session: java.lang.Exception: RTA Websocket [null] disconnected before connectionId was received
-	at com.rtm516.mcxboxbroadcast.core.SessionManagerCore.createSession(SessionManagerCore.java:239) ~[?:?]
-	at com.rtm516.mcxboxbroadcast.core.SessionManagerCore.init(SessionManagerCore.java:180) ~[?:?]
-	at com.rtm516.mcxboxbroadcast.core.SessionManager.init(SessionManager.java:79) ~[?:?]
-	at com.rtm516.mcxboxbroadcast.bootstrap.geyser.MCXboxBroadcastExtension.createSession(MCXboxBroadcastExtension.java:238) ~[?:?]
-	at com.rtm516.mcxboxbroadcast.bootstrap.geyser.MCXboxBroadcastExtension.lambda$onPostInitialize$4(MCXboxBroadcastExtension.java:205) ~[?:?]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[14:26:20] [Server thread/INFO]: Stopping the server
-[14:26:20] [Server thread/INFO]: Stopping server
-[14:26:20] [Server thread/INFO]: [JustTPA] Disabling JustTPA v20250220c
-[14:26:20] [Server thread/INFO]: [JustTPA] JustTPA disabled
-[14:26:20] [Server thread/INFO]: [MCOptimizer] Disabling MCOptimizer v1.2.2
-[14:26:20] [Server thread/INFO]: [MCOptimizer] Lag prediction manager shutdown
-[14:26:21] [Craft Scheduler Thread - 4 - MCOptimizer/WARN]: [MCOptimizer] Plugin MCOptimizer v1.2.2 generated an exception while executing task 23
+[14:29:37] [User Authenticator #0/INFO]: UUID of player TheRealRexo is aef92a64-80e4-3a84-906f-cbd810f21b5b
+[14:29:37] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, Essentials, ProtocolLib]
+[14:29:40] [Server thread/INFO]: [BedrockMovementFix] Player joined: TheRealRexo
+[14:29:40] [Server thread/INFO]: [BedrockMovementFix]   Is Bedrock: false
+[14:29:40] [Server thread/INFO]: [BedrockMovementFix]   Has bypass permission: true
+[14:29:40] [Server thread/INFO]: [BedrockMovementFix]   Movement fix active: false
+[14:29:40] [TAB Processing Thread/INFO]: [TAB] [WARN] Placeholder %skript_tab_time% used in a numeric condition returned "%skript_tab_time%" for player TheRealRexo, which is not a valid number.
+[14:29:40] [TAB Processing Thread/INFO]: [TAB] [WARN] Placeholder %skript_tab_time% used in a numeric condition returned "%skript_tab_time%" for player TheRealRexo, which is not a valid number.
+[14:29:40] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:40] [Server thread/INFO]: TheRealRexo joined the game
+[14:29:40] [Server thread/INFO]: TheRealRexo[/127.0.0.1:56223] logged in with entity id 1 at ([world]-17.37722021430012, 110.0, 51.08850766874752)
+[14:29:41] [Server thread/INFO]: [voicechat] Received secret request of TheRealRexo (20)
+[14:29:41] [Server thread/INFO]: [voicechat] Sent secret to TheRealRexo
+[14:29:42] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:44] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:46] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:48] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:50] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:50] [Server thread/INFO]: [Skript] Reloading the config, aliases and all scripts...
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: [Skript] Loaded 5684 aliases in 456ms
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 2: (ENDFIGHTEVENT.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this structure: on dragon spawn
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: on dragon spawn:
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 7: (ENDFIGHTEVENT.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this structure: after 10 seconds
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: after 10 seconds:
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 2: (TAB_placeholders.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this structure: on skript placeholder request "player_health"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: on skript placeholder request "player_health":
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 4: (endlockdown.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this structure: set {_unlock} to 1766295000
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set {_unlock} to 1766295000
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 3: (borderchecker.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     The expression 'world border of the world with name "world"' returns the following types that do not have the size property: world border
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set {_size} to size of world border of world "world"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 5: (borderchecker.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     world border of the world with name "world" can't be set to '10000' because the latter is not a world border
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set world border of world "world" to 10000
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 14: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: create bossbar "combat-%uuid of victim%" for victim
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: create bossbar "combat-%uuid of victim%" for victim
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 15: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set title of bossbar "combat-%uuid of victim%" to "&c&lIN COMBAT"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 16: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set color of bossbar "combat-%uuid of victim%" to red
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set color of bossbar "combat-%uuid of victim%" to red
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 17: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set progress of bossbar "combat-%uuid of victim%" to 1
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set progress of bossbar "combat-%uuid of victim%" to 1
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 19: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: create bossbar "combat-%uuid of attacker%" for attacker
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: create bossbar "combat-%uuid of attacker%" for attacker
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 20: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set title of bossbar "combat-%uuid of attacker%" to "&c&lIN COMBAT"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 21: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set color of bossbar "combat-%uuid of attacker%" to red
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set color of bossbar "combat-%uuid of attacker%" to red
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 22: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set progress of bossbar "combat-%uuid of attacker%" to 1
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set progress of bossbar "combat-%uuid of attacker%" to 1
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 27: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: set {_diff} to difference between now and {-combat::%loop-player%} in seconds
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: set {_diff} to difference between now and {-combat::%loop-player%} in seconds
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 29: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition: 'bossbar "combat-%uuid of loop-player%" exists'
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: if bossbar "combat-%uuid of loop-player%" exists:
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 33: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: remove bossbar "combat-%uuid of loop-player%"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: remove bossbar "combat-%uuid of loop-player%"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 41: (combatlog.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition/effect: remove bossbar "combat-%uuid of loop-player%"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: remove bossbar "combat-%uuid of loop-player%"
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 10: (endlockdown.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this condition: 'bossbar "pre_teleport" doesn't exist'
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: if bossbar "pre_teleport" doesn't exist:
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 13: (endlockdown.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     'else' has to be placed just after another 'if' or 'else if' section
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: else:
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]: Line 16: (endlockdown.sk)
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Can't understand this effect: else
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Line: else if {_timeleft} <= 0 and bossbar "pre_teleport" exists:
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:  
+[14:29:51] [ForkJoinPool.commonPool-worker-6/INFO]:     Encountered 21 errors while reloading the config, aliases and all scripts! (662ms)
+[14:29:52] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:54] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:56] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:29:58] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:00] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:02] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:04] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:06] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:08] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:10] [TAB BossBar Thread/INFO]: [TAB] [WARN] Placeholder "%animation:bar_colors%" used in color of BossBar "ServerInfo" returned "AQUA" for player TheRealRexo, which cannot be evaluated to one of the pre-defined values [PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE].
+[14:30:11] [Server thread/INFO]: TheRealRexo issued server command: /stop
+[14:30:11] [Server thread/INFO]: [TheRealRexo: Stopping the server]
+[14:30:11] [Server thread/INFO]: Stopping server
+[14:30:11] [Server thread/INFO]: [JustTPA] Disabling JustTPA v20250220c
+[14:30:11] [Server thread/INFO]: [JustTPA] JustTPA disabled
+[14:30:11] [Server thread/INFO]: [MCOptimizer] Disabling MCOptimizer v1.2.2
+[14:30:11] [Server thread/INFO]: [MCOptimizer] Lag prediction manager shutdown
+[14:30:11] [Craft Scheduler Thread - 4 - MCOptimizer/WARN]: [MCOptimizer] Plugin MCOptimizer v1.2.2 generated an exception while executing task 23
 java.lang.NullPointerException: Cannot invoke "java.net.ServerSocket.isClosed()" because "this.webServer" is null
 	at MCOptimizer-1.21.11.jar//com.mc.optimizer.lagprediction.LagPredictionManager.lambda$startWebInterface$2(LagPredictionManager.java:217) ~[?:?]
 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.11.jar:1.21.11-103-e5718dc]
@@ -560,84 +676,86 @@ java.lang.NullPointerException: Cannot invoke "java.net.ServerSocket.isClosed()"
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[14:26:21] [Server thread/INFO]: [MCOptimizer] Generated final performance report: report-20260205-142621
-[14:26:21] [Server thread/INFO]: [MCOptimizer] Performance report manager shutdown
-[14:26:21] [Server thread/INFO]: [MCOptimizer] AFK manager shutdown
-[14:26:21] [Server thread/INFO]: [MCOptimizer] Task optimizer shutdown
-[14:26:21] [Server thread/INFO]: [MCOptimizer] TNT optimizer shutdown
-[14:26:21] [Server thread/INFO]: [MCOptimizer] MCOptimizer disabled
-[14:26:21] [Server thread/INFO]: [MCOptimizer] For support go to: https://dcs.gg/fruitsnacks/
-[14:26:21] [Server thread/INFO]: [MCOptimizer] Check https://fruitsnacks.xyz for upcoming projects
-[14:26:21] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.4.0+7381-3decaf0
-[14:26:21] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[14:26:21] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
-[14:26:21] [Server thread/INFO]: [skript-particle] Disabling skript-particle v1.4.0
-[14:26:21] [Server thread/INFO]: [GrimAC] Disabling GrimAC v2.3.73-daa3bfe
-[14:26:21] [Server thread/INFO]: [GrimAC] Terminating PacketEvents...
-[14:26:21] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.7.2
-[14:26:21] [Server thread/INFO]: [TAB] Disabling TAB v5.5.0
-[14:26:21] [Server thread/INFO]: [TAB] Disabled in 0ms
-[14:26:21] [Server thread/INFO]: [JEIRecipeBridge] Disabling JEIRecipeBridge v1.0.0
-[14:26:21] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.10.0
-[14:26:21] [Server thread/INFO]: [BedrockMovementFix] Disabling BedrockMovementFix v${version}
-[14:26:21] [Server thread/INFO]: [Craftorithm] Disabling Craftorithm v1.10.25-20260112
-[14:26:21] [Server thread/INFO]: [BlockSigningPlugin] Disabling BlockSigningPlugin v2.9
-[14:26:21] [Server thread/INFO]: [packetevents] Disabling packetevents v2.11.2
-[14:26:21] [Server thread/INFO]: [PreLoginWhitelist] Disabling PreLoginWhitelist v1.3
-[14:26:21] [Server thread/INFO]: [skript-placeholders] Disabling skript-placeholders v1.7.0
-[14:26:21] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.11
-[14:26:21] [Server thread/INFO]: [Orebfuscator] Disabling Orebfuscator v5.5.7
-[14:26:21] [Server thread/INFO]: [KnockbackSync] Disabling KnockbackSync v1.3.6-dev-b132
-[14:26:21] [Server thread/INFO]: [HomePlugin] Disabling HomePlugin v0.8.6-main-SNAPSHOT
-[14:26:21] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
-[14:26:21] [Server thread/INFO]: [HomePlugin] HomePlugin shut down successfully!
-[14:26:21] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
-[14:26:21] [Server thread/INFO]: [skript-gui] Disabling skript-gui v1.3.1
-[14:26:21] [Server thread/INFO]: [SkBee] Disabling SkBee v3.16.0
-[14:26:21] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.2-SNAPSHOT
-[14:26:21] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[14:26:21] [Server thread/INFO]: [Geyser-Spigot] Disabled extension MCXboxBroadcast
-[14:26:21] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[14:26:21] [Server thread/INFO]: [EssentialsDiscord] Disabling EssentialsDiscord v2.21.2
-[14:26:21] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
-[14:26:21] [Server thread/INFO]: [Skript] Disabling Skript v2.14.1
-[14:26:21] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b126-096c605)
-[14:26:21] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.2
-[14:26:21] [Server thread/INFO]: [Vault] Disabling Vault v2.18.0
-[14:26:21] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.28
-[14:26:21] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[14:26:21] [Server thread/INFO]: [LuckPerms] Closing storage...
-[14:26:21] [Server thread/INFO]: [LuckPerms] Goodbye!
-[14:26:21] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.12.1
-[14:26:21] [Server thread/INFO]: Saving players
-[14:26:21] [WebSocketConnectReadThread-190/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[14:26:21] [Server thread/INFO]: Saving worlds
-[14:26:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.00s
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[14:26:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[14:26:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[14:26:21] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[14:26:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[14:26:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[14:26:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[14:26:21] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[14:26:21] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[14:26:21] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[14:26:21] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[14:26:21] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[14:30:11] [Server thread/INFO]: [MCOptimizer] Generated final performance report: report-20260205-143011
+[14:30:11] [Server thread/INFO]: [MCOptimizer] Performance report manager shutdown
+[14:30:11] [Server thread/INFO]: [MCOptimizer] AFK manager shutdown
+[14:30:11] [Server thread/INFO]: [MCOptimizer] Task optimizer shutdown
+[14:30:11] [Server thread/INFO]: [MCOptimizer] TNT optimizer shutdown
+[14:30:11] [Server thread/INFO]: [MCOptimizer] MCOptimizer disabled
+[14:30:11] [Server thread/INFO]: [MCOptimizer] For support go to: https://dcs.gg/fruitsnacks/
+[14:30:11] [Server thread/INFO]: [MCOptimizer] Check https://fruitsnacks.xyz for upcoming projects
+[14:30:11] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.4.0+7381-3decaf0
+[14:30:11] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[14:30:11] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
+[14:30:11] [Server thread/INFO]: [skript-particle] Disabling skript-particle v1.4.0
+[14:30:11] [Server thread/INFO]: [GrimAC] Disabling GrimAC v2.3.73-daa3bfe
+[14:30:11] [Server thread/INFO]: [GrimAC] Terminating PacketEvents...
+[14:30:11] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.7.2
+[14:30:11] [Server thread/INFO]: [TAB] Disabling TAB v5.5.0
+[14:30:11] [Server thread/INFO]: [TAB] Disabled in 5ms
+[14:30:11] [Server thread/INFO]: [JEIRecipeBridge] Disabling JEIRecipeBridge v1.0.0
+[14:30:11] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.10.0
+[14:30:11] [Server thread/INFO]: [BedrockMovementFix] Disabling BedrockMovementFix v${version}
+[14:30:11] [Server thread/INFO]: [Craftorithm] Disabling Craftorithm v1.10.25-20260112
+[14:30:11] [Server thread/INFO]: [BlockSigningPlugin] Disabling BlockSigningPlugin v2.9
+[14:30:11] [Server thread/INFO]: [packetevents] Disabling packetevents v2.11.2
+[14:30:11] [Server thread/INFO]: [PreLoginWhitelist] Disabling PreLoginWhitelist v1.3
+[14:30:11] [Server thread/INFO]: [skript-placeholders] Disabling skript-placeholders v1.7.0
+[14:30:11] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.11
+[14:30:11] [Server thread/INFO]: [Orebfuscator] Disabling Orebfuscator v5.5.7
+[14:30:11] [Server thread/INFO]: [KnockbackSync] Disabling KnockbackSync v1.3.6-dev-b132
+[14:30:11] [Server thread/INFO]: [HomePlugin] Disabling HomePlugin v0.8.6-main-SNAPSHOT
+[14:30:11] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[14:30:11] [Server thread/INFO]: [HomePlugin] HomePlugin shut down successfully!
+[14:30:11] [Server thread/INFO]: [HomePlugin] ------------------------------------------------------
+[14:30:11] [Server thread/INFO]: [skript-gui] Disabling skript-gui v1.3.1
+[14:30:11] [Server thread/INFO]: [SkBee] Disabling SkBee v3.16.0
+[14:30:11] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.2-SNAPSHOT
+[14:30:11] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[14:30:11] [Server thread/INFO]: [Geyser-Spigot] Disabled extension MCXboxBroadcast
+[14:30:11] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[14:30:11] [Server thread/INFO]: [EssentialsDiscord] Disabling EssentialsDiscord v2.21.2
+[14:30:11] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[14:30:11] [Server thread/INFO]: [Skript] Disabling Skript v2.14.1
+[14:30:11] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b126-096c605)
+[14:30:11] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.2
+[14:30:11] [Server thread/INFO]: [Vault] Disabling Vault v2.18.0
+[14:30:11] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.28
+[14:30:11] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[14:30:12] [Server thread/INFO]: [LuckPerms] Closing storage...
+[14:30:12] [Server thread/INFO]: [LuckPerms] Goodbye!
+[14:30:12] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.12.1
+[14:30:12] [Server thread/INFO]: Saving players
+[14:30:12] [Server thread/INFO]: TheRealRexo lost connection: Server closed
+[14:30:12] [WebSocketConnectReadThread-264/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[14:30:12] [Server thread/INFO]: TheRealRexo left the game
+[14:30:12] [Server thread/INFO]: Saving worlds
+[14:30:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:30:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[14:30:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[14:30:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Saved 870 block chunks, 870 entity chunks, 0 poi chunks in world 'world' in 3.14s
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[14:30:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[14:30:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[14:30:15] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[14:30:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:30:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:30:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:30:15] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:30:15] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[14:30:15] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[14:30:15] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[14:30:15] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

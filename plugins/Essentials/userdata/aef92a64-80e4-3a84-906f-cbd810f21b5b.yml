@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 100.74.177.19
+ip-address: 127.0.0.1
 afk: false
 socialspy: false
 npc: false
@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1770218416341
-  login: 1770218293288
+  logout: 1770291011986
+  login: 1770290980387
 money: '0'
 last-account-name: TheRealRexo
 logoutlocation:
   world: 8ea6d1cc-6545-4abf-9fe7-8effe0c0b183
   world-name: world
-  x: -17.37722021430012
+  x: -9.143509609592748
   y: 110.0
-  z: 51.08850766874752
-  yaw: -174.8054962158203
-  pitch: 42.32110595703125
+  z: 56.85115486132844
+  yaw: -163.25543212890625
+  pitch: 35.006256103515625
