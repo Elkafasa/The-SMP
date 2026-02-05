@@ -1,54 +1,35 @@
-# Latest Startup Log Diagnosis (logs/latest.log)
+# Startup Validation Report (current run)
 
-## Primary breakages
+## Command used
 
-1. **EssentialsDiscord fails to authenticate and disables itself**
-   - Log shows: `The provided token is invalid!`
-   - This prevents EssentialsDiscord from staying online.
+```bash
+(sleep 120; echo stop) | java -jar server.jar nogui
+```
 
-2. **EssentialsDiscordLink crashes with NullPointerException**
-   - It tries to call Discord API while EssentialsDiscord is already disabled.
-   - Root cause is cascading from the invalid Discord token above.
+## Result: target files are still broken
 
-3. **Skript scripts are not compiling (multiple syntax errors)**
-   - Several scripts fail to parse (`ENDFIGHTEVENT.sk`, `endlockdown.sk`, `combatlog.sk`, `TAB_placeholders.sk`, `borderchecker.sk`).
-   - Because these scripts fail at load time, event systems described in README are likely not active.
+The fresh `logs/latest.log` from this run shows the same targeted Skript parsing failures.
 
-4. **TAB placeholder warnings indicate unresolved placeholders**
-   - `%skript_tab_time%` is returned as literal text instead of a number.
-   - `%animation:bar_colors%` returns `AQUA`, but TAB bossbar color enum only allows `[PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE]`.
+### Broken Skript files
 
-5. **MCXboxBroadcast session creation fails (TLS trust/cert chain issue)**
-   - Error includes `SSLHandshakeException` and `PKIX path building failed`.
-   - Indicates Java truststore / certificate chain issue when connecting to remote endpoint.
+- `plugins/Skript/scripts/ENDFIGHTEVENT.sk`
+  - `Can't understand this structure: on dragon spawn`
+  - `Can't understand this structure: after 10 seconds`
+- `plugins/Skript/scripts/TAB_placeholders.sk`
+  - `Can't understand this structure: on skript placeholder request "player_health"`
+- `plugins/Skript/scripts/endlockdown.sk`
+  - structure/flow errors and unsupported `bossbar ... exists` checks
+- `plugins/Skript/scripts/borderchecker.sk`
+  - world border syntax lines still error in this runtime
+- `plugins/Skript/scripts/combatlog.sk`
+  - unsupported bossbar create/set/remove syntax and time-difference expression errors
 
-6. **MCOptimizer throws NPE on shutdown task**
-   - `this.webServer is null` in `LagPredictionManager` task.
-   - This is likely plugin bug or race condition during plugin disable.
+## TAB status
 
-## Important warnings (non-fatal but significant)
+- The prior dynamic runtime warnings about `%skript_tab_time%` and bossbar color `AQUA` were **not present** in this fresh run.
+- TAB still reports config-schema warnings (missing/default sections, unknown key warnings), but these are separate from the old `%skript_tab_time%` / `AQUA` issues.
 
-- Server running in offline mode (`online-mode=false`) and warns it is insecure.
-- Simple Voice Chat warns encryption is not secure in offline mode.
-- ProtocolLib says Minecraft 1.21.11 is not officially tested.
-- Essentials reports unsupported server version.
+## Bottom line
 
-## README cross-check
-
-README states:
-- End event flow is fully scripted.
-- Combat system is bossbar-driven and tracked in Skript variables.
-- TAB animations and placeholders depend on Skript placeholders.
-
-Current logs show those systems are partially broken because related Skript files fail to parse.
-
-## Recommended fix order
-
-1. Fix Discord token in EssentialsDiscord config, then restart.
-2. Temporarily disable EssentialsDiscordLink until EssentialsDiscord is healthy.
-3. Resolve Skript syntax compatibility for installed Skript/addon versions:
-   - `on dragon spawn`, `after 10 seconds`, bossbar syntaxes, placeholder request syntax, world border syntaxes.
-4. Fix TAB bossbar color animation by removing unsupported values (e.g., replace `AQUA`).
-5. Define/load missing `%skript_tab_time%` placeholder (or remove numeric condition depending on it).
-6. For MCXboxBroadcast PKIX errors, update Java CA trust bundle / system certs and verify outbound TLS chain.
-7. Update/replace MCOptimizer if NPE persists after clean restart.
+- **Yes, files are still broken** for the Skript set above.
+- The server reaches `Done (...)`, but those scripts fail to load correctly, so their gameplay logic is not active.
