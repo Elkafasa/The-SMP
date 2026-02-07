@@ -1,111 +1,92 @@
-# TAB plugin configuration for "The SMP"
 config-version: 5
 
-# Register TAB's PlaceholderAPI expansion so it integrates properly
+# Set to true to allow Skript placeholders to work through PAPI
 placeholders:
   register-tab-expansion: true
 
-# Header & Footer for the TAB list
 header-footer:
   enabled: true
   designs:
     default:
       header:
-        - "&b&lTHE SMP"
-        - "&fWelcome &a%player_name%"
-        - "&7Players: &f%server_online%"
+        - "%animation:TitleWave%"
+        - "&7Welcome, &f%player_name%"
       footer:
-        - "&7Ping: &f%player_ping%ms"
-        - "&7Time: &f%server_time_HH:mm:ss%"
+        - "&7Ping: &f%player_ping%ms &8| &7Time: &f%server_time_HH:mm%"
+        - ""
+        - "%animation:ip_glow%"
 
-# Name formatting in player list and collision
 tablist-name-formatting:
   enabled: true
-  disable-condition: '%world%=disabledworld'
+  # Names Only: White and plain as requested
+  default-format: "&f%player_name%"
 
-# Scoreboard teams setup (keeps collision rules unified)
 scoreboard-teams:
   enabled: true
-  enable-collision: true
-  invisible-nametags: false
-  can-see-friendly-invisibles: false
+  # Alphabetical sorting A-Z
   sorting-types:
-    - GROUPS:owner,admin,mod,default
-    - PLACEHOLDER_A_TO_Z:%player_name%
-  disable-condition: '%world%=disabledworld'
+    - "PLACEHOLDER_A_TO_Z:%player_name%"
+  invisible-nametags: false
 
-# Show ping next to players
 yellow-number:
-  enabled: true
-  value: '%player_ping%'
-  disable-condition: '%world%=disabledworld'
+  # Completely removed from the right side as requested
+  enabled: false
 
-# Below name health display
 belowname-objective:
-  enabled: true
-  disable-condition: '%world%=disabledworld'
-  fancy-value: '&c%player_health%'
-  value: '%player_health%'
-  title: '&cHealth'
+  enabled: false
 
-# Bossbar configuration (TAB's own bossbars)
-bossbar:
-  enabled: true
-  toggle-command: /bossbar
-  remember-toggle-choice: false
-  hidden-by-default: false
-  bars:
-    server_info:
-      style: PROGRESS
-      color: BLUE
-      progress: 100
-      text: '&b&lTHE SMP &7| &fSeason 1'
+playerlist-objective:
+  # Ensuring the space on the right of names is empty
+  enabled: false
 
-# Scoreboard display
 scoreboard:
   enabled: true
-  delay-on-join-milliseconds: 0
   toggle-command: /sb
   remember-toggle-choice: false
   hidden-by-default: false
-
+  use-numbers: false
+  static-number: 0
   scoreboards:
+    # --- NORMAL MODE ---
     default:
-      title: '&b&lTHE SMP'
+      title: "%animation:TitleWave%"
       lines:
-        - '&7Date: &f%server_date_dd/MM/yyyy%'
-        - '&7Time: &f%server_time_HH:mm:ss%'
-        - ''
-        - '&fPlayer Info'
-        - ' &7Name: &a%player_name%'
-        - ' &7Ping: &a%player_ping% ms'
-        - ''
-        - '&fServer Stats'
-        - ' &7Online: &a%server_online%'
-        - ' &7TPS: &a%server_tps_1_colored%'
-        - ''
-        - '&fCombat Status'
-        - ' &7Status: &c%skript_combat_status%'
-        - ' &7Time Left: &e%skript_combat_timeleft%s'
-        - ''
-        - '&fEnd Lock'
-        - ' &7Locked: &c%skript_end_locked%'
-        - ' &7Unlock in: &e%skript_end_timeleft%s'
-        - ''
-        - '&e&lthe-smp.com'
+        - "&7%server_date_dd/MM/yyyy%"
+        - ""
+        - "&fPlayer: &b%player_name%"
+        - "&fOnline: &b%server_online%"
+        - "&fCombat: &c%skript_combat_status%"
+        - "&fHealth: &c%player_health_rounded%/%player_max_health% ❤"
+        - "&fRAM: %animation:ram_bar%"
+        - ""
+        - "&b&lTHESMP.NET" # Visual IP per request
 
-# Debugging (can enable temporarily if needed)
-debug: false
+    # --- GLITCH MODE ---
+    # Triggered when {event.glitch.active} is true in Skript
+    glitch:
+      display-condition: "%skript_glitch_active%=true"
+      title: "&k||&r %animation:glitch_vibrant% &k||"
+      lines:
+        - "%animation:glitch_line%"
+        - ""
+        - "&fPlayer: &b%player_name%" # PROTECTED
+        - "%animation:glitch_line%"
+        - "%animation:glitch_line%"
+        - "&fHealth: &c%player_health_rounded%/%player_max_health% ❤" # PROTECTED
+        - "%animation:glitch_line%"
+        - ""
+        - "&4&kERROR_IP_FOUND"
 
-# Refresh intervals (in ms) – controls how often placeholders update
 placeholder-refresh-intervals:
-  default-refresh-interval: 500
-  '%server_tps_1_colored%': 1000
-  '%player_health%': 200
-  '%player_ping%': 500
-  '%skript_combat_timeleft%': 500
-  '%skript_end_timeleft%': 1000
+  # Speed up refreshes for the glitch event and combat
+  "%skript_combat_status%": 500
+  "%skript_glitch_active%": 500
+  "%player_health_rounded%": 200
+  "%player_ping%": 1000
+  "%server_tps_1_colored%": 1000
 
-# Optional: per-world objectives (disabled here)
-per-world-playerlist:
-  enabled: false
+# Prevent other plugins from breaking the custom sorting
+prevent-spectator-effect:
+  enabled: true
+
+use-online-uuid-in-tablist: true

@@ -1,43 +1,26 @@
-# ENDFIGHTEVENT.sk — Ender Dragon event hooks
-
-# When the dragon spawns in the End
 on spawn of an ender dragon:
-    # Only if it's in the End world
     if world of event-entity is "world_the_end":
         set {event.dragon.active} to true
         broadcast "&5&l[END EVENT] &dThe Ender Dragon has awakened!"
-        # PvP remains disabled until event finishes
-        # You can optionally set another flag for PvP disabled
 
-# When the dragon dies in the End
 on death of an ender dragon:
-    # Only if it's in the End world
-    if world of event-entity is "world_the_end":
-        # Mark that the dragon fight is no longer active
+    if world of victim is "world_the_end":
         delete {event.dragon.active}
-
-        # Activate glitch phase
         set {event.glitch.active} to true
-
-        # Broadcast to players
         broadcast "&a&l[END EVENT] The Ender Dragon has been defeated!"
-
-        # Optional: set progression flags / timers for post-dragon effects
-        # Example: Disable PvP for 15 minutes after dragon death
         set {event.postdragon.pvp_disabled} to true
         set {event.postdragon.disable_until} to now + 15 minutes
+        # Expand border logic
+        execute console command "worldborder set 20000 600"
 
-# Clean up glitch phase when appropriate
+on damage of player:
+    if {event.postdragon.pvp_disabled} is true:
+        attacker is a player
+        cancel event
+        send "&cPost-Dragon peace is active for 15 minutes!" to attacker
+
 every 1 second:
-    # If glitch state is active
-    if {event.glitch.active} is set:
-        # You can drive glitch effects here
-        # For example, integrate glitch placeholders for scoreboards
-        # or countdown displays. You already exposed placeholders
-        # via TAB_placeholders.sk, so this is where you can update
-        # any other glitch timers or progression variables.
-
-        # When the glitch phase should end
+    if {event.glitch.active} is true:
         if {event.postdragon.disable_until} is set:
             if now >= {event.postdragon.disable_until}:
                 delete {event.glitch.active}

@@ -1,35 +1,32 @@
-# Exposes Skript variables to PlaceholderAPI so TAB (with register-tab-expansion: true) can use them.
-# Requires skript-placeholders & PlaceholderAPI installed
+on placeholderapi placeholder request for prefix "skript":
+    if identifier is "combat_status":
+        if {-combat::%uuid of player%} is set:
+            set the result to "IN COMBAT"
+        else:
+            set the result to "SAFE"
 
-on skript placeholder request "skript_combat_status":
-    # Combat active?
-    if {combat.active::%player%} is set:
-        set {_status} to "IN COMBAT"
-    else:
-        set {_status} to "SAFE"
-    set the result to {_status}
+    if identifier is "combat_timeleft":
+        if {-combat::%uuid of player%} is set:
+            set {_elapsed} to total seconds of (difference between now and {-combat::%uuid of player%})
+            set {_val} to 15 - {_elapsed}
+            set the result to "%round(max(0, {_val}))%"
+        else:
+            set the result to "0"
 
-on skript placeholder request "skript_combat_timeleft":
-    # Time left from 0 to {@combat_time}, if in combat
-    if {combat.active::%player%} is set:
-        set {_elapsed} to difference between now and {combat.active::%player%} in seconds
-        set {_left} to {@combat_time} - {_elapsed}
-        if {_left} < 0:
-            set {_left} to 0
-        set the result to {_left}
-    else:
-        set the result to "0"
+    if identifier is "end_locked":
+        if {end.locked} is true:
+            set the result to "YES"
+        else:
+            set the result to "NO"
 
-on skript placeholder request "skript_end_locked":
-    if {end.locked} is set and {end.locked} is true:
-        set the result to "YES"
-    else:
-        set the result to "NO"
+    if identifier is "end_timeleft":
+        if {end.timeleft_raw} is set:
+            set the result to "%round({end.timeleft_raw})%"
+        else:
+            set the result to "0"
 
-on skript placeholder request "skript_end_timeleft":
-    if {end.unlock.timeleft} is set:
-        # Convert remaining UNIX seconds into a countdown for TAB
-        set {_sec} to {end.unlock.timeleft}
-        set the result to {_sec}
-    else:
-        set the result to "0"
+    if identifier is "glitch_active":
+        if {event.glitch.active} is true:
+            set the result to "true"
+        else:
+            set the result to "false"

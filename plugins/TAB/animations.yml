@@ -1,41 +1,49 @@
-# animations.yml for TAB plugin (v5.x)
-# Define multiple animations with a change interval (ms) + frames.
-# Use %animation:<name>% in your config.yml.
-
+# Animations for The SMP
 TitleWave:
   change-interval: 500
   texts:
     - "&b&lTHE SMP"
     - "&3&lTHE SMP"
-    - "&b&lTHE SMP"
+    - "&f&lTHE SMP"
     - "&3&lTHE SMP"
-    - "&b&lTHE SMP"
 
-CombatPulse:
-  change-interval: 300
+ip_glow:
+  change-interval: 150
   texts:
-    - "&cIN COMBAT"
-    - "&4IN COMBAT"
-    - "&cIN COMBAT"
-    - "&4IN COMBAT"
+    - "&fbetterthanchoosmp.sdlf.fun"
+    - "&f&lbetterthanchoosmp.sdlf.fun"
+    - "&b&lbetterthanchoosmp.sdlf.fun"
+    - "&3&lbetterthanchoosmp.sdlf.fun"
+    - "&b&lbetterthanchoosmp.sdlf.fun"
+    - "&f&lbetterthanchoosmp.sdlf.fun"
 
-EndCountdown:
+glitch_line:
+  change-interval: 100
+  texts:
+    - "&4&k1234567890"
+    - "&c&k0987654321"
+    - "&4&kABCDEFGHIJ"
+
+glitch_vibrant:
+  change-interval: 50
+  texts:
+    - "&4&lE&c&lRR&4&lOR"
+    - "&c&lER&4&lR&c&lOR"
+    - "&4&lERROR"
+
+ram_bar:
   change-interval: 1000
   texts:
-    - "&6End Unlocking Soon"
-    - "&e%skript_end_timeleft%s &6seconds left"
-    - "&6End Unlocking Soon"
-    - "&e%skript_end_timeleft%s &6seconds left"
+    - "&7%memory_used%MB"
 
-RainbowSlash:
-  change-interval: 200
+# Color cycling for potential lore use
+day_colors:
+  change-interval: 2000
   texts:
-    - "&c/ &6\\ &e/ &a\\"
-    - "&6\\ &e/ &a\\ &c/"
-    - "&e/ &a\\ &c/ &6\\"
-    - "&a\\ &c/ &6\\ &e/"
-
-StaticServerInfo:
-  change-interval: 1000
+    - "&e"
+    - "&6"
+night_colors:
+  change-interval: 2000
   texts:
-    - "&b&lTHE SMP &7| &fSeason 1"
+    - "&b"
+    - "&3"
