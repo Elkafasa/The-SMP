@@ -22,9 +22,7 @@ Minigames (Coming Soon): Bedwars and Skywars are currently under development.
 
 World & Border
 
-<<<<<<< HEAD
 Starting Border: $10,000 \times 10,000$ blocks.
-=======
 Starting Border: 
 10
 ,
@@ -34,7 +32,6 @@ Starting Border:
 ,
 000
  blocks.
->>>>>>> origin/TEST
 
 Border Expansion: The world border expands through specific progression achievements. The Ender Dragon’s death serves as the primary trigger for a major expansion.
 
