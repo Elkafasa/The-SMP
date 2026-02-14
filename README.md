@@ -64,10 +64,6 @@ Ender Chests & Shulkers: Unobtainable until the Ender Dragon is defeated.
 
 Elite Weaponry: Maces and Netherite Spears are locked until the post-Dragon phase.
 
-<<<<<<< HEAD
 Voice Chat: Required. The server uses Simple Voice Chat.Download hereEssential 
-=======
-Voice Chat: Required. The server uses Simple Voice Chat.Download hereEssential
->>>>>>> origin/TEST
 
 Commands:/tpa — Request teleportation to a friend./sethome / /home — Manage your personal spawn points.
