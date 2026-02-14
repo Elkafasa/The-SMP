@@ -22,6 +22,7 @@ Minigames (Coming Soon): Bedwars and Skywars are currently under development.
 
 World & Border
 
+Starting Border: $10,000 \times 10,000$ blocks.
 Starting Border: 
 10
 ,
@@ -60,6 +61,6 @@ Ender Chests & Shulkers: Unobtainable until the Ender Dragon is defeated.
 
 Elite Weaponry: Maces and Netherite Spears are locked until the post-Dragon phase.
 
-Voice Chat: Required. The server uses Simple Voice Chat.Download hereEssential
+Voice Chat: Required. The server uses Simple Voice Chat.Download hereEssential 
 
 Commands:/tpa — Request teleportation to a friend./sethome / /home — Manage your personal spawn points.
