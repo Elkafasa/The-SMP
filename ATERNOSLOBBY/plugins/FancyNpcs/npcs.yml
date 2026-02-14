@@ -1,0 +1,205 @@
+npcs:
+  cd38b0b4-60f5-4899-a018-0af5b24bc17d:
+    name: SURVIVAL
+    creator: aef92a64-80e4-3a84-906f-cbd810f21b5b
+    displayName: SURVIVAL (THE SMP)
+    type: PLAYER
+    location:
+      world: world
+      x: 3.5
+      y: 68.0
+      z: 0.5
+      yaw: 87.19006
+      pitch: -12.300039
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 16
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: true
+    equipment:
+      MAINHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:diamond_sword
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:sharpness":1}'
+        schema_version: 1
+      CHEST:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:iron_chestplate
+        count: 1
+        schema_version: 1
+      OFFHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:shield
+        count: 1
+        schema_version: 1
+    attributes:
+      on_ground: 'true'
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: '&aHello %player_name%, sending you to the SMP!'
+        '2':
+          action: console_command
+          value: tag {player} add TO_ACTUAL_SMP
+        '3':
+          action: console_command
+          value: redirect {player} betterthanchoosmp.sdlf.fun
+  46ba0539-af6a-4dd3-98d0-b74ee99316b9:
+    name: BEDWARS
+    creator: aef92a64-80e4-3a84-906f-cbd810f21b5b
+    displayName: COMING SOON
+    type: PLAYER
+    location:
+      world: world
+      x: 3.5
+      y: 68.0
+      z: -2.5
+      yaw: 114.15088
+      pitch: 87.299995
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 16
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: true
+    attributes:
+      on_ground: 'true'
+      pose: crouching
+    equipment:
+      MAINHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:iron_sword
+        count: 1
+        schema_version: 1
+      FEET:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:leather_boots
+        count: 1
+        components:
+          minecraft:dyed_color: '11546150'
+        schema_version: 1
+      CHEST:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:chainmail_chestplate
+        count: 1
+        schema_version: 1
+      HEAD:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:leather_helmet
+        count: 1
+        components:
+          minecraft:dyed_color: '11546150'
+        schema_version: 1
+      OFFHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:red_wool
+        count: 1
+        schema_version: 1
+      LEGS:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:chainmail_leggings
+        count: 1
+        schema_version: 1
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: BEDWARS COMING SOON
+  23a4eb51-690c-4488-9f0e-4e4a6f9d8374:
+    name: SKYWARS
+    creator: aef92a64-80e4-3a84-906f-cbd810f21b5b
+    displayName: COMING SOON
+    type: PLAYER
+    location:
+      world: world
+      x: 3.5
+      y: 68.0
+      z: 3.5
+      yaw: 96.15039
+      pitch: 90.0
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 16
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: true
+    equipment:
+      MAINHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:stone_axe
+        count: 1
+        schema_version: 1
+      FEET:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:leather_boots
+        count: 1
+        schema_version: 1
+      CHEST:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:iron_chestplate
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:protection":1,"minecraft:unbreaking":1}'
+        schema_version: 1
+      HEAD:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:chainmail_helmet
+        count: 1
+        schema_version: 1
+      OFFHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:cracked_stone_bricks
+        count: 1
+        schema_version: 1
+      LEGS:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:chainmail_leggings
+        count: 1
+        components:
+          minecraft:enchantments: '{"minecraft:projectile_protection":1}'
+        schema_version: 1
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: SKYWARS COMING SOON

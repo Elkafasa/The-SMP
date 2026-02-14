@@ -22,7 +22,19 @@ Minigames (Coming Soon): Bedwars and Skywars are currently under development.
 
 World & Border
 
+<<<<<<< HEAD
 Starting Border: $10,000 \times 10,000$ blocks.
+=======
+Starting Border: 
+10
+,
+000
+×
+10
+,
+000
+ blocks.
+>>>>>>> origin/TEST
 
 Border Expansion: The world border expands through specific progression achievements. The Ender Dragon’s death serves as the primary trigger for a major expansion.
 
@@ -52,6 +64,10 @@ Ender Chests & Shulkers: Unobtainable until the Ender Dragon is defeated.
 
 Elite Weaponry: Maces and Netherite Spears are locked until the post-Dragon phase.
 
+<<<<<<< HEAD
 Voice Chat: Required. The server uses Simple Voice Chat.Download hereEssential 
+=======
+Voice Chat: Required. The server uses Simple Voice Chat.Download hereEssential
+>>>>>>> origin/TEST
 
 Commands:/tpa — Request teleportation to a friend./sethome / /home — Manage your personal spawn points.
